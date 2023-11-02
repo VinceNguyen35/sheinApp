@@ -1,5 +1,5 @@
-import TopBanner from "./TopBanner";
-import Navbar from "./Navbar";
+import TopBanner from "./header/TopBanner";
+import Navbar from "./header/Navbar";
 
 const header = () => {
     return (
