@@ -1,8 +1,19 @@
+import trustwaveIcon from "../../../assets/trustwaveIcon.png";
+import dmcaIcon from "../../../assets/dmcaIcon.png";
+
 const LegalIcons = () => {
     return (
         <div>
-            <h6>Legal Icon Here</h6>
-            <h6>Legal Icon Here</h6>
+            <img
+                src={trustwaveIcon}
+                alt="Trustwave icon"
+                style={{ height: 24 }}
+            />
+            <img
+                src={dmcaIcon}
+                alt="DMCA icon"
+                style={{ height: 24 }}
+            />
         </div>
     );
 }
