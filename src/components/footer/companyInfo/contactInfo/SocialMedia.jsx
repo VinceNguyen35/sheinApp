@@ -11,51 +11,69 @@ import messengerIcon from "../../../../assets/messengerIcon.png";
 const SocialMedia = () => {
     return (
         <div>
-            <img
-                src={facebookIcon}
-                alt="Facebook icon"
-                style={{ width: 20 }}
-            />
-            <img
-                src={instagramIcon}
-                alt="Instagram icon"
-                style={{ width: 20 }}
-            />
-            <img
-                src={twitterIcon}
-                alt="Twitter icon"
-                style={{ width: 20 }}
-            />
-            <img
-                src={youtubeIcon}
-                alt="Youtube icon"
-                style={{ width: 20 }}
-            />
-            <img
-                src={pinterestIcon}
-                alt="Pinterest icon"
-                style={{ width: 20 }}
-            />
-            <img
-                src={snapchatIcon}
-                alt="Snapchat icon"
-                style={{ width: 20 }}
-            />
-            <img
-                src={tiktokIcon}
-                alt="Tiktok icon"
-                style={{ width: 20 }}
-            />
-            <img
-                src={linkedinIcon}
-                alt="Linkedin icon"
-                style={{ width: 20 }}
-            />
-            <img
-                src={messengerIcon}
-                alt="Messenger icon"
-                style={{ width: 20 }}
-            />
+            <a href="https://www.facebook.com/sheinus/">
+                <img
+                    src={facebookIcon}
+                    alt="Facebook icon"
+                    style={{ width: 20 }}
+                />
+            </a>
+            <a href="https://www.instagram.com/shein_us/">
+                <img
+                    src={instagramIcon}
+                    alt="Instagram icon"
+                    style={{ width: 20 }}
+                />
+            </a>
+            <a href="https://mobile.twitter.com/SHEIN_News">
+                <img
+                    src={twitterIcon}
+                    alt="Twitter icon"
+                    style={{ width: 20 }}
+                />
+            </a>
+            <a href="https://www.youtube.com/user/sheinsidevideo">
+                <img
+                    src={youtubeIcon}
+                    alt="Youtube icon"
+                    style={{ width: 20 }}
+                />
+            </a>
+            <a href="https://www.pinterest.com/SHEINofficial/">
+                <img
+                    src={pinterestIcon}
+                    alt="Pinterest icon"
+                    style={{ width: 20 }}
+                />
+            </a>
+            <a href="https://www.snapchat.com/add/sheinofficial">
+                <img
+                    src={snapchatIcon}
+                    alt="Snapchat icon"
+                    style={{ width: 20 }}
+                />
+            </a>
+            <a href="https://www.tiktok.com/@shein_official">
+                <img
+                    src={tiktokIcon}
+                    alt="Tiktok icon"
+                    style={{ width: 20 }}
+                />
+            </a>
+            <a href="https://www.linkedin.com/careersite/sheinus">
+                <img
+                    src={linkedinIcon}
+                    alt="Linkedin icon"
+                    style={{ width: 20 }}
+                />
+            </a>
+            <a href="https://www.m.me/121041328593190">
+                <img
+                    src={messengerIcon}
+                    alt="Messenger icon"
+                    style={{ width: 20 }}
+                />
+            </a>
         </div>
     );
 }
