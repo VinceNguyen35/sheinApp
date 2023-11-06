@@ -2,7 +2,7 @@
 const Category = ({category}) => {
     return (
         <div>
-            <a href="">{category}</a>
+            <a href={category.link}>{category.name}</a>
         </div>
     );
 }
