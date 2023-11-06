@@ -9,90 +9,86 @@ import afterpayIcon from "../../../../assets/afterpayIcon.png";
 import klarnaIcon from "../../../../assets/klarnaIcon.png";
 import applepayIcon from "../../../../assets/applepayIcon.png";
 import googlepayIcon from "../../../../assets/googlepayIcon.png";
-import zopIcon from "../../../../assets/zopIcon.png";
+import zipIcon from "../../../../assets/zipIcon.png";
 import venmoIcon from "../../../../assets/venmoIcon.png";
 import cashappIcon from "../../../../assets/cashappIcon.png";
 import affirmIcon from "../../../../assets/affirmIcon.png";
 
 
 const PaymentMethods = () => {
+    const paymentMethodsList = [
+        {
+            name: "visa",
+            icon: visaIcon
+        },
+        {
+            name: "mastercard",
+            icon: mastercardIcon
+        },
+        {
+            name: "maestro",
+            icon: maestroIcon
+        },
+        {
+            name: "american express",
+            icon: amexIcon
+        },
+        {
+            name: "discover",
+            icon: discoverIcon
+        },
+        {
+            name: "diners club",
+            icon: dinersclubIcon
+        },
+        {
+            name: "paypal",
+            icon: paypalIcon
+        },
+        {
+            name: "after pay",
+            icon: afterpayIcon
+        },
+        {
+            name: "klarna",
+            icon: klarnaIcon
+        },
+        {
+            name: "apple pay",
+            icon: applepayIcon
+        },
+        {
+            name: "google pay",
+            icon: googlepayIcon
+        },
+        {
+            name: "zip",
+            icon: zipIcon
+        },
+        {
+            name: "venmo",
+            icon: venmoIcon
+        },
+        {
+            name: "cash app",
+            icon: cashappIcon
+        },
+        {
+            name: "affirm",
+            icon: affirmIcon
+        }
+    ];
+
     return (
         <div>
-            <img
-                src={visaIcon}
-                alt="Visa icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={mastercardIcon}
-                alt="Mastercard icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={maestroIcon}
-                alt="Maestro icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={amexIcon}
-                alt="American Express icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={discoverIcon}
-                alt="Discover icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={dinersclubIcon}
-                alt="Diners Club icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={paypalIcon}
-                alt="PayPal icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={afterpayIcon}
-                alt="Afterpay icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={klarnaIcon}
-                alt="Klarna icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={applepayIcon}
-                alt="Apple Pay icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={googlepayIcon}
-                alt="Google Pay icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={zopIcon}
-                alt="Zop icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={venmoIcon}
-                alt="Venmo icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={cashappIcon}
-                alt="Cash App icon"
-                style={{ height: 40 }}
-            />
-            <img
-                src={affirmIcon}
-                alt="Affirm icon"
-                style={{ height: 40 }}
-            />
+            {paymentMethodsList.map((paymentMethod, index) => (
+                <img
+                    key={index}
+                    src={paymentMethod.icon}
+                    alt={`${paymentMethod.name}` + " icon"}
+                    style={{ height: 40 }}
+                />
+            ))}
         </div>
     );
 }

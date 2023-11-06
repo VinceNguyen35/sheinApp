@@ -3,28 +3,28 @@ const LegaLinks = () => {
         <div>
             <ul>
                 <li>
-                    <a href="#">Privacy Center</a>
+                    <a href="https://us.shein.com/Privacy-Center-a-1045.html">Privacy Center</a>
                 </li>
                 <li>
-                    <a href="#">Privacy & Cookie Policy</a>
+                    <a href="https://us.shein.com/Privacy-Security-Policy-a-282.html">Privacy & Cookie Policy</a>
                 </li>
                 <li>
                     <a href="#">Do Not Sell My Personal Information</a>
                 </li>
                 <li>
-                    <a href="#">Terms & Conditions</a>
+                    <a href="https://us.shein.com/Terms-and-Conditions-a-399.html">Terms & Conditions</a>
                 </li>
                 <li>
-                    <a href="#">IP Notice</a>
+                    <a href="https://us.shein.com/copyright-noticeam-a-379.html">IP Notice</a>
                 </li>
                 <li>
-                    <a href="#">Accessibility</a>
+                    <a href="https://us.shein.com/Accessibility-a-1024.html">Accessibility</a>
                 </li>
                 <li>
-                    <a href="#">Imprint</a>
+                    <a href="https://us.shein.com/imprint-a-746.html">Imprint</a>
                 </li>
                 <li>
-                    <a href="#">Ad Choice</a>
+                    <a href="https://us.shein.com/Privacy-Security-Policy-a-282.html#ps-t3">Ad Choice</a>
                 </li>
                 <li>
                     <a href="#">United States</a>

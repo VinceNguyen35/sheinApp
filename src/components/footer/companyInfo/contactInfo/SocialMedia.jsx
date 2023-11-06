@@ -9,71 +9,68 @@ import linkedinIcon from "../../../../assets/linkedinIcon.png";
 import messengerIcon from "../../../../assets/messengerIcon.png";
 
 const SocialMedia = () => {
+    const socialMediaList = [
+        {
+            name: "facebook",
+            icon: facebookIcon,
+            link: "https://www.facebook.com/sheinus/"
+        },
+        {
+            name: "instagram",
+            icon: instagramIcon,
+            link: "https://www.instagram.com/shein_us/"
+        },
+        {
+            name: "twitter",
+            icon: twitterIcon,
+            link: "https://www.instagram.com/shein_us/"
+        },
+        {
+            name: "youtube",
+            icon: youtubeIcon,
+            link: "https://www.youtube.com/user/sheinsidevideo"
+        },
+        {
+            name: "pinterest",
+            icon: pinterestIcon,
+            link: "https://www.pinterest.com/SHEINofficial/"
+        },
+        {
+            name: "snapchat",
+            icon: snapchatIcon,
+            link: "https://www.snapchat.com/add/sheinofficial"
+        },
+        {
+            name: "tiktok",
+            icon: tiktokIcon,
+            link: "https://www.tiktok.com/@shein_official"
+        },
+        {
+            name: "linkedin",
+            icon: linkedinIcon,
+            link: "https://www.linkedin.com/careersite/sheinus"
+        },
+        {
+            name: "messenger",
+            icon: messengerIcon,
+            link: "https://www.m.me/121041328593190"
+        },
+    ];
+    
     return (
         <div>
-            <a href="https://www.facebook.com/sheinus/">
-                <img
-                    src={facebookIcon}
-                    alt="Facebook icon"
-                    style={{ width: 20 }}
-                />
-            </a>
-            <a href="https://www.instagram.com/shein_us/">
-                <img
-                    src={instagramIcon}
-                    alt="Instagram icon"
-                    style={{ width: 20 }}
-                />
-            </a>
-            <a href="https://mobile.twitter.com/SHEIN_News">
-                <img
-                    src={twitterIcon}
-                    alt="Twitter icon"
-                    style={{ width: 20 }}
-                />
-            </a>
-            <a href="https://www.youtube.com/user/sheinsidevideo">
-                <img
-                    src={youtubeIcon}
-                    alt="Youtube icon"
-                    style={{ width: 20 }}
-                />
-            </a>
-            <a href="https://www.pinterest.com/SHEINofficial/">
-                <img
-                    src={pinterestIcon}
-                    alt="Pinterest icon"
-                    style={{ width: 20 }}
-                />
-            </a>
-            <a href="https://www.snapchat.com/add/sheinofficial">
-                <img
-                    src={snapchatIcon}
-                    alt="Snapchat icon"
-                    style={{ width: 20 }}
-                />
-            </a>
-            <a href="https://www.tiktok.com/@shein_official">
-                <img
-                    src={tiktokIcon}
-                    alt="Tiktok icon"
-                    style={{ width: 20 }}
-                />
-            </a>
-            <a href="https://www.linkedin.com/careersite/sheinus">
-                <img
-                    src={linkedinIcon}
-                    alt="Linkedin icon"
-                    style={{ width: 20 }}
-                />
-            </a>
-            <a href="https://www.m.me/121041328593190">
-                <img
-                    src={messengerIcon}
-                    alt="Messenger icon"
-                    style={{ width: 20 }}
-                />
-            </a>
+            {socialMediaList.map((socialMedia, index) => (
+                <a
+                    key={index}
+                    href={socialMedia.link}
+                >
+                    <img
+                        src={socialMedia.icon}
+                        alt={`${socialMedia.name}` + " icon"}
+                        style={{ width: 20 }}
+                    />
+                </a>
+            ))}
         </div>
     );
 }
