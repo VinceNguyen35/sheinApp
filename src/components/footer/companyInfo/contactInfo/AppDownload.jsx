@@ -1,5 +1,5 @@
-import appleIcon from "../../../../assets/appleIcon.png";
-import androidIcon from "../../../../assets/androidIcon.png";
+import appleIcon from "../../../../assets/logos/appleIcon.png";
+import androidIcon from "../../../../assets/logos/androidIcon.png";
 
 const AppDownload = () => {
     const appList = [

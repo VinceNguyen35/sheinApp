@@ -1,6 +1,6 @@
 import SearchBar from "./generalNav/SearchBar";
 import MiscellaneousNav from "./generalNav/MiscellaneousNav";
-import sheinLogo from "../../../assets/sheinLogo.png";
+import sheinLogo from "../../../assets/logos/sheinLogo.png";
 
 const GeneralNav = () => {
     return (

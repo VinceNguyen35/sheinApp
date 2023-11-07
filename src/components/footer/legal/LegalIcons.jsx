@@ -1,5 +1,5 @@
-import trustwaveIcon from "../../../assets/trustwaveIcon.png";
-import dmcaIcon from "../../../assets/dmcaIcon.png";
+import trustwaveIcon from "../../../assets/logos/trustwaveIcon.png";
+import dmcaIcon from "../../../assets/logos/dmcaIcon.png";
 
 const LegalIcons = () => {
     return (

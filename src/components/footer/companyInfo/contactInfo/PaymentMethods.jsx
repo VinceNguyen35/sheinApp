@@ -1,18 +1,18 @@
-import visaIcon from "../../../../assets/visaIcon.png";
-import mastercardIcon from "../../../../assets/mastercardIcon.png";
-import maestroIcon from "../../../../assets/maestroIcon.png";
-import amexIcon from "../../../../assets/amexIcon.png";
-import discoverIcon from "../../../../assets/discoverIcon.png";
-import dinersclubIcon from "../../../../assets/dinersclubIcon.png";
-import paypalIcon from "../../../../assets/paypalIcon.png";
-import afterpayIcon from "../../../../assets/afterpayIcon.png";
-import klarnaIcon from "../../../../assets/klarnaIcon.png";
-import applepayIcon from "../../../../assets/applepayIcon.png";
-import googlepayIcon from "../../../../assets/googlepayIcon.png";
-import zipIcon from "../../../../assets/zipIcon.png";
-import venmoIcon from "../../../../assets/venmoIcon.png";
-import cashappIcon from "../../../../assets/cashappIcon.png";
-import affirmIcon from "../../../../assets/affirmIcon.png";
+import visaIcon from "../../../../assets/logos/visaIcon.png";
+import mastercardIcon from "../../../../assets/logos/mastercardIcon.png";
+import maestroIcon from "../../../../assets/logos/maestroIcon.png";
+import amexIcon from "../../../../assets/logos/amexIcon.png";
+import discoverIcon from "../../../../assets/logos/discoverIcon.png";
+import dinersclubIcon from "../../../../assets/logos/dinersclubIcon.png";
+import paypalIcon from "../../../../assets/logos/paypalIcon.png";
+import afterpayIcon from "../../../../assets/logos/afterpayIcon.png";
+import klarnaIcon from "../../../../assets/logos/klarnaIcon.png";
+import applepayIcon from "../../../../assets/logos/applepayIcon.png";
+import googlepayIcon from "../../../../assets/logos/googlepayIcon.png";
+import zipIcon from "../../../../assets/logos/zipIcon.png";
+import venmoIcon from "../../../../assets/logos/venmoIcon.png";
+import cashappIcon from "../../../../assets/logos/cashappIcon.png";
+import affirmIcon from "../../../../assets/logos/affirmIcon.png";
 
 
 const PaymentMethods = () => {

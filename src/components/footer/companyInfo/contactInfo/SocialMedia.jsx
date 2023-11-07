@@ -1,12 +1,12 @@
-import facebookIcon from "../../../../assets/facebookIcon.png";
-import instagramIcon from "../../../../assets/instagramIcon.png";
-import twitterIcon from "../../../../assets/twitterIcon.png";
-import youtubeIcon from "../../../../assets/youtubeIcon.png";
-import pinterestIcon from "../../../../assets/pinterestIcon.png";
-import snapchatIcon from "../../../../assets/snapchatIcon.png";
-import tiktokIcon from "../../../../assets/tiktokIcon.png";
-import linkedinIcon from "../../../../assets/linkedinIcon.png";
-import messengerIcon from "../../../../assets/messengerIcon.png";
+import facebookIcon from "../../../../assets/logos/facebookIcon.png";
+import instagramIcon from "../../../../assets/logos/instagramIcon.png";
+import twitterIcon from "../../../../assets/logos/twitterIcon.png";
+import youtubeIcon from "../../../../assets/logos/youtubeIcon.png";
+import pinterestIcon from "../../../../assets/logos/pinterestIcon.png";
+import snapchatIcon from "../../../../assets/logos/snapchatIcon.png";
+import tiktokIcon from "../../../../assets/logos/tiktokIcon.png";
+import linkedinIcon from "../../../../assets/logos/linkedinIcon.png";
+import messengerIcon from "../../../../assets/logos/messengerIcon.png";
 
 const SocialMedia = () => {
     const socialMediaList = [

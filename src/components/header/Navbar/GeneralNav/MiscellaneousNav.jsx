@@ -1,8 +1,8 @@
-import userIcon from "../../../../assets/userIcon.png";
-import shoppingCartIcon from "../../../../assets/shoppingCartIcon.png";
-import heartIcon from "../../../../assets/heartIcon.png";
-import headphonesIcon from "../../../../assets/headphonesIcon.png";
-import globeIcon from "../../../../assets/globeIcon.png";
+import userIcon from "../../../../assets/logos/userIcon.png";
+import shoppingCartIcon from "../../../../assets/logos/shoppingCartIcon.png";
+import heartIcon from "../../../../assets/logos/heartIcon.png";
+import headphonesIcon from "../../../../assets/logos/headphonesIcon.png";
+import globeIcon from "../../../../assets/logos/globeIcon.png";
 
 const MiscellaneousNav = () => {
     return (
