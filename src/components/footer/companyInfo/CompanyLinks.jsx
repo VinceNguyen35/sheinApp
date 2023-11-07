@@ -1,14 +1,18 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
-const CompanyLinks = ({infoLinks}) => {
+const CompanyLinks = ({item}) => {
     return (
         <div>
-            <h6>{infoLinks.categoryName}</h6>
+            <h6>{item.categoryType}</h6>
             {
-                infoLinks.companyLinks.map((link, index) => (
+                item.companyLinks.map((link, index) => (
                     <div>
-                        <a href="" id={index}>{link}</a>
-                        <br />
+                        <a
+                            href={link.link}
+                            id={index}
+                        >
+                            {link.title}
+                        </a>
                     </div>
                 ))
             }
