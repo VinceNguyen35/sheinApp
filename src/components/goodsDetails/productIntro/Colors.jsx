@@ -1,5 +1,12 @@
 /* eslint-disable react/prop-types */
-const Colors = ({colors, colorsPictures}) => {
+import { useContext } from "react";
+import { ProductContext } from "../../../context/ProductContext";
+
+const Colors = () => {
+    const product = useContext(ProductContext);
+    const colors = product.colors;
+    const colorsPictures = product.colorsPictures;
+
     return (
         <div>
             <h4>Color: </h4>

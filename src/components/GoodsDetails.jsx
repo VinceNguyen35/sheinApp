@@ -3,10 +3,10 @@
 import ProductIntro from "./goodsDetails/ProductIntro";
 import CustomerReviews from "./goodsDetails/CustomerReviews";
 
-const GoodsDetails = ({product}) => {
+const GoodsDetails = () => {
     return (
         <div>
-            <ProductIntro product={product}/>
+            <ProductIntro />
             <CustomerReviews />
         </div>
     );

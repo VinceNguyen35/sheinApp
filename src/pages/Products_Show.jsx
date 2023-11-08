@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 // React Imports
+import { ProductContext } from "../context/ProductContext";
 import { useParams } from "react-router-dom";
 
 // Data Imports for Demo Purposes Only
@@ -231,8 +232,10 @@ const Products_Show = () => {
             {!productExists && <NotFound />}
             {productExists &&
             <div>
-                <h2>{id}</h2>
-                <GoodsDetails product={product} />
+                <ProductContext.Provider value={product}>
+                    <h2>{id}</h2>
+                    <GoodsDetails />
+                </ProductContext.Provider>
             </div>}
         </div>
     );

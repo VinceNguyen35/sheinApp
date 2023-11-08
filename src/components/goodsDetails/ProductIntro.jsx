@@ -8,16 +8,13 @@ import ShippingInfo from "./productIntro/ShippingInfo";
 import AddingProduct from "./productIntro/AddingProduct";
 import ProductAccordion from "./productIntro/ProductAccordion";
 
-const ProductIntro = ({product}) => {
+const ProductIntro = () => {
     return (
         <div>
             <Breadcrumbs />
-            <ProductGallery pictures={product.pictures}/>
+            <ProductGallery />
             <ProductInfo />
-            <Colors
-                colors={product.colors}
-                colorsPictures={product.colorsPictures}
-            />
+            <Colors />
             <SelectionInfo />
             <ShippingInfo />
             <AddingProduct />
