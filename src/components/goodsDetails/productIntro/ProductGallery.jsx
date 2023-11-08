@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-const ProductGallery = ({product}) => {
-    const gallery = product.pictures;
+const ProductGallery = ({pictures}) => {
+    const gallery = pictures;
     return (
         <div>
             <h5>Product Gallery Here</h5>
