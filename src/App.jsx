@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Pages
 import Home from "./pages/Home";
 import Products_Show from "./pages/Products_Show";
+import NotFound from "./pages/NotFound";
 
 // Components
 import Header from "./components/Header";
@@ -16,20 +17,16 @@ function App() {
           <div className="pages">
             <Routes>
               <Route
-                path="*"
+                path="/"
                 element={<Home />}
               />
               <Route
-                path="/manfinity"
-                element={<Products_Show item="manfinity"/>}
+                path="/:id"
+                element={<Products_Show />}
               />
               <Route
-                path="/cargoPants"
-                element={<Products_Show item="cargoPants"/>}
-              />
-              <Route
-                path="/dress"
-                element={<Products_Show item="dress"/>}
+                path="*"
+                element={<NotFound />}
               />
             </Routes>
           </div>

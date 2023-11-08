@@ -1,7 +1,6 @@
-import productsData from "../../../assets/productsData";
-
-const ProductGallery = () => {
-    const gallery = productsData.manfinity.products;
+/* eslint-disable react/prop-types */
+const ProductGallery = ({product}) => {
+    const gallery = product.pictures;
     return (
         <div>
             <h5>Product Gallery Here</h5>

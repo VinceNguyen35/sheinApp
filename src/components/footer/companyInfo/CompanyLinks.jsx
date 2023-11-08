@@ -6,14 +6,12 @@ const CompanyLinks = ({item}) => {
             <h6>{item.categoryType}</h6>
             {
                 item.companyLinks.map((link, index) => (
-                    <div>
-                        <a
-                            href={link.link}
-                            id={index}
-                        >
-                            {link.title}
-                        </a>
-                    </div>
+                    <a
+                        key={index}
+                        href={link.link}
+                    >
+                        {link.title}
+                    </a>
                 ))
             }
         </div>

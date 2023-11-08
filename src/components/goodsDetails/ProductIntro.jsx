@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Breadcrumbs from "./productIntro/Breadcrumbs";
 import ProductGallery from "./productIntro/ProductGallery";
 import ProductInfo from "./productIntro/ProductInfo";
@@ -6,11 +7,11 @@ import ShippingInfo from "./productIntro/ShippingInfo";
 import AddingProduct from "./productIntro/AddingProduct";
 import ProductAccordion from "./productIntro/ProductAccordion";
 
-const ProductIntro = () => {
+const ProductIntro = ({product}) => {
     return (
         <div>
             <Breadcrumbs />
-            <ProductGallery />
+            <ProductGallery product={product}/>
             <ProductInfo />
             <SelectionInfo />
             <ShippingInfo />
