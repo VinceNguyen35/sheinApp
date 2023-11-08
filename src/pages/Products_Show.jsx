@@ -13,9 +13,11 @@ import manfinity_img7 from "../assets/products/manfinity/manfinity_img7.webp";
 
 // Component Imports
 import GoodsDetails from "../components/GoodsDetails";
+import NotFound from "../components/NotFound";
 
 const Products_Show = () => {
     const { id } = useParams();
+    let productExists = true;
 
     const productData = [
         {
@@ -136,20 +138,34 @@ const Products_Show = () => {
     ];
 
     let product = {};
-    if(id === "manfinity") {
-        product = productData[0];
-    }
-    if (id === "cargopants") {
-        product = productData[1];
-    }
-    if (id === "dress") {
-        product = productData[2];
+    switch(id) {
+        case "manfinity": 
+            product = productData[0];
+            productExists = true;
+            break;
+        case "cargopants": 
+            product = productData[1];
+            productExists = true;
+            break;
+        case "dress":
+            product = productData[2];
+            productExists = true;
+            break;
+        default:
+            product = productData[0];
+            productExists = false;
+            break;
+        
     }
 
     return (
         <div>
-            <h2>{id}</h2>
-            <GoodsDetails product={product}/>
+            {!productExists && <NotFound />}
+            {productExists &&
+            <div>
+                <h2>{id}</h2>
+                <GoodsDetails product={product} />
+            </div>}
         </div>
     );
 }

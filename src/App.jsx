@@ -2,8 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Pages
 import Home from "./pages/Home";
+import Products from "./pages/Products";
 import Products_Show from "./pages/Products_Show";
-import NotFound from "./pages/NotFound";
+import NotFound from "./components/NotFound";
 
 // Components
 import Header from "./components/Header";
@@ -21,7 +22,11 @@ function App() {
                 element={<Home />}
               />
               <Route
-                path="/:id"
+                path="/products"
+                element={<Products />}
+              />
+              <Route
+                path="/products/:id"
                 element={<Products_Show />}
               />
               <Route
