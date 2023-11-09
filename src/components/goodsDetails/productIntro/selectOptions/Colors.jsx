@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
-import { ProductContext } from "../../../context/ProductContext";
+import { ProductContext } from "../../../../context/ProductContext";
 
 const Colors = () => {
     const product = useContext(ProductContext);
@@ -9,7 +9,7 @@ const Colors = () => {
 
     return (
         <div>
-            <h4>Color: </h4>
+            <h6>Colors Here</h6>
             {
                 colors.map((color, index) => (
                     <div key={index}>{color}</div>

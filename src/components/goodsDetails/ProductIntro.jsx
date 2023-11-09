@@ -2,8 +2,7 @@
 import Breadcrumbs from "./productIntro/Breadcrumbs";
 import ProductGallery from "./productIntro/ProductGallery";
 import ProductInfo from "./productIntro/ProductInfo";
-import Colors from "./productIntro/Colors";
-import SelectionInfo from "./productIntro/SelectionInfo";
+import SelectOptions from "./productIntro/SelectOptions";
 import ShippingInfo from "./productIntro/ShippingInfo";
 import AddingProduct from "./productIntro/AddingProduct";
 import ProductAccordion from "./productIntro/ProductAccordion";
@@ -14,8 +13,7 @@ const ProductIntro = () => {
             <Breadcrumbs />
             <ProductGallery />
             <ProductInfo />
-            <Colors />
-            <SelectionInfo />
+            <SelectOptions />
             <ShippingInfo />
             <AddingProduct />
             <ProductAccordion />
