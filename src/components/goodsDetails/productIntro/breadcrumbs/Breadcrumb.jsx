@@ -1,6 +1,11 @@
-const Breadcrumb = () => {
+/* eslint-disable react/prop-types */
+const Breadcrumb = ({breadcrumb}) => {
     return (
-        <h6>Breadcrumb Here</h6>
+        <div>
+            <a href={breadcrumb.link}>
+                { breadcrumb.title }
+            </a>
+        </div>
     );
 }
  

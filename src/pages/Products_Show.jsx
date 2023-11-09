@@ -58,6 +58,28 @@ const Products_Show = () => {
             price: 11.99,
             averageRating: 4.79,
             numberOfReviews: 600,
+            breadcrumbs: [
+                {
+                    title: "Home",
+                    link: "https://us.shein.com/"
+                },
+                {
+                    title: "Men Apparel",
+                    link: "https://us.shein.com/Men-Apparel-c-2026.html"
+                },
+                {
+                    title: "Men Clothing",
+                    link: "https://us.shein.com/Men-Clothing-c-6273.html"
+                },
+                {
+                    title: "Men Tops",
+                    link: "https://us.shein.com/Men-Tops-c-1970.html"
+                },
+                {
+                    title: "Men T-Shirts",
+                    link: "https://us.shein.com/Men-T-Shirts-c-1980.html"
+                }
+            ],
             colors: [
                 "Army Green",
                 "Dark Grey",
@@ -110,6 +132,28 @@ const Products_Show = () => {
             price: 24.49,
             averageRating: 3.62,
             numberOfReviews: 123,
+            breadcrumbs: [
+                {
+                    title: "Home",
+                    link: "https://us.shein.com/"
+                },
+                {
+                    title: "Women Apparel",
+                    link: "https://us.shein.com/Women-Apparel-c-4436.html"
+                },
+                {
+                    title: "Women Clothing",
+                    link: "https://us.shein.com/Women-Clothing-c-2030.html"
+                },
+                {
+                    title: "Women Bottoms",
+                    link: "https://us.shein.com/Women-Bottoms-c-1767.html"
+                },
+                {
+                    title: "Women Pants",
+                    link: "https://us.shein.com/Women-Pants-c-1740.html"
+                },
+            ],
             colors: [
                 "Black",
                 "Grey"
@@ -157,6 +201,28 @@ const Products_Show = () => {
             price: 11.49,
             averageRating: 4.76,
             numberOfReviews: 365,
+            breadcrumbs: [
+                {
+                    title: "Home",
+                    link: "https://us.shein.com/"
+                },
+                {
+                    title: "Women Apparel",
+                    link: "https://us.shein.com/Women-Apparel-c-4436.html"
+                },
+                {
+                    title: "Weddings & Events",
+                    link: "https://us.shein.com/Weddings-Events-c-3088.html"
+                },
+                {
+                    title: "Women Party Wear",
+                    link: "https://us.shein.com/Women-Party-Wear-c-5360.html"
+                },
+                {
+                    title: "Women Cocktail Dresses",
+                    link: "https://us.shein.com/Women-Cocktail-Dresses-c-8035.html"
+                },
+            ],
             colors: [
                 "Violet Purple",
                 "Dark Green",
