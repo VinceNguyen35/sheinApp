@@ -16,6 +16,7 @@ import armyGreen from "../assets/products/manfinity/armyGreen.webp";
 import darkGrey from "../assets/products/manfinity/darkGrey.webp";
 import mochaBrown from "../assets/products/manfinity/mochaBrown.webp";
 import navyBlue from "../assets/products/manfinity/navyBlue.webp";
+import manfinity_storeIMG from "../assets/products/manfinity/manfinity_storeIMG.jpg";
 
 
 // Cargo Pants
@@ -25,7 +26,7 @@ import cargoPants_img3 from "../assets/products/cargoPants/cargoPants_img3.webp"
 import cargoPants_img4 from "../assets/products/cargoPants/cargoPants_img4.webp";
 import cargoPants_img5 from "../assets/products/cargoPants/cargoPants_img5.webp";
 import cargoPants_img1_black from "../assets/products/cargoPants/cargoPants_img1_black.webp";
-
+import cargoPants_storeIMG from "../assets/products/cargoPants/cargoPants_storeIMG.png";
 
 // Dress
 import dress_img1 from "../assets/products/dress/dress_img1.webp";
@@ -41,6 +42,7 @@ import dustyBlue from "../assets/products/dress/dustyBlue.webp";
 import babyPink from "../assets/products/dress/babyPink.webp";
 import black from "../assets/products/dress/black.webp";
 import burgundy from "../assets/products/dress/burgundy.webp";
+import dress_storeIMG from "../assets/products/dress/dress_storeIMG.png";
 
 
 // Component Imports
@@ -167,6 +169,77 @@ const Products_Show = () => {
                     detail: "No"
                 }
             ],
+            sizeAndFitHeaders: [
+                "Size",
+                "US",
+                "Bicep Length",
+                "Bust",
+                "Cuff",
+                "Length",
+                "Shoulder",
+                "Sleeve Length"
+            ],
+            sizeAndFitData: [
+                [
+                    "S",
+                    "36",
+                    16.9,
+                    43.7,
+                    9,
+                    29.1,
+                    23,
+                    22.9
+                ],
+                [
+                    "M",
+                    "38",
+                    17.3,
+                    45.3,
+                    9.4,
+                    29.9,
+                    23.8,
+                    23.2
+                ],
+                [
+                    "L",
+                    "40",
+                    17.9,
+                    47.2,
+                    9.9,
+                    30.7,
+                    24.8,
+                    23.6
+                ],
+                [
+                    "XL",
+                    "42",
+                    18.4,
+                    49.2,
+                    10.4,
+                    31.5,
+                    25.8,
+                    23.9
+                ],
+                [
+                    "XXL",
+                    "44",
+                    19,
+                    51.2,
+                    10.9,
+                    32.3,
+                    26.8,
+                    24.2
+                ],
+            ],
+            storeDetails: {
+                storeName: "Manfinity Homme",
+                storeTags:[],
+                storeRating: "4.93",
+                storeProducts: "12614",
+                storeFollowers: "2.9K",
+                storeImg: manfinity_storeIMG,
+                storeLink: "https://us.shein.com/store/home?store_code=9518398926&type=selection&routeId=102216732&ici=PageGoodsDetail&src_identifier=on%3Dstore%60cn%3DManfinity%20Homme%60hz%3D0%60ps%3D1_1%60jc%3DthirdPartyStoreHome_9518398926&src_module=DetailBrand&src_tab_page_id=page_goods_detail1699586200179&store_score=4.93"
+            },
             pictures: [
                 manfinity_img1,
                 manfinity_img2,
@@ -289,6 +362,59 @@ const Products_Show = () => {
                     detail: "No"
                 }
             ],
+            sizeAndFitHeaders: [
+                "Size",
+                "US",
+                "Hip Size",
+                "Inseam",
+                "Waist Size"
+            ],
+            sizeAndFitData: [
+                [
+                    "XS",
+                    "2",
+                    39,
+                    30.3,
+                    26.8
+                ],
+                [
+                    "S",
+                    "4",
+                    103,
+                    77.5,
+                    72
+                ],
+                [
+                    "M",
+                    "6",
+                    107,
+                    78,
+                    76
+                ],
+                [
+                    "L",
+                    "8/10",
+                    111,
+                    78.5,
+                    82
+                ],
+                [
+                    "XL",
+                    "12",
+                    115,
+                    79,
+                    88
+                ],
+            ],
+            storeDetails: {
+                storeName: "SDNGED General",
+                storeTags: ["3P Seller"],
+                storeRating: "4.00",
+                storeProducts: "567",
+                storeFollowers: "2.0K",
+                storeImg: cargoPants_storeIMG,
+                storeLink: "https://us.shein.com/store/home?store_code=5564930356&type=selection&routeId=102146317&ici=PageGoodsDetail&src_identifier=on%3Dstore%60cn%3DSDNGED%20General%60hz%3D0%60ps%3D1_1%60jc%3DthirdPartyStoreHome_5564930356&src_module=DetailBrand&src_tab_page_id=page_goods_detail1699586663486&store_score=4.0"
+            },
             pictures: [
                 cargoPants_img1,
                 cargoPants_img2,
@@ -411,6 +537,57 @@ const Products_Show = () => {
                     detail: "No"
                 }
             ],
+            sizeAndFitHeaders: [
+                "Size",
+                "US",
+                "Bust",
+                "Hip Size",
+                "Length",
+                "Waist Size"
+            ],
+            sizeAndFitData: [
+                [
+                    "XS",
+                    "2",
+                    32.7,
+                    33.5,
+                    52,
+                    24
+                ],
+                [
+                    "S",
+                    "4",
+                    34.3,
+                    35,
+                    52.8,
+                    25.6
+                ],
+                [
+                    "M",
+                    "6",
+                    35.8,
+                    36.6,
+                    53.5,
+                    27.2
+                ],
+                [
+                    "L",
+                    "8/10",
+                    38.2,
+                    39,
+                    54.3,
+                    29.5
+                ]
+            ],
+            storeDetails: {
+                storeName: "SHEIN Belle",
+                storeTags: [],
+                storeRating: "4.85",
+                storeProducts: "5801",
+                storeFollowers: "2.7K",
+                storeImg: dress_storeIMG,
+                storeLink: "https://us.shein.com/store/home?store_code=2112285262&type=selection&routeId=102172132&ici=PageGoodsDetail&src_identifier=on%3Dstore%60cn%3DSHEIN%C2%A0Belle%60hz%3D0%60ps%3D1_1%60jc%3DthirdPartyStoreHome_2112285262&src_module=DetailBrand&src_tab_page_id=page_goods_detail1699586901956&store_score=4.85"
+            },
             pictures: [
                 dress_img1,
                 dress_img2,
