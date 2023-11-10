@@ -5,23 +5,18 @@ import { ProductContext } from "../../../../context/ProductContext";
 const Colors = () => {
     const product = useContext(ProductContext);
     const colors = product.colors;
-    const colorsPictures = product.colorsPictures;
 
     return (
         <div>
             <h6>Colors Here</h6>
             {
                 colors.map((color, index) => (
-                    <div key={index}>{color}</div>
-                ))
-            }
-            {
-                colorsPictures.map((colorPicture, index) => (
-                    <img
+                    <div
                         key={index}
-                        src={colorPicture}
-                        alt={colorPicture}
-                    />
+                    >
+                        { color.name }
+                        <img src={ color.picture } alt={ color.name } />
+                    </div>
                 ))
             }
         </div>

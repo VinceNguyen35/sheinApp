@@ -81,16 +81,22 @@ const Products_Show = () => {
                 }
             ],
             colors: [
-                "Army Green",
-                "Dark Grey",
-                "Mocha Brown",
-                "Navy Blue"
-            ],
-            colorsPictures: [
-                armyGreen,
-                darkGrey,
-                mochaBrown,
-                navyBlue
+                {
+                    name: "Army Green",
+                    picture: armyGreen
+                },
+                {
+                    name: "Dark Grey",
+                    picture: darkGrey
+                },
+                {
+                    name: "Mocha Brown",
+                    picture: mochaBrown
+                },
+                {
+                    name: "Navy Blue",
+                    picture: navyBlue
+                }
             ],
             sizes: [
                 "36 (S)",
@@ -155,12 +161,14 @@ const Products_Show = () => {
                 },
             ],
             colors: [
-                "Black",
-                "Grey"
-            ],
-            colorsPictures: [
-                cargoPants_img1_black,
-                cargoPants_img1
+                {
+                    name: "Black",
+                    picture: cargoPants_img1_black
+                },
+                {
+                    name: "Grey",
+                    picture: cargoPants_img1
+                }
             ],
             sizes: [
                 "2 (XS)",
@@ -224,22 +232,34 @@ const Products_Show = () => {
                 },
             ],
             colors: [
-                "Violet Purple",
-                "Dark Green",
-                "Dusty Pink",
-                "Dusty Blue",
-                "Baby Pink",
-                "Black",
-                "Burgundy"
-            ],
-            colorsPictures: [
-                violetPurple,
-                darkGreen,
-                dustyPink,
-                dustyBlue,
-                babyPink,
-                black,
-                burgundy
+                {
+                    name: "Violet Purple",
+                    picture: violetPurple
+                },
+                {
+                    name: "Dark Green",
+                    picture: darkGreen
+                },
+                {
+                    name: "Dusty Pink",
+                    picture: dustyPink
+                },
+                {
+                    name: "Dusty Blue",
+                    picture: dustyBlue
+                },
+                {
+                    name: "Baby Pink",
+                    picture: babyPink
+                },
+                {
+                    name: "Black",
+                    picture: black
+                },
+                {
+                    name: "Burgundy",
+                    picture: burgundy
+                }
             ],
             sizes: [
                 "2 (XS)",
