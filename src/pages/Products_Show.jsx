@@ -105,23 +105,68 @@ const Products_Show = () => {
                 "42 (XL)",
                 "44 (XXL"
             ],
-            description: {
-                "Color": "Mocha Brown",
-                "Style": "Casual",
-                "Pattern Type": "Letter",
-                "Neckline": "Round Neck",
-                "Details": "Patched",
-                "Sleeve Length": "Long Sleeve",
-                "Sleeve Type": "Drop Shoulder",
-                "Length": "Long",
-                "Fit Type": "Regular Fit",
-                "Fabric": "Slight Stretch",
-                "Material": "Knitted Fabric",
-                "Composition": "75 % Polyester, 20% Viscose, 5% Elastane",
-                "Temperature": "Spring / Fall(18 - 25℃/63-77℉)",
-                "Care Instructions": "Machine wash or professional dry clean",
-                "Sheer": "No",
-            },
+            description: [
+                {
+                    title: "Color",
+                    detail: "Mocha Brown"
+                },
+                {
+                    title: "Style",
+                    detail: "Casual"
+                },
+                {
+                    title: "Pattern Type",
+                    detail: "Letter"
+                },
+                {
+                    title: "Neckline",
+                    detail: "Round Neck"
+                },
+                {
+                    title: "Details",
+                    detail: "Patched"
+                },
+                {
+                    title: "Sleeve Length",
+                    detail: "Long Sleeve"
+                },
+                {
+                    title: "Sleeve Type",
+                    detail: "Drop Shoulder"
+                },
+                {
+                    title: "Length",
+                    detail: "Long"
+                },
+                {
+                    title: "Fit Type",
+                    detail: "Regular Fit"
+                },
+                {
+                    title: "Fabric",
+                    detail: "Slight Stretch"
+                },
+                {
+                    title: "Material",
+                    detail: "Knitted Fabric"
+                },
+                {
+                    title: "Composition",
+                    detail: "75 % Polyester, 20% Viscose, 5% Elastane"
+                },
+                {
+                    title: "Temperature",
+                    detail: "Spring / Fall(18 - 25℃/63-77℉)"
+                },
+                {
+                    title: "Care Instructions",
+                    detail: "Machine wash or professional dry clean"
+                },
+                {
+                    title: "Sheer",
+                    detail: "No"
+                }
+            ],
             pictures: [
                 manfinity_img1,
                 manfinity_img2,
@@ -177,24 +222,73 @@ const Products_Show = () => {
                 "8/10 (L)",
                 "12 (XL)"
             ],
-            description: {
-                "Color": "Grey",
-                "Style": "Casual",
-                "Pattern Type": "Plain",
-                "Type": "Cargo Pants",
-                "Closure Type": "Zipper Fly",
-                "Details": "Button, Pocket, Zipper",
-                "Waist Line": "Natural",
-                "Length": "Long",
-                "Fit Type": "Regular Fit",
-                "Fabric": "Non - Stretch",
-                "Material": "Woven Fabric",
-                "Composition": "100 % Viscose",
-                "Care Instructions": "Hand wash, do not dry clean",
-                "Temperature": "Late Fall(10- 17℃/ 50 - 63℉)",
-                "Body": "Unlined",
-                "Sheer": "No",
-            },
+            description: [
+                {
+                    title: "Color",
+                    detail: "Grey"
+                },
+                {
+                    title: "Style",
+                    detail: "Casual"
+                },
+                {
+                    title: "Pattern Type",
+                    detail: "Plain"
+                },
+                {
+                    title: "Type",
+                    detail: "Cargo Pants"
+                },
+                {
+                    title: "Closure Type",
+                    detail: "Zipper Fly"
+                },
+                {
+                    title: "Details",
+                    detail: "Button, Pocket, Zipper"
+                },
+                {
+                    title: "Waist Line",
+                    detail: "Natural"
+                },
+                {
+                    title: "Length",
+                    detail: "Long"
+                },
+                {
+                    title: "Fit Type",
+                    detail: "Regular Fit"
+                },
+                {
+                    title: "Fabric",
+                    detail: "Non - Stretch"
+                },
+                {
+                    title: "Material",
+                    detail: "Woven Fabric"
+                },
+
+                {
+                    title: "Composition",
+                    detail: "100 % Viscose"
+                },
+                {
+                    title: "Care Instructions",
+                    detail: "Hand wash, do not dry clean"
+                },
+                {
+                    title: "Temperature",
+                    detail: "Late Fall(10- 17℃/ 50 - 63℉)"
+                },
+                {
+                    title: "Body",
+                    detail: "Unlined"
+                },
+                {
+                    title: "Sheer",
+                    detail: "No"
+                }
+            ],
             pictures: [
                 cargoPants_img1,
                 cargoPants_img2,
@@ -267,20 +361,56 @@ const Products_Show = () => {
                 "6 (M)",
                 "8/10 (L)",
             ],
-            description: {
-                "Color": "Dark Green",
-                "Pattern Type": "Plain",
-                "Details": "Backless, Draped, Wrap",
-                "Neckline": "Halter",
-                "Sleeve Length": "Sleeveless",
-                "Length": "Long",
-                "Fit Type": "Regular Fit",
-                "Fabric": "Non - Stretch",
-                "Material": "Satin",
-                "Composition": "97 % Polyester, 3% Elastane",
-                "Care Instructions": "Machine wash or professional dry clean",
-                "Sheer": "No",
-            },
+            description: [
+                {
+                    title: "Color",
+                    detail: "Dark Green"
+                },
+                {
+                    title: "Pattern Type",
+                    detail: "Plain"
+                },
+                {
+                    title: "Details",
+                    detail: "Backless, Draped, Wrap"
+                },
+                {
+                    title: "Neckline",
+                    detail: "Halter"
+                },
+                {
+                    title: "Sleeve Length",
+                    detail: "Sleeveless"
+                },
+                {
+                    title: "Length",
+                    detail: "Long"
+                },
+                {
+                    title: "Fit Type",
+                    detail: "Regular Fit"
+                },
+                {
+                    title: "Fabric",
+                    detail: "Non - Stretch"
+                },
+                {
+                    title: "Material",
+                    detail: "Satin"
+                },
+                {
+                    title: "Composition",
+                    detail: "97 % Polyester, 3% Elastane"
+                },
+                {
+                    title: "Care Instructions",
+                    detail: "Machine wash or professional dry clean"
+                },
+                {
+                    title: "Sheer",
+                    detail: "No"
+                }
+            ],
             pictures: [
                 dress_img1,
                 dress_img2,

@@ -3,8 +3,8 @@ import Breadcrumbs from "./productIntro/Breadcrumbs";
 import ProductGallery from "./productIntro/ProductGallery";
 import ProductInfo from "./productIntro/ProductInfo";
 import SelectOptions from "./productIntro/SelectOptions";
-import ShippingInfo from "./productIntro/ShippingInfo";
 import AddingProduct from "./productIntro/AddingProduct";
+import ShippingInfo from "./productIntro/ShippingInfo";
 import ProductAccordion from "./productIntro/ProductAccordion";
 
 const ProductIntro = () => {
@@ -14,8 +14,8 @@ const ProductIntro = () => {
             <ProductGallery />
             <ProductInfo />
             <SelectOptions />
-            <ShippingInfo />
             <AddingProduct />
+            <ShippingInfo />
             <ProductAccordion />
         </div>
     );

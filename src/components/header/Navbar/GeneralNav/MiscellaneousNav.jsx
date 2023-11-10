@@ -1,6 +1,6 @@
 import userIcon from "../../../../assets/logos/userIcon.png";
 import shoppingCartIcon from "../../../../assets/logos/shoppingCartIcon.png";
-import heartIcon from "../../../../assets/logos/heartIcon.png";
+import heartIconGrey from "../../../../assets/logos/heartIconGrey.png";
 import headphonesIcon from "../../../../assets/logos/headphonesIcon.png";
 import globeIcon from "../../../../assets/logos/globeIcon.png";
 
@@ -18,7 +18,7 @@ const MiscellaneousNav = () => {
                 style={{ width: 20 }}
             />
             <img
-                src={heartIcon}
+                src={heartIconGrey}
                 alt="Heart Icon"
                 style={{ width: 20 }}
             />
