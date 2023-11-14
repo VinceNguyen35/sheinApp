@@ -61,13 +61,12 @@ const SocialMedia = () => {
         <div>
             {socialMediaList.map((socialMedia, index) => (
                 <a
-                    key={index}
-                    href={socialMedia.link}
+                    key={ index }
+                    href={ socialMedia.link }
                 >
                     <img
-                        src={socialMedia.icon}
+                        src={ socialMedia.icon }
                         alt={`${socialMedia.name}` + " icon"}
-                        style={{ width: 20 }}
                     />
                 </a>
             ))}

@@ -7,7 +7,6 @@ const AddingProduct = () => {
             <img
                 src={heartIconBlack}
                 alt="User Icon"
-                style={{ width: 40 }}
             />
         </div>
     );

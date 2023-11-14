@@ -8,7 +8,6 @@ const SearchBar = () => {
                 <img
                     src={searchIcon}
                     alt="Search Icon"
-                    style={{ width: 50 }}
                 />
             </form>
         </div>

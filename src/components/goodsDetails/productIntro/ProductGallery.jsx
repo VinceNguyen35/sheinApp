@@ -14,7 +14,6 @@ const ProductGallery = () => {
                     key={index}
                     src={img}
                     alt={"gallery img " + `${index}`}
-                    style={{ width: 40 }}
                 />
             ))}
         </div>

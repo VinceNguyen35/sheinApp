@@ -15,7 +15,10 @@ const Colors = () => {
                         key={index}
                     >
                         { color.name }
-                        <img src={ color.picture } alt={ color.name } />
+                        <img
+                            src={ color.picture }
+                            alt={ color.name }
+                        />
                     </div>
                 ))
             }

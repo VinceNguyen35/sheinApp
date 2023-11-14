@@ -10,7 +10,6 @@ const GeneralNav = () => {
                     <img
                         src={sheinLogo}
                         alt="Shein Logo"
-                        style={{ width: 150 }}
                     />
                 </a>
             </div>

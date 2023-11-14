@@ -83,10 +83,9 @@ const PaymentMethods = () => {
         <div>
             {paymentMethodsList.map((paymentMethod, index) => (
                 <img
-                    key={index}
-                    src={paymentMethod.icon}
+                    key={ index }
+                    src={ paymentMethod.icon }
                     alt={`${paymentMethod.name}` + " icon"}
-                    style={{ height: 40 }}
                 />
             ))}
         </div>

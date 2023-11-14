@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Products_Show from "./pages/Products_Show";
-import NotFound from "./pages/NotFound";
+import NotFound from "./components/NotFound";
 
 // Components
 import Header from "./components/Header";
