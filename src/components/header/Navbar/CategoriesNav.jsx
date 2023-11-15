@@ -96,12 +96,16 @@ const CategoriesNav = () => {
     return (
         <div className="categories-nav">
             <Categories />
-            {categories.map((category, index) => (
-                <Category
-                    key={index}
-                    category={category}
-                />
-            ))}
+            <div className="categories-carousel-content">
+                <div className="categories-carousel-controller">
+                    {categories.map((category, index) => (
+                        <Category
+                            key={index}
+                            category={category}
+                        />
+                    ))}
+                </div>
+            </div>
         </div>
     );
 }

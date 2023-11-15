@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 56px;
     padding: 0 20px;
 
     .header-left {
@@ -17,9 +18,10 @@
     }
 
     .header-center {
-        width: 500px;
         display: flex;
         justify-content: flex-end;
+        flex: 1;
+        margin-right: 28px;
 
         form {
             display: flex;

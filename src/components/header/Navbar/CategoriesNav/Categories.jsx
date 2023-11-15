@@ -1,6 +1,8 @@
 const Categories = () => {
     return (
-        <h3>Categories Here</h3>
+        <div className="categories-dropdown">
+            Categories
+        </div>
     );
 }
  

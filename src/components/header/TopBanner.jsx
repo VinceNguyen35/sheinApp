@@ -2,10 +2,12 @@ import NewUserCoupon from "../../assets/NewUserCoupon.png";
 
 const TopBanner = () => {
     return (
-        <img
-            src={ NewUserCoupon }
-            alt="Banner used to give new users a discount"
-        />
+        <div className="top-banner">
+            <img
+                src={NewUserCoupon}
+                alt="Banner used to give new users a discount"
+            />
+        </div>
     );
 }
  
