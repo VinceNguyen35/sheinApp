@@ -6,7 +6,7 @@ import globeIcon from "../../../../assets/logos/globeIcon.png";
 
 const MiscellaneousNav = () => {
     return (
-        <div>
+        <div className="general-nav-icons">
             <img
                 src={userIcon}
                 alt="User Icon"

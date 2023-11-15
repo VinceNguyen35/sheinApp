@@ -3,7 +3,7 @@ import CategoriesNav from "./Navbar/CategoriesNav";
 
 const Navbar = () => {
     return (
-        <div>
+        <div className="navbar">
             <GeneralNav />
             <CategoriesNav />
         </div>

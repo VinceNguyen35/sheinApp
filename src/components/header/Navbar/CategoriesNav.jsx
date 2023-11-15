@@ -94,7 +94,7 @@ const CategoriesNav = () => {
     ];
 
     return (
-        <div>
+        <div className="categories-nav">
             <Categories />
             {categories.map((category, index) => (
                 <Category

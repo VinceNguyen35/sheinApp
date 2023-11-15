@@ -3,7 +3,7 @@ import Legal from "./footer/Legal";
 
 const footer = () => {
     return (
-        <div>
+        <div className="footer">
             <h3>Footer</h3>
             <div className="row">
                 <CompanyInfo />

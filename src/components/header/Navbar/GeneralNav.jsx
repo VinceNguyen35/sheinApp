@@ -4,7 +4,7 @@ import sheinLogo from "../../../assets/logos/sheinLogo.png";
 
 const GeneralNav = () => {
     return (
-        <div>
+        <div className="general-nav">
             <div className="header-left">
                 <a href="https://us.shein.com">
                     <img
