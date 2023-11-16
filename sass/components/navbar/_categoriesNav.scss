@@ -10,12 +10,21 @@
     font-weight: 400;
 
     .categories-dropdown {
-        padding: 0 10px;
+        display: inline-block;
+        height: 100%;
+
+        .dropdown {
+            height: 100%;
+            padding: 10px 10px 0 10px;
+        }
+
+        & :hover {
+            background-color: #e8e8e8;
+        }
     }
 
     .categories-carousel-content {
         height: 100%;
-        top: 25%;
         position: relative;
         overflow: hidden;
         -webkit-box-flex: 1;
@@ -24,10 +33,16 @@
         .categories-carousel-controller {
             position: absolute;
             white-space: nowrap;
+            height: 100%;
+
+            & :hover {
+                background-color: #e8e8e8;
+            }
 
             .category {
                 display: inline-block;
-                padding: 0 10px;
+                height: 100%;
+                padding: 10px 10px 0 10px;
             }
         }
     }

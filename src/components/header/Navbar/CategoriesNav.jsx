@@ -95,7 +95,9 @@ const CategoriesNav = () => {
 
     return (
         <div className="categories-nav">
-            <Categories />
+            <div className="categories-dropdown">
+                <Categories />
+            </div>
             <div className="categories-carousel-content">
                 <div className="categories-carousel-controller">
                     {categories.map((category, index) => (

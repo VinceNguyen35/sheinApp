@@ -1,6 +1,6 @@
 const Categories = () => {
     return (
-        <div className="categories-dropdown">
+        <div className="dropdown">
             Categories
         </div>
     );

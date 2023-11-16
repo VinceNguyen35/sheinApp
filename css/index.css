@@ -98,11 +98,18 @@ body {
   font-weight: 400;
 }
 .categories-nav .categories-dropdown {
-  padding: 0 10px;
+  display: inline-block;
+  height: 100%;
+}
+.categories-nav .categories-dropdown .dropdown {
+  height: 100%;
+  padding: 10px 10px 0 10px;
+}
+.categories-nav .categories-dropdown :hover {
+  background-color: #e8e8e8;
 }
 .categories-nav .categories-carousel-content {
   height: 100%;
-  top: 25%;
   position: relative;
   overflow: hidden;
   flex: 1;
@@ -110,10 +117,15 @@ body {
 .categories-nav .categories-carousel-content .categories-carousel-controller {
   position: absolute;
   white-space: nowrap;
+  height: 100%;
+}
+.categories-nav .categories-carousel-content .categories-carousel-controller :hover {
+  background-color: #e8e8e8;
 }
 .categories-nav .categories-carousel-content .categories-carousel-controller .category {
   display: inline-block;
-  padding: 0 10px;
+  height: 100%;
+  padding: 10px 10px 0 10px;
 }
 
 .top-banner {
