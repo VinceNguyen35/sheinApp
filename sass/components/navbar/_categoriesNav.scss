@@ -18,6 +18,15 @@
             height: 100%;
             padding: 10px 10px 0 10px;
 
+            .hovering {
+                transform: rotate(180deg);
+                transition: .2s ease-in-out;
+            }
+
+            .notHovering {
+                transition: .2s ease-in-out;
+            }
+
             img {
                 width: 10px;
                 height: 10px;
@@ -59,10 +68,15 @@
         box-shadow: -2px 0px 3px 0px rgba(0, 0, 0, 0.08);
         display: flex;
         align-items: center;
+
+        & :hover {
+            cursor: pointer;
+        }
+
         img {
             width: 10px;
             height: 10px;
-            padding: 0 5px;
+            padding: 0 10px;
         }
     }
 }

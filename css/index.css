@@ -106,6 +106,13 @@ body {
   height: 100%;
   padding: 10px 10px 0 10px;
 }
+.categories-nav .categories-dropdown .dropdown .hovering {
+  transform: rotate(180deg);
+  transition: 0.2s ease-in-out;
+}
+.categories-nav .categories-dropdown .dropdown .notHovering {
+  transition: 0.2s ease-in-out;
+}
 .categories-nav .categories-dropdown .dropdown img {
   width: 10px;
   height: 10px;
@@ -139,10 +146,13 @@ body {
   display: flex;
   align-items: center;
 }
+.categories-nav .categories-scroller :hover {
+  cursor: pointer;
+}
 .categories-nav .categories-scroller img {
   width: 10px;
   height: 10px;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .top-banner {
