@@ -1,5 +1,6 @@
 import Categories from "./CategoriesNav/Categories";
 import Category from "./CategoriesNav/Category";
+import CategoriesScroller from "./categoriesNav/CategoriesScroller";
 
 const CategoriesNav = () => {
     const categories = [
@@ -108,6 +109,7 @@ const CategoriesNav = () => {
                     ))}
                 </div>
             </div>
+            <CategoriesScroller />
         </div>
     );
 }
