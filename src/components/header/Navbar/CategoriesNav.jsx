@@ -1,3 +1,7 @@
+// react imports
+import { useState } from "react";
+
+// component imports
 import Categories from "./CategoriesNav/Categories";
 import Category from "./CategoriesNav/Category";
 import CategoriesScroller from "./categoriesNav/CategoriesScroller";
@@ -94,13 +98,55 @@ const CategoriesNav = () => {
         }
     ];
 
+    const carouselBreakpoints = [
+        0,
+        62.86,
+        110.55,
+        239.72,
+        298.28,
+        344.84,
+        446.17,
+        622.8,
+        840.03,
+        953.41,
+        1077.04,
+        1215.04,
+        1345.65,
+        1469.49,
+        1595.52,
+        1685.44,
+        1886.28,
+        2052.23,
+        2144.82,
+        2239.96,
+        2338.52,
+        2514.91,
+    ];
+
+    const [carouselDisplacement, setCarouselDisplacement] = useState(0);
+
+    const scrollLeft = () => {
+        setCarouselDisplacement(carouselDisplacement - 1);
+    }
+
+    const scrollRight = () => {
+        setCarouselDisplacement(carouselDisplacement + 1);
+    }
+
+
     return (
         <div className="categories-nav">
             <div className="categories-dropdown">
                 <Categories />
             </div>
             <div className="categories-carousel-content">
-                <div className="categories-carousel-controller">
+                <div
+                    className="categories-carousel-controller"
+                    style={{
+                        transition: "transform 0.5s ease 0s",
+                        transform: "translate(-" + carouselBreakpoints[carouselDisplacement] + "px)"
+                    }}
+                >
                     {categories.map((category, index) => (
                         <Category
                             key={index}
@@ -109,7 +155,11 @@ const CategoriesNav = () => {
                     ))}
                 </div>
             </div>
-            <CategoriesScroller />
+            <CategoriesScroller
+                carouselDisplacement={ carouselDisplacement }
+                scrollLeft={ scrollLeft }
+                scrollRight= { scrollRight }
+            />
         </div>
     );
 }

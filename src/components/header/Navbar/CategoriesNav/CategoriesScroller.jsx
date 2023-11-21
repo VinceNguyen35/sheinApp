@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // react imports
 import { useState } from "react";
 
@@ -7,22 +8,30 @@ import leftArrowGreyIcon from "../../../../assets/logos/leftArrowGreyIcon.png";
 import rightArrowBlackIcon from "../../../../assets/logos/rightArrowBlackIcon.png";
 import rightArrowGreyIcon from "../../../../assets/logos/rightArrowGreyIcon.png";
 
-const CategoriesScroller = () => {
+const CategoriesScroller = ({
+    carouselDisplacement,
+    scrollLeft,
+    scrollRight
+}) => {
     const [leftArrow, setLeftArrow] = useState(leftArrowGreyIcon);
     const [rightArrow, setRightArrow] = useState(rightArrowBlackIcon);
 
     const handleLeftArrow = () => {
-        if(leftArrow === leftArrowGreyIcon) {
-            setLeftArrow(leftArrowBlackIcon);
-        } else {
+        if (carouselDisplacement > 0) {
+            scrollLeft();
+            setRightArrow(rightArrowBlackIcon);
+        }
+        if (carouselDisplacement === 0) {
             setLeftArrow(leftArrowGreyIcon);
         }
     }
 
     const handleRightArrow = () => {
-        if(rightArrow === rightArrowGreyIcon) {
-            setRightArrow(rightArrowBlackIcon);
-        } else {
+        if (carouselDisplacement < 21) {
+            scrollRight();
+            setLeftArrow(leftArrowBlackIcon);
+        }
+        if (carouselDisplacement === 21) {
             setRightArrow(rightArrowGreyIcon);
         }
     }
