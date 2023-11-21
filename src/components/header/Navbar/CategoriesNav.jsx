@@ -126,11 +126,11 @@ const CategoriesNav = () => {
     const [carouselDisplacement, setCarouselDisplacement] = useState(0);
 
     const scrollLeft = () => {
-        setCarouselDisplacement(carouselDisplacement - 1);
+        setCarouselDisplacement(carouselDisplacement - 2);
     }
 
     const scrollRight = () => {
-        setCarouselDisplacement(carouselDisplacement + 1);
+        setCarouselDisplacement(carouselDisplacement + 2);
     }
 
 

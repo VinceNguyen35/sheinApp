@@ -154,6 +154,9 @@ body {
   height: 10px;
   padding: 0 10px;
 }
+.categories-nav .categories-scroller .cannotHover {
+  pointer-events: none;
+}
 
 .top-banner {
   display: flex;

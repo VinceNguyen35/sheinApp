@@ -78,5 +78,9 @@
             height: 10px;
             padding: 0 10px;
         }
+
+        .cannotHover {
+            pointer-events: none;
+        }
     }
 }
