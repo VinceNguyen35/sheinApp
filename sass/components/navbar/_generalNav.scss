@@ -31,6 +31,11 @@
                 height: 20px;
                 border: 10px solid black;
             }
+
+            img:hover {
+                cursor: pointer;
+                opacity: 0.75;
+            }
         
             input {
                 width: 100%;

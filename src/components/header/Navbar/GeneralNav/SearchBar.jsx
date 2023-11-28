@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react-hooks/exhaustive-deps */
 // react imports
 import { useState, useEffect } from "react";
@@ -5,7 +6,7 @@ import { useState, useEffect } from "react";
 // component imports
 import searchIcon from "../../../../assets/logos/searchIcon.png";
 
-const SearchBar = () => {
+const SearchBar = ({ setIsEditing }) => {
     const placeholderItemsList = [
         "Dress Cocktail",
         "Cargos",
@@ -33,11 +34,21 @@ const SearchBar = () => {
         setInterval(rotatePlaceholderItem, 4000);
     }, []);
 
+    const handleFocusIn = () => {
+        setIsEditing(true)
+    }
+
+    const handleFocusOut = () => {
+        setIsEditing(false);
+    }
+
     return (
         <form action="">
             <input
                 type="text"
                 placeholder={ placeholderItem }
+                onFocus={ handleFocusIn }
+                onBlur={ handleFocusOut }
             />
             <img
                 src={ searchIcon }
