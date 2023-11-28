@@ -5,8 +5,9 @@ import { useState, useEffect } from "react";
 
 // component imports
 import searchIcon from "../../../../assets/logos/searchIcon.png";
+import SearchContent from "./SearchContent";
 
-const SearchBar = ({ setIsEditing }) => {
+const SearchBar = () => {
     const placeholderItemsList = [
         "Dress Cocktail",
         "Cargos",
@@ -21,6 +22,7 @@ const SearchBar = ({ setIsEditing }) => {
     ];
 
     const [placeholderItem, setPlaceholderItem] = useState(placeholderItemsList[0]);
+    const [isEditing, setIsEditing] = useState(false);
 
     useEffect(() => {
         let i = 0;
@@ -54,6 +56,12 @@ const SearchBar = ({ setIsEditing }) => {
                 src={ searchIcon }
                 alt="Search Icon"
             />
+            {
+                isEditing && <SearchContent />
+            }
+            {
+                isEditing && <div className="search-mask"></div>
+            }
         </form>
     );
 }
