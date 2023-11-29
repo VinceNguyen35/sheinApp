@@ -137,15 +137,27 @@ body {
 .general-nav .header-right .general-nav-icons {
   display: flex;
   justify-content: space-around;
+  color: #888888;
 }
 .general-nav .header-right .general-nav-icons :hover {
   cursor: pointer;
 }
-.general-nav .header-right .general-nav-icons img {
+.general-nav .header-right .general-nav-icons div {
+  padding: 0 5px;
+}
+.general-nav .header-right .general-nav-icons div img {
   z-index: 60;
   width: 21px;
   height: 20px;
-  padding: 0 5px;
+  padding: 0 3px;
+}
+.general-nav .header-right .general-nav-icons .dropdown {
+  position: absolute;
+  z-index: 50;
+  top: 115px;
+  padding: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.08);
 }
 
 .categories-nav {
