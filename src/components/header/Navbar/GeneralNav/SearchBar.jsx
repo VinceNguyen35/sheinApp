@@ -50,17 +50,28 @@ const SearchBar = () => {
                 type="text"
                 placeholder={ placeholderItem }
                 onFocus={ handleFocusIn }
-                onBlur={ handleFocusOut }
             />
             <img
                 src={ searchIcon }
                 alt="Search Icon"
             />
             {
-                isEditing && <SearchContent />
+                isEditing &&
+                <SearchContent />
             }
             {
-                isEditing && <div className="search-mask"></div>
+                isEditing &&
+                <div
+                    className="search-mask-header"
+                    onClick={ handleFocusOut }
+                ></div>
+            }
+            {
+                isEditing &&
+                <div
+                    className="search-mask-body"
+                    onClick={ handleFocusOut }
+                ></div>
             }
         </form>
     );
