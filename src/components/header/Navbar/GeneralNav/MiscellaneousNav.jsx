@@ -4,7 +4,7 @@ import { useState } from "react";
 // Component Imports
 import userIcon from "../../../../assets/logos/userIcon.png";
 import shoppingCartIcon from "../../../../assets/logos/shoppingCartIcon.png";
-import heartIconGrey from "../../../../assets/logos/heartIconGrey.png";
+import heartIconBlack from "../../../../assets/logos/heartIconBlack.png";
 import headphonesIcon from "../../../../assets/logos/headphonesIcon.png";
 import globeIcon from "../../../../assets/logos/globeIcon.png";
 
@@ -17,9 +17,9 @@ const MiscellaneousNav = () => {
     const [internationalHover, setInternationalHover] = useState(false);
 
     return (
-        <div className="general-nav-icons">
+        <div className="miscellaneous-nav">
             <div
-                className="user-settings"
+                className="miscellaneous-icon"
                 onMouseOver={() => setUserHover(true)}
                 onMouseOut={() => setUserHover(false)}
             >
@@ -29,7 +29,7 @@ const MiscellaneousNav = () => {
                 />
             </div>
             <div
-                className="shopping-cart"
+                className="miscellaneous-icon"
                 onMouseOver={() => setShoppingCartHover(true)}
                 onMouseOut={() => setShoppingCartHover(false)}
             >
@@ -39,15 +39,15 @@ const MiscellaneousNav = () => {
                 />
                 { shoppingCartItemsTotal }
             </div>
-            <div className="favorites">
+            <div className="miscellaneous-icon">
                 <img
-                    src={heartIconGrey}
+                    src={heartIconBlack}
                     alt="Heart Icon"
                 />
                 { favoriteItemsTotal }
             </div>
             <div
-                className="support"
+                className="miscellaneous-icon"
                 onMouseOver={() => setSupportHover(true)}
                 onMouseOut={() => setSupportHover(false)}
             >
@@ -57,7 +57,7 @@ const MiscellaneousNav = () => {
                 />
             </div>
             <div
-                className="international"
+                className="miscellaneous-icon"
                 onMouseOver={() => setInternationalHover(true)}
                 onMouseOut={() => setInternationalHover(false)}
             >
