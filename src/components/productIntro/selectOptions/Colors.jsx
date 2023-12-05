@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
-import { ProductContext } from "../../../../context/ProductContext";
+import { ProductContext } from "../../../context/ProductContext";
 
 const Colors = () => {
     const product = useContext(ProductContext);

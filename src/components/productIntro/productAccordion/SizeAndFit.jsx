@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ProductContext } from "../../../../context/ProductContext";
+import { ProductContext } from "../../../context/ProductContext";
 
 const SizeAndFit = () => {
     const product = useContext(ProductContext);

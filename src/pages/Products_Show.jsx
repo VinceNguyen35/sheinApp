@@ -46,7 +46,7 @@ import dress_storeIMG from "../assets/products/dress/dress_storeIMG.png";
 
 
 // Component Imports
-import GoodsDetails from "../components/GoodsDetails";
+import ProductIntro from "../components/ProductIntro";
 import NotFound from "../components/NotFound";
 
 const Products_Show = () => {
@@ -627,7 +627,7 @@ const Products_Show = () => {
             <div>
                 <ProductContext.Provider value={product}>
                     <h2>{id}</h2>
-                    <GoodsDetails />
+                    <ProductIntro />
                 </ProductContext.Provider>
             </div>}
         </div>

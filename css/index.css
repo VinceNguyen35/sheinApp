@@ -249,3 +249,7 @@ body {
   width: 1230px;
   margin: 0 auto;
 }
+
+.enlarged-image {
+  height: 510px;
+}

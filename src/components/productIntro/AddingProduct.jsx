@@ -1,4 +1,4 @@
-import heartIconBlack from "../../../assets/logos/heartIconBlack.png";
+import heartIconBlack from "../../assets/logos/heartIconBlack.png";
 
 const AddingProduct = () => {
     return (

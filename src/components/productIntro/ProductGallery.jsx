@@ -1,10 +1,14 @@
 /* eslint-disable react/prop-types */
-import { useContext } from "react";
-import { ProductContext } from "../../../context/ProductContext";
+import { useContext, useEffect } from "react";
+import { ProductContext } from "../../context/ProductContext";
 
-const ProductGallery = () => {
+const ProductGallery = ({ setEnlargedImage }) => {
     const product = useContext(ProductContext);
     const pictures = product.pictures;
+
+    useEffect(() => {
+        setEnlargedImage(pictures[0]);
+    }, []);
 
     return (
         <div>
@@ -14,6 +18,7 @@ const ProductGallery = () => {
                     key={index}
                     src={img}
                     alt={"gallery img " + `${index}`}
+                    onMouseOver={() => setEnlargedImage(pictures[index])}
                 />
             ))}
         </div>
