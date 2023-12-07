@@ -250,6 +250,24 @@ body {
   margin: 0 auto;
 }
 
+.breadcrumbs {
+  display: inline-flex;
+  padding: 16px 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.breadcrumbs .breadcrumb {
+  padding: 0 2px;
+}
+.breadcrumbs .breadcrumb a {
+  color: #999;
+  font-size: 12px;
+}
+.breadcrumbs .breadcrumb span {
+  color: #999;
+  font-size: 12px;
+}
+
 .product-images {
   display: flex;
 }
@@ -262,4 +280,8 @@ body {
 .product-images .enlarged-image {
   height: 510px;
   position: relative;
+}
+
+.products-show {
+  padding: 0 25px;
 }

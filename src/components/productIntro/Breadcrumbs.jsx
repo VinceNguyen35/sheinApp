@@ -1,20 +1,44 @@
+// React Imports
 import { useContext } from "react";
+
+// Component Imports
 import { ProductContext } from "../../context/ProductContext";
-import Breadcrumb from "./breadcrumbs/Breadcrumb";
 
 const Breadcrumbs = () => {
     const product = useContext(ProductContext);
+    const productName = product.productName;
     const breadcrumbs = product.breadcrumbs;
 
+    const handleFinalBreadcrumb = (index, endOfBreadcrumbs) => {
+        if(index === endOfBreadcrumbs) {
+            return true;
+        }
+        return false;
+    }
+
     return (
-        <div>
-            <h6>Breadcrumbs Here</h6>
+        <div className="breadcrumbs">
             {
                 breadcrumbs.map((breadcrumb, index) => (
-                    <Breadcrumb
-                        key={index}
-                        breadcrumb={breadcrumb}
-                    />
+                    <div
+                        className="breadcrumb"
+                        key={ index }
+                    >
+                        <a
+                            href={ breadcrumb.link }
+                        >
+                            { breadcrumb.title }
+                        </a>
+                        <span> / </span>
+                        {
+                            handleFinalBreadcrumb(index, breadcrumbs.length - 1) &&
+                            <a
+                                href="#"
+                            >
+                                { productName }
+                            </a>
+                        }
+                    </div>
                 ))
             }
         </div>

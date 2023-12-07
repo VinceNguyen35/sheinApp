@@ -1,0 +1,20 @@
+.breadcrumbs {
+    display: inline-flex;
+    padding: 16px 0;
+    white-space: nowrap;
+    overflow: hidden;
+
+    .breadcrumb {
+        padding: 0 2px;
+
+        a {
+            color: #999;
+            font-size: 12px;
+        }
+
+        span {
+            color: #999;
+            font-size: 12px;
+        }
+    }
+}

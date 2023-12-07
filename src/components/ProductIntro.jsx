@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 // Component Imports
-import Breadcrumbs from "./productIntro/Breadcrumbs";
 import ProductImages from "./productIntro/ProductImages";
 import ProductInfo from "./productIntro/ProductInfo";
 import SelectOptions from "./productIntro/SelectOptions";
@@ -11,7 +10,6 @@ import ProductAccordion from "./productIntro/ProductAccordion";
 const ProductIntro = () => {
     return (
         <div className="product-intro">
-            <Breadcrumbs />
             <ProductImages />
             <ProductInfo />
             <SelectOptions />

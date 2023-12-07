@@ -47,6 +47,7 @@ import dress_storeIMG from "../assets/products/dress/dress_storeIMG.png";
 
 // Component Imports
 import ProductIntro from "../components/ProductIntro";
+import Breadcrumbs from "../components/productIntro/Breadcrumbs";
 import NotFound from "../components/NotFound";
 
 const Products_Show = () => {
@@ -626,7 +627,7 @@ const Products_Show = () => {
             {productExists &&
                 <div className="products-show">
                 <ProductContext.Provider value={product}>
-                    <h2>{id}</h2>
+                    <Breadcrumbs />
                     <ProductIntro />
                 </ProductContext.Provider>
             </div>}
