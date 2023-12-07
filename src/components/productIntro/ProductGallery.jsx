@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 import { useContext, useEffect } from "react";
 import { ProductContext } from "../../context/ProductContext";
@@ -11,7 +12,7 @@ const ProductGallery = ({ setEnlargedImage }) => {
     }, []);
 
     return (
-        <div>
+        <div className="product-gallery">
             <h5>Product Gallery Here</h5>
             {pictures.map((img, index) => (
                 <img
