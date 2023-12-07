@@ -1,0 +1,16 @@
+.product-images {
+    display: flex;
+
+    .product-gallery {
+        width: 50px;
+
+        img {
+            height: 50px;
+        }
+    }
+
+    .enlarged-image {
+        height: 510px;
+        position: relative;
+    }
+}

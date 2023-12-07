@@ -621,10 +621,10 @@ const Products_Show = () => {
     }
 
     return (
-        <div>
+        <div className="found-product">
             {!productExists && <NotFound />}
             {productExists &&
-            <div>
+                <div className="products-show">
                 <ProductContext.Provider value={product}>
                     <h2>{id}</h2>
                     <ProductIntro />

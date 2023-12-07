@@ -250,6 +250,16 @@ body {
   margin: 0 auto;
 }
 
-.enlarged-image {
+.product-images {
+  display: flex;
+}
+.product-images .product-gallery {
+  width: 50px;
+}
+.product-images .product-gallery img {
+  height: 50px;
+}
+.product-images .enlarged-image {
   height: 510px;
+  position: relative;
 }
