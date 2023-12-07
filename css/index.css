@@ -250,9 +250,16 @@ body {
   margin: 0 auto;
 }
 
+.product-intro {
+  display: flex;
+}
+.product-intro .product-intro-col-right {
+  margin-left: 3.5%;
+}
+
 .breadcrumbs {
   display: inline-flex;
-  padding: 16px 0;
+  padding: 14px 0;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -280,6 +287,23 @@ body {
 .product-images .enlarged-image {
   height: 510px;
   position: relative;
+}
+
+.product-info {
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #e5e5e5;
+  margin-bottom: 25px;
+}
+.product-info .product-name {
+  font-size: 14px;
+}
+.product-info .sku {
+  color: #767676;
+  font-size: 12px;
+}
+.product-info .average-rating {
+  color: #facf19;
+  font-size: 12px;
 }
 
 .products-show {

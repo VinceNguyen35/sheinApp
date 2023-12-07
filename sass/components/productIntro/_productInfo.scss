@@ -1,0 +1,19 @@
+.product-info {
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #e5e5e5;
+    margin-bottom: 25px;
+
+    .product-name {
+        font-size: 14px;
+    }
+
+    .sku {
+        color: #767676;
+        font-size: 12px;
+    }
+
+    .average-rating {
+        color: #facf19;
+        font-size: 12px;
+    }
+}

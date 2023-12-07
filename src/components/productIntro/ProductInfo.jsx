@@ -5,12 +5,11 @@ const ProductInfo = () => {
     const product = useContext(ProductContext);
 
     return (
-        <div>
-            <h6>Product Info Here</h6>
-            <div>Name: { product.productName }</div>
-            <div>SKU: { product.SKU }</div>
-            <div>
-                Avg. Rating: { product.averageRating } ({ product.numberOfReviews } Reviews)
+        <div className="product-info">
+            <div className="product-name">{ product.productName }</div>
+            <div className="sku">SKU: { product.SKU }</div>
+            <div className="average-rating">
+                { product.averageRating } ({ product.numberOfReviews } Reviews)
             </div>
 
         </div>

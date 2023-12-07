@@ -10,12 +10,16 @@ import ProductAccordion from "./productIntro/ProductAccordion";
 const ProductIntro = () => {
     return (
         <div className="product-intro">
-            <ProductImages />
-            <ProductInfo />
-            <SelectOptions />
-            <AddingProduct />
-            <ShippingInfo />
-            <ProductAccordion />
+            <div className="product-intro-col-left">
+                <ProductImages />
+            </div>
+            <div className="product-intro-col-right">
+                <ProductInfo />
+                <SelectOptions />
+                <AddingProduct />
+                <ShippingInfo />
+                <ProductAccordion />
+            </div>
         </div>
     );
 }
