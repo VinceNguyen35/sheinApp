@@ -7,13 +7,25 @@
         font-size: 14px;
     }
 
-    .sku {
-        color: #767676;
-        font-size: 12px;
-    }
+    .product-info-minor-details {
+        display: flex;
+        align-items: flex-end;
 
-    .average-rating {
-        color: #facf19;
-        font-size: 12px;
+        .sku {
+            color: #767676;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+    
+        .ratings {
+            display: flex;
+            color: #facf19;
+            font-size: 12px;
+    
+            img {
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
     }
 }

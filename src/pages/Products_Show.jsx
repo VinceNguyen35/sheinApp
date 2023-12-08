@@ -59,6 +59,7 @@ const Products_Show = () => {
             productName: "Manfinity Homme Men Letter Patched Detail Tee",
             SKU: "sm2209144214692168",
             price: 11.99,
+            discountPercentage: 41,
             averageRating: 4.79,
             numberOfReviews: 600,
             breadcrumbs: [
@@ -255,6 +256,7 @@ const Products_Show = () => {
             productName: "Flap Pocket Cargo Pants",
             SKU: "sw2303019187878545",
             price: 24.49,
+            discountPercentage: 37,
             averageRating: 3.62,
             numberOfReviews: 123,
             breadcrumbs: [
@@ -428,7 +430,8 @@ const Products_Show = () => {
             productName: "SHEIN Belle Solid Draped Backless Halterneck Satin Bridesmaid Dress",
             SKU: "sn2204193020259050",
             price: 11.49,
-            averageRating: 4.76,
+            discountPercentage: 30,
+            averageRating: 4.62,
             numberOfReviews: 365,
             breadcrumbs: [
                 {

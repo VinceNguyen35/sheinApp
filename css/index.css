@@ -297,13 +297,23 @@ body {
 .product-info .product-name {
   font-size: 14px;
 }
-.product-info .sku {
+.product-info .product-info-minor-details {
+  display: flex;
+  align-items: flex-end;
+}
+.product-info .product-info-minor-details .sku {
   color: #767676;
   font-size: 12px;
+  margin-right: 10px;
 }
-.product-info .average-rating {
+.product-info .product-info-minor-details .ratings {
+  display: flex;
   color: #facf19;
   font-size: 12px;
+}
+.product-info .product-info-minor-details .ratings img {
+  height: 16px;
+  margin: 0 3px;
 }
 
 .products-show {
