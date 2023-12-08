@@ -6,6 +6,7 @@ import { ProductContext } from "../../context/ProductContext";
 import starIconEmpty from "../../assets/logos/starIconEmpty.png";
 import starIconHalf from "../../assets/logos/starIconHalf.png";
 import starIconFilled from "../../assets/logos/starIconFilled.png";
+import rightArrowGreyIcon from "../../assets/logos/rightArrowGreyIcon.png";
 
 const ProductInfo = () => {
     const product = useContext(ProductContext);
@@ -72,12 +73,23 @@ const ProductInfo = () => {
                 </div>
             </div>
             <div className="pricing-details">
-                <div className="discounted-price">${ discountedPrice(product.price, product.discountPercentage) }</div>
-                <div className="discount-percentage">Estimated { product.discountPercentage }%</div>
-                <div className="original-price">${ product.price }</div>
+                <span className="discounted-price">${discountedPrice(product.price, product.discountPercentage)}</span>
+                <div className="discount-wrapper">
+                    <div className="discount-estimation">
+                        Estimated
+                    </div>
+                    <div className="discount-percentage">
+                        -{product.discountPercentage}%
+                    </div>
+                </div>
+                <div className="original-price">
+                    ${product.price}
+                    <img src={ rightArrowGreyIcon } alt="right arrow" />
+                </div>
             </div>
             <div className="discount-details">
                 30% OFF For orders $9.90+ • 25% OFF For orders %59.00+
+                <img src={ rightArrowGreyIcon } alt="right arrow" />
             </div>
         </div>
     );
