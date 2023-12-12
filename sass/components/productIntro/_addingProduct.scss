@@ -1,0 +1,38 @@
+.adding-product {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    .add-to-cart {
+        width: 355px;
+        height: 54px;
+        line-height: 54px;
+        color: #ffffff;
+        background-color: #000000;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .add-to-cart:hover {
+        cursor: pointer;
+        color: rgb(255, 255, 255, 0.95);
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .favorite-button {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        border: 1px solid #e5e5e5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .favorite-icon {
+        width: 25px;
+        height: 25px;
+    }
+}

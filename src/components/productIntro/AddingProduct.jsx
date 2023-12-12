@@ -2,12 +2,17 @@ import heartIconBlack from "../../assets/logos/heartIconBlack.png";
 
 const AddingProduct = () => {
     return (
-        <div>
-            <button>ADD TO CART</button>
-            <img
-                src={heartIconBlack}
-                alt="User Icon"
-            />
+        <div className="adding-product">
+            <div className="add-to-cart">
+                ADD TO CART
+            </div>
+            <div className="favorite-button">
+                <img
+                    src={ heartIconBlack }
+                    alt="User Icon"
+                    className="favorite-icon"
+                />
+            </div>
         </div>
     );
 }
