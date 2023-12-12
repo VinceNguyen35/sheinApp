@@ -22,25 +22,36 @@ const Colors = () => {
         }
     },[]);
 
+    const selectedColorClasses = (color) => {
+        if(color === selectedColor) {
+            return "color selected-color"
+        } else {
+            return "color";
+        }
+    }
+
     return (
         <div className="colors-section">
             <div className="colors-header">
-                <span>Color: </span>
-                <span>{ selectedColor.name }</span>
+                <span className="colors-title">Color:</span>
+                <span className="colors-selected">{ selectedColor.name }</span>
             </div>
-            {
-                colors.map((color, index) => (
-                    <div
-                        key={index}
-                    >
-                        <img
-                            src={ color.picture }
-                            alt={ color.name }
-                            onClick={() => { setSelectedColor(colors[index]); } }
-                        />
-                    </div>
-                ))
-            }
+            <div className="colors-selection">
+                {
+                    colors.map((color, index) => (
+                        <div
+                            key={index}
+                            className={ selectedColorClasses(color) }
+                        >
+                            <img
+                                src={color.picture}
+                                alt={color.name}
+                                onClick={() => { setSelectedColor(colors[index]); }}
+                            />
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     );
 }

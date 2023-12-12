@@ -377,6 +377,45 @@ body {
   cursor: pointer;
 }
 
+.select-options .colors-section .colors-header .colors-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.select-options .colors-section .colors-header .colors-selected {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 9px;
+}
+.select-options .colors-section .colors-selection {
+  display: flex;
+}
+.select-options .colors-section .colors-selection .color {
+  height: 28px;
+  width: 28px;
+  padding: 3px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+}
+.select-options .colors-section .colors-selection .color img {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+}
+.select-options .colors-section .colors-selection .color:hover {
+  border-radius: 50%;
+  border: 1px solid #222;
+}
+.select-options .colors-section .colors-selection .selected-color {
+  border-radius: 50%;
+  border: 2px solid #222;
+}
+.select-options .colors-section .colors-selection .selected-color:hover {
+  border-radius: 50%;
+  border: 2px solid #222;
+}
+
 .products-show {
   padding: 0 25px;
 }
