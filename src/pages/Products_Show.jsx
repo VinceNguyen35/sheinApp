@@ -107,7 +107,7 @@ const Products_Show = () => {
                 "38 (M)",
                 "40 (L)",
                 "42 (XL)",
-                "44 (XXL"
+                "44 (XXL)"
             ],
             description: [
                 {
