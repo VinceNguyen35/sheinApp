@@ -1,20 +1,34 @@
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { ProductContext } from "../../../context/ProductContext";
 
 const Sizes = () => {
     const product = useContext(ProductContext);
     const sizes = product.sizes;
 
+    const [selectedSize, setSelectedSize] = useState("");
+
+    const selectedSizeClasses = (size) => {
+        if (size === selectedSize) {
+            return "size-radio selected-size"
+        } else {
+            return "size-radio";
+        }
+    }
+
     return (
-        <div>
-            <h6>Sizes Here</h6>
+        <div className="sizes-section">
+            <div className="sizes-header">Size</div>
             {
                 sizes.map((size, index) => (
-                    <div
+                    <span
                         key={ index }
+                        className={ selectedSizeClasses(size) }
+                        onClick={ () => { setSelectedSize(size) } }
                     >
-                        { size }
-                    </div>
+                        <div className="size-text">
+                            { size }
+                        </div>
+                    </span>
                 ))
             }
         </div>
