@@ -3,7 +3,7 @@ import Sizes from "./selectOptions/Sizes";
 
 const SelectOptions = () => {
     return (
-        <div>
+        <div className="select-options">
             <Colors />
             <Sizes />
         </div>
