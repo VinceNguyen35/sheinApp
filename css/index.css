@@ -485,6 +485,42 @@ body {
   height: 25px;
 }
 
+.shipping-info {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.shipping-info .shipping-header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 15px 0 28px 0;
+}
+.shipping-info .shipping-section {
+  padding: 0 20px 8px 0;
+}
+.shipping-info .shipping-section .shipping-section-header {
+  display: flex;
+  justify-content: flex-start;
+}
+.shipping-info .shipping-section .shipping-section-header img {
+  height: 24px;
+  width: 24px;
+}
+.shipping-info .shipping-section .shipping-section-header .shipping-section-header-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0 0 6px 6px;
+  margin-bottom: 5px;
+  line-height: 24px;
+}
+.shipping-info .shipping-section .shipping-section-details {
+  color: #767676;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
 .products-show {
   padding: 0 25px;
 }

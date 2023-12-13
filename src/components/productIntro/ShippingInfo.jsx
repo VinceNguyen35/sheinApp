@@ -1,3 +1,8 @@
+// Image Imports
+import shippingIcon from "../../assets/logos/shippingIcon.png";
+import returnBoxIcon from "../../assets/logos/returnBoxIcon.png";
+import storeIcon from "../../assets/logos/storeIcon.png";
+
 const ShippingInfo = () => {
     // Getting Today's Date
     const today = new Date();
@@ -43,24 +48,49 @@ const ShippingInfo = () => {
     const averageShippingDate = mm + '/' + averageShippingDay + '/' + yyyy;
     const slowestShippingDate = mm + '/' + slowestShippingDay + '/' + yyyy;
 
-
     return (
-        <div>
-            <h5>Shipping Info Here</h5>
-            <div className="shipping-option">
-                Standard Shipping: $3.99, FREE on orders $29.00+
-                <br />
-                Estimated to be delivered on { averageShippingDate } - { slowestShippingDate }
-                <br />
-                77.13% are ≤ 10 days
+        <div className="shipping-info">
+            <div className="shipping-header">Shipping to United States</div>
+            <div className="shipping-section">
+                <div className="shipping-section-header">
+                    <img src={ shippingIcon } alt="shipping icon" />
+                    <span className="shipping-section-header-title">Delivery</span>
+                </div>
+                <div className="shipping-section-details">
+                    <div className="shipping-option">
+                        Standard Shipping: $3.99, FREE on orders $29.00+
+                        <br />
+                        Estimated to be delivered on {averageShippingDate} - {slowestShippingDate}
+                        <br />
+                        77.13% are ≤ 10 days
+                    </div>
+                    <br />
+                    <div className="shipping-option">
+                        Express Shipping: $12.99, FREE on orders $129.00+
+                        <br />
+                        Estimated to be delivered on {fastestShippingDate} - {averageShippingDate}
+                        <br />
+                        80.94% are ≤ 7 days
+                    </div>
+                </div>
             </div>
-            <br />
-            <div className="shipping-option">
-                Express Shipping: $12.99, FREE on orders $129.00+
-                <br />
-                Estimated to be delivered on {fastestShippingDate} - { averageShippingDate }
-                <br />
-                80.94% are ≤ 7 days
+            <div className="shipping-section">
+                <div className="shipping-section-header">
+                    <img src={ returnBoxIcon } alt="return box icon" />
+                    <span className="shipping-section-header-title">Free Return & Exchange</span>
+                </div>
+                <div className="shipping-section-details">
+                    Learn More
+                </div>
+            </div>
+            <div className="shipping-section">
+                <div className="shipping-section-header">
+                    <img src={ storeIcon } alt="store icon" />
+                    <span className="shipping-section-header-title">Sold by SHEIN</span>
+                </div>
+                <div className="shipping-section-details">
+                    Ships from SHEIN
+                </div>
             </div>
         </div>
     );
