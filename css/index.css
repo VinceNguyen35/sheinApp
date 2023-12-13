@@ -252,6 +252,7 @@ body {
 
 .product-intro {
   display: flex;
+  justify-content: center;
 }
 .product-intro .product-intro-col-right {
   margin-left: 3.5%;
@@ -497,6 +498,7 @@ body {
   margin: 15px 0 28px 0;
 }
 .shipping-info .shipping-section {
+  width: 100%;
   padding: 0 20px 8px 0;
 }
 .shipping-info .shipping-section .shipping-section-header {
@@ -510,15 +512,44 @@ body {
 .shipping-info .shipping-section .shipping-section-header .shipping-section-header-title {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0 0 6px 6px;
   margin-bottom: 5px;
   line-height: 24px;
 }
 .shipping-info .shipping-section .shipping-section-details {
   color: #767676;
+  margin-left: 32px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
+}
+.shipping-info .shipping-section .shipping-section-details .shipping-options-content {
+  display: flex;
+  justify-content: space-between;
+}
+.shipping-info .shipping-section .shipping-section-details .shipping-options-content .shipping-option {
+  background-color: #f6f6f6;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #767676;
+  font-size: 12px;
+}
+.shipping-info .shipping-section .shipping-section-details .shipping-options-content .shipping-option .shipping-option-details {
+  margin-bottom: 5px;
+}
+.shipping-info .shipping-section .shipping-section-details .shipping-options-content .shipping-option .shipping-option-details .shipping-price {
+  font-weight: 700;
+  color: #222;
+}
+.shipping-info .shipping-section .shipping-section-details .shipping-options-content .shipping-option .shipping-option-details .free-shipping-price {
+  color: #198055;
+}
+.shipping-info .shipping-section .shipping-section-details .shipping-options-content .shipping-option .shipping-option-percentage {
+  color: #A86104;
+}
+.shipping-info .shipping-section .shipping-section-details .shipping-extra-info {
+  cursor: pointer;
 }
 
 .products-show {

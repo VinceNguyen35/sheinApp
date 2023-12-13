@@ -57,20 +57,30 @@ const ShippingInfo = () => {
                     <span className="shipping-section-header-title">Delivery</span>
                 </div>
                 <div className="shipping-section-details">
-                    <div className="shipping-option">
-                        Standard Shipping: $3.99, FREE on orders $29.00+
+                    <div className="shipping-options-content">
+                        <div className="shipping-option">
+                            <div className="shipping-option-details">
+                                Standard Shipping: <span className="shipping-price">$3.99</span>, FREE on orders <span className="free-shipping-price">$29.00+</span>
+                            </div>
+                            <div className="shipping-option-details">
+                                Estimated to be delivered on {averageShippingDate} - {slowestShippingDate}
+                            </div>
+                            <div className="shipping-option-percentage">
+                                77.13% are ≤ <b>10</b> days
+                            </div>
+                        </div>
                         <br />
-                        Estimated to be delivered on {averageShippingDate} - {slowestShippingDate}
-                        <br />
-                        77.13% are ≤ 10 days
-                    </div>
-                    <br />
-                    <div className="shipping-option">
-                        Express Shipping: $12.99, FREE on orders $129.00+
-                        <br />
-                        Estimated to be delivered on {fastestShippingDate} - {averageShippingDate}
-                        <br />
-                        80.94% are ≤ 7 days
+                        <div className="shipping-option">
+                            <div className="shipping-option-details">
+                                Express Shipping: <span className="shipping-price">$12.99</span>, FREE on orders <span className="free-shipping-price">$129.00+</span>
+                            </div>
+                            <div className="shipping-option-details">
+                                Estimated to be delivered on {fastestShippingDate} - {averageShippingDate}
+                            </div>
+                            <div className="shipping-option-percentage">
+                                80.94% are ≤ <b>7</b> days
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,7 +90,7 @@ const ShippingInfo = () => {
                     <span className="shipping-section-header-title">Free Return & Exchange</span>
                 </div>
                 <div className="shipping-section-details">
-                    Learn More
+                    <span className="shipping-extra-info">Learn More</span>
                 </div>
             </div>
             <div className="shipping-section">
