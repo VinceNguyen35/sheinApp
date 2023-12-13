@@ -1,5 +1,9 @@
+// React Imports
 import { useState, useContext } from "react";
 import { ProductContext } from "../../../context/ProductContext";
+
+// Img Imports
+import plusIcon from "../../../assets/logos/plusIcon.png";
 
 const AboutStore = () => {
     const product = useContext(ProductContext);
@@ -8,12 +12,13 @@ const AboutStore = () => {
     const [isDisplayed, setIsDisplayed] = useState(false);
 
     return (
-        <div className="accordion-about-store">
+        <div className="accordion">
             <div
                 className="accordion-header"
                 onClick={ () => { setIsDisplayed(!isDisplayed) } }
             >
-                About Store
+                <span className="accordion-header-title">About Store</span>
+                <img src={ plusIcon } alt="plus icon" />
             </div>
             {
                 isDisplayed &&

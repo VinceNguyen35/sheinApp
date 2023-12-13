@@ -552,7 +552,24 @@ body {
   cursor: pointer;
 }
 
-.product-accordion .accordion-header {
+.product-accordion {
+  margin: 10px 0;
+}
+.product-accordion .accordion {
+  width: 100%;
+  padding: 10px 0;
+}
+.product-accordion .accordion .accordion-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-accordion .accordion .accordion-header img {
+  height: 10px;
+  width: 10px;
+}
+.product-accordion .accordion .accordion-header .accordion-header-title {
   font-weight: 700;
   font-size: 16px;
 }

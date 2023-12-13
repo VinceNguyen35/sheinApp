@@ -1,5 +1,9 @@
+// React Imports
 import { useState, useContext } from "react";
 import { ProductContext } from "../../../context/ProductContext";
+
+// Img Imports
+import plusIcon from "../../../assets/logos/plusIcon.png";
 
 const SizeAndFit = () => {
     const product = useContext(ProductContext);
@@ -9,12 +13,13 @@ const SizeAndFit = () => {
     const [isDisplayed, setIsDisplayed] = useState(false);
 
     return (
-        <div className="accordion-size-and-fit">
+        <div className="accordion">
             <div
                 className="accordion-header"
                 onClick={ () => { setIsDisplayed(!isDisplayed) } }
             >
-                Size & Fit
+                <span className="accordion-header-title">Size & Fit</span>
+                <img src={ plusIcon } alt="plus icon" />
             </div>
             {
                 isDisplayed &&
