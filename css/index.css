@@ -552,6 +552,11 @@ body {
   cursor: pointer;
 }
 
+.product-accordion .accordion-header {
+  font-weight: 700;
+  font-size: 16px;
+}
+
 .products-show {
   padding: 0 25px;
 }
