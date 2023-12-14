@@ -3,10 +3,10 @@
 
     .accordion {
         width: 100%;
-        padding: 10px 0;
 
         .accordion-header {
             cursor: pointer;
+            padding: 10px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -19,6 +19,34 @@
             .accordion-header-title {
                 font-weight: 700;
                 font-size: 16px;
+            }
+        }
+
+        .accordion-details {
+            padding: 10px 0;
+
+            .description-table {
+                display: table;
+                width: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color: #222;
+
+                .description-table-item {
+                    display: table-row;
+                    line-height: 20px;
+
+                    .description-table-item-key {
+                        display: table-cell;
+                        width: 50%;
+                        padding-right: 25px;
+                    }
+
+                    .description-table-item-val {
+                        display: table-cell;
+                        width: 50%;
+                    }
+                }
             }
         }
     }

@@ -23,15 +23,19 @@ const Description = () => {
             {
                 isDisplayed &&
                 <div className="accordion-details">
-                    {
-                        description.map((item, index) => (
-                            <div
-                                key={index}
-                            >
-                                {item.title}: {item.detail}
-                            </div>
-                        ))
-                    }
+                    <div className="description-table">
+                        {
+                            description.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="description-table-item"
+                                >
+                                    <div className="description-table-item-key">{ item.title }: </div>
+                                    <div className="description-table-item-val">{ item.detail }</div>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
             }
         </div>

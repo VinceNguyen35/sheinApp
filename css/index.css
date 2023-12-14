@@ -557,10 +557,10 @@ body {
 }
 .product-accordion .accordion {
   width: 100%;
-  padding: 10px 0;
 }
 .product-accordion .accordion .accordion-header {
   cursor: pointer;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -572,6 +572,29 @@ body {
 .product-accordion .accordion .accordion-header .accordion-header-title {
   font-weight: 700;
   font-size: 16px;
+}
+.product-accordion .accordion .accordion-details {
+  padding: 10px 0;
+}
+.product-accordion .accordion .accordion-details .description-table {
+  display: table;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #222;
+}
+.product-accordion .accordion .accordion-details .description-table .description-table-item {
+  display: table-row;
+  line-height: 20px;
+}
+.product-accordion .accordion .accordion-details .description-table .description-table-item .description-table-item-key {
+  display: table-cell;
+  width: 50%;
+  padding-right: 25px;
+}
+.product-accordion .accordion .accordion-details .description-table .description-table-item .description-table-item-val {
+  display: table-cell;
+  width: 50%;
 }
 
 .products-show {
