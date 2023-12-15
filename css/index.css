@@ -554,6 +554,7 @@ body {
 
 .product-accordion {
   margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .product-accordion .accordion {
   width: 100%;
@@ -579,7 +580,6 @@ body {
 .product-accordion .accordion .accordion-details .description-table {
   display: table;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #222;
 }
@@ -595,6 +595,60 @@ body {
 .product-accordion .accordion .accordion-details .description-table .description-table-item .description-table-item-val {
   display: table-cell;
   width: 50%;
+}
+.product-accordion .accordion .accordion-details .size-and-fit .size-and-fit-header {
+  font-weight: 700;
+  font-size: 12px;
+  color: #222;
+  margin-bottom: 15px;
+}
+.product-accordion .accordion .accordion-details .size-and-fit .measurement-types {
+  cursor: pointer;
+  display: flex;
+  width: 76px;
+  height: 24px;
+  border: 1px solid #000000;
+}
+.product-accordion .accordion .accordion-details .size-and-fit .measurement-types .measurement-type {
+  width: 28px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.product-accordion .accordion .accordion-details .size-and-fit .measurement-types .selected {
+  color: #ffffff;
+  background-color: #000000;
+}
+.product-accordion .accordion .accordion-details .size-and-fit table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 15px;
+  font-size: 12px;
+  text-align: center;
+  display: table;
+}
+.product-accordion .accordion .accordion-details .size-and-fit table thead tr {
+  display: table-row;
+}
+.product-accordion .accordion .accordion-details .size-and-fit table thead tr th {
+  display: table-cell;
+  width: 65px;
+  height: 38px;
+  padding: 0 4px;
+  border: 1px solid #e5e5e5;
+}
+.product-accordion .accordion .accordion-details .size-and-fit table tbody tr {
+  display: table-row;
+}
+.product-accordion .accordion .accordion-details .size-and-fit table tbody tr td {
+  display: table-cell;
+  width: 65px;
+  height: 38px;
+  padding: 0 4px;
+  border: 1px solid #e5e5e5;
 }
 
 .products-show {
