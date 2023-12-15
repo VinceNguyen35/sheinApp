@@ -11,17 +11,31 @@ const SizeAndFit = () => {
     const sizeAndFitData = product.sizeAndFitData;
 
     const [isDisplayed, setIsDisplayed] = useState(false);
+    const [measurementSelected, setMeasurementSelected] = useState("IN");
     const [cmSelectionClass, setCMSelectionClass] = useState("measurement-type");
     const [inchSelectionClass, setInchSelectionClass] = useState("measurement-type selected");
 
     const handleMeasurementSelection = (measurement) => {
         if(measurement === "CM") {
+            setMeasurementSelected("CM");
             setCMSelectionClass("measurement-type selected");
             setInchSelectionClass("measurement-type");
         } else {
+            setMeasurementSelected("IN");
             setCMSelectionClass("measurement-type");
             setInchSelectionClass("measurement-type selected");
         }
+    }
+
+    const handleDataConversion = (data) => {
+        // type checking
+        if(typeof data == "number") {
+            if (measurementSelected === "CM") {
+                const newVal = data * 2.54;
+                return Math.trunc(newVal * 100) / 100;
+            }
+        }
+        return data;
     }
 
     return (
@@ -77,7 +91,8 @@ const SizeAndFit = () => {
                                                     <td
                                                         key={index}
                                                     >
-                                                        {data}
+                                                        { handleDataConversion(data) }
+                                                        {/* { data } */}
                                                     </td>
                                                 ))
                                             }
