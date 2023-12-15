@@ -23,37 +23,65 @@ const AboutStore = () => {
             {
                 isDisplayed &&
                 <div className="accordion-details">
-                    <img
-                        src={storeDetails.storeImg}
-                        alt={`${storeDetails.storeName} img`}
-                    />
-                    <div>
-                        <h4>
-                            {
-                                storeDetails.storeName
-                            }
-                            {
-                                storeDetails.storeTags.map((tag, index) => (
-                                    <div
-                                        key={index}
-                                    >
-                                        {tag}
+                    <div className="store-details">
+                        <div className="store-details-top-level">
+                            <img
+                                src={storeDetails.storeImg}
+                                alt={`${storeDetails.storeName} img`}
+                            />
+                            <div className="white-space"></div>
+                            <div className="info-box">
+                                <div className="info-box-header">
+                                    <div className="store-name">
+                                        {
+                                            storeDetails.storeName
+                                        }
                                     </div>
-                                ))
-                            }
-                        </h4>
+                                    <div className="store-tags">
+                                        {
+                                            storeDetails.storeTags.map((tag, index) => (
+                                                <div
+                                                    key={index}
+                                                    className="store-tag"
+                                                >
+                                                    {tag}
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
+                                <div className="info-box-details">
+                                    <div className="detail-item">
+                                        <span className="detail-data">{storeDetails.storeRating}</span>
+                                        <span className="detail-type">Rating</span>
+                                    </div>
+                                    <span className="detail-item-separation">|</span>
+                                    <div className="detail-item">
+                                        <span className="detail-data">{storeDetails.storeProducts}</span>
+                                        <span className="detail-type">Items</span>
+                                    </div>
+                                    <span className="detail-item-separation">|</span>
+                                    <div className="detail-item">
+                                        <span className="detail-data">{storeDetails.storeFollowers}</span>
+                                        <span className="detail-type">Followers</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="store-details-bottom-level">
+                            <a
+                                href={storeDetails.storeLink}
+                            >
+                                <div className="store-detail-button">All Items</div>
+                            </a>
+                            <div className="white-space"></div>
+                            <a
+                                href=""
+                            >
+                                <div className="store-detail-button">+ Follow</div>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        {storeDetails.storeRating} Rating
-                        {storeDetails.storeProducts} Products
-                        {storeDetails.storeFollowers} Followers
-                    </div>
-                    <a
-                        href={storeDetails.storeLink}
-                    >
-                        <button>All Items</button>
-                    </a>
-                    <button>+ Follow</button>
                 </div>
             }
         </div>
