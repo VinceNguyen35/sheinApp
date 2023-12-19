@@ -1,0 +1,95 @@
+.store-details {
+    .store-details-top-level {
+        display: flex;
+
+        img {
+            width: 40px;
+            height: 40px;
+            padding: 1px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .white-space {
+            width: 8px;
+            height: 8px;
+        }
+
+        .info-box {
+            .info-box-header {
+                display: flex;
+
+                .store-name {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                .store-tags {
+                    padding-left: 4px;
+
+                    .store-tag {
+                        padding: 0 6px;
+                        height: 20px;
+                        line-height: 20px;
+                        font-size: 12px;
+                        color: #198055;
+                        background-color: #f5fcfb;
+                    }
+                }
+            }
+
+            .info-box-details {
+                margin-top: 9px;
+                display: flex;
+
+                .detail-item {
+                    display: flex;
+                    align-items: center;
+
+                    .detail-data {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+
+                    .detail-type {
+                        padding-left: 2px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 17px;
+                        color: #767676;
+                    }
+                }
+
+                .detail-item-separation {
+                    padding: 0 8px;
+                    color: #e5e5e5;
+                }
+            }
+        }
+    }
+
+    .store-details-bottom-level {
+        display: flex;
+        align-items: center;
+
+        a {
+            width: 100%;
+
+            .store-detail-button {
+                font-weight: 400;
+                font-size: 14px;
+                width: 100%;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                border: 1px solid #ccc;
+                margin-top: 12px;
+            }
+        }
+
+        .white-space {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

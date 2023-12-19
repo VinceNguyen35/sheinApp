@@ -1,0 +1,40 @@
+.select-size {
+    margin-top: 15px;
+
+    .select-size-header {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .select-size-radio {
+        display: inline-block;
+        padding: 8px 4px;
+        border-radius: 48px;
+        border: 1px solid #e5e5e5;
+        margin: 0 12px 12px 0;
+        cursor: pointer;
+
+        .select-size-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            padding: 0 12px;
+        }
+    }
+
+    .select-size-radio:hover {
+        border-radius: 48px;
+        border: 1px solid #222;
+    }
+
+    .selected-size {
+        border-radius: 48px;
+        border: 2px solid #222;
+    }
+
+    .selected-size:hover {
+        border-radius: 48px;
+        border: 2px solid #222;
+    }
+}

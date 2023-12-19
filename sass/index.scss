@@ -10,20 +10,33 @@
 // layout
 
 // components
-// navbar
-@import "components/navbar/generalNav";
-@import "components/navbar/categoriesNav";
-@import "components/navbar/topBanner";
+// header
+@import "components/header/topBanner";
+// header/navbar
+@import "components/header/navbar/generalNav";
+@import "components/header/navbar/categoriesNav";
 
 // productIntro
 @import "components/productIntro/productIntro";
 @import "components/productIntro/breadcrumbs";
-@import "components/productIntro/productImages";
 @import "components/productIntro/productInfo";
-@import "components/productIntro/selectOptions";
 @import "components/productIntro/addingProduct";
 @import "components/productIntro/shippingInfo";
-@import "components/productIntro/productAccordion";
+
+// productIntro/selectOptions
+@import "components/productIntro/selectOptions/selectColor";
+@import "components/productIntro/selectOptions/selectSize";
+
+// productIntro/productImages
+@import "components/productIntro/productImages/productImages";
+@import "components/productIntro/productImages/productGallery";
+@import "components/productIntro/productImages/enlargedImage";
+
+// productIntro/productAccordion
+@import "components/productIntro/productAccordion/productAccordion";
+@import "components/productIntro/productAccordion/description";
+@import "components/productIntro/productAccordion/sizeAndFit";
+@import "components/productIntro/productAccordion/storeDetails";
 
 // pages
 @import "pages/products_show";

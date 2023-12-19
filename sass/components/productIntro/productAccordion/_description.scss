@@ -1,0 +1,22 @@
+.description {
+    display: table;
+    width: 100%;
+    font-size: 12px;
+    color: #222;
+
+    .description-table-item {
+        display: table-row;
+        line-height: 20px;
+
+        .description-table-item-key {
+            display: table-cell;
+            width: 50%;
+            padding-right: 25px;
+        }
+
+        .description-table-item-val {
+            display: table-cell;
+            width: 50%;
+        }
+    }
+}

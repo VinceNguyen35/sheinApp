@@ -23,7 +23,7 @@ const Description = () => {
             {
                 isDisplayed &&
                 <div className="accordion-details">
-                    <div className="description-table">
+                    <div className="description">
                         {
                             description.map((item, index) => (
                                 <div

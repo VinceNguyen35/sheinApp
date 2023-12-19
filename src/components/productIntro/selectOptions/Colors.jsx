@@ -31,10 +31,10 @@ const Colors = () => {
     }
 
     return (
-        <div className="colors-section">
-            <div className="colors-header">
-                <span className="colors-title">Color:</span>
-                <span className="colors-selected">{ selectedColor.name }</span>
+        <div className="select-color">
+            <div className="select-color-header">
+                <span className="select-color-title">Color:</span>
+                <span className="select-color-selected">{ selectedColor.name }</span>
             </div>
             <div className="colors-selection">
                 {

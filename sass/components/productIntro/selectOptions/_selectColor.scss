@@ -1,0 +1,49 @@
+.select-color {
+    .select-color-header {
+        .select-color-title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .select-color-selected {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 9px;
+        }
+    }
+
+    .colors-selection {
+        display: flex;
+
+        .color {
+            height: 28px;
+            width: 28px;
+            padding: 3px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            margin: 0 10px 10px 0;
+            cursor: pointer;
+
+            img {
+                height: 28px;
+                width: 28px;
+                border-radius: 50%;
+            }
+        }
+
+        .color:hover {
+            border-radius: 50%;
+            border: 1px solid #222;
+        }
+
+        .selected-color {
+            border-radius: 50%;
+            border: 2px solid #222;
+        }
+
+        .selected-color:hover {
+            border-radius: 50%;
+            border: 2px solid #222;
+        }
+    }
+}

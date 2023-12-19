@@ -9,15 +9,15 @@ const Sizes = () => {
 
     const selectedSizeClasses = (size) => {
         if (size === selectedSize) {
-            return "size-radio selected-size"
+            return "select-size-radio selected-size"
         } else {
-            return "size-radio";
+            return "select-size-radio";
         }
     }
 
     return (
-        <div className="sizes-section">
-            <div className="sizes-header">Size</div>
+        <div className="select-size">
+            <div className="select-size-header">Size</div>
             {
                 sizes.map((size, index) => (
                     <span
@@ -25,7 +25,7 @@ const Sizes = () => {
                         className={ selectedSizeClasses(size) }
                         onClick={ () => { setSelectedSize(size) } }
                     >
-                        <div className="size-text">
+                        <div className="select-size-text">
                             { size }
                         </div>
                     </span>
