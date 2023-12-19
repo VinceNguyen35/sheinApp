@@ -1,7 +1,7 @@
 // Component Imports
-import sheinLogo from "../../../assets/logos/sheinLogo.png";
-import SearchBar from "./generalNav/SearchBar";
-import MiscellaneousNav from "./generalNav/MiscellaneousNav";
+import sheinLogo from "../../../../assets/logos/sheinLogo.png";
+import SearchBar from "./SearchBar";
+import MiscellaneousNav from "./MiscellaneousNav";
 
 const GeneralNav = () => {
 

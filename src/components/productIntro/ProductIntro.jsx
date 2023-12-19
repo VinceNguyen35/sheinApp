@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 // Component Imports
-import ProductImages from "./productIntro/ProductImages";
-import ProductInfo from "./productIntro/ProductInfo";
-import SelectOptions from "./productIntro/SelectOptions";
-import AddingProduct from "./productIntro/AddingProduct";
-import ShippingInfo from "./productIntro/ShippingInfo";
-import ProductAccordion from "./productIntro/ProductAccordion";
+import ProductImages from "./productImages/ProductImages";
+import ProductInfo from "./ProductInfo";
+import SelectOptions from "./selectOptions/SelectOptions";
+import AddingProduct from "./AddingProduct";
+import ShippingInfo from "./ShippingInfo";
+import ProductAccordion from "./productAccordion/ProductAccordion";
 
 const ProductIntro = () => {
     return (

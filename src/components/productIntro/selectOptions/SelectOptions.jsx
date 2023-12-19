@@ -1,5 +1,5 @@
-import Colors from "./selectOptions/Colors";
-import Sizes from "./selectOptions/Sizes";
+import Colors from "./Colors";
+import Sizes from "./Sizes";
 
 const SelectOptions = () => {
     return (

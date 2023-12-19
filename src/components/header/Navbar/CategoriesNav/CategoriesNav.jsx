@@ -2,9 +2,9 @@
 import { useState } from "react";
 
 // component imports
-import Categories from "./CategoriesNav/Categories";
-import Category from "./CategoriesNav/Category";
-import CategoriesScroller from "./categoriesNav/CategoriesScroller";
+import Categories from "./Categories";
+import Category from "./Category";
+import CategoriesScroller from "./CategoriesScroller";
 
 const CategoriesNav = () => {
     const categories = [

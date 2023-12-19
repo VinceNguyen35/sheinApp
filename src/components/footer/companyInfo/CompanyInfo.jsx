@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
-import CompanyLinks from "./companyInfo/CompanyLinks";
-import ContactInfo from "./companyInfo/ContactInfo";
+import CompanyLinks from "./CompanyLinks";
+import ContactInfo from "./contactInfo/ContactInfo";
 
 const CompanyInfo = () => {
     const companyInfo = [

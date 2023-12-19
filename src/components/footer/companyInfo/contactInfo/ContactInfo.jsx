@@ -1,6 +1,6 @@
-import SocialMedia from "./contactInfo/SocialMedia";
-import AppDownload from "./contactInfo/AppDownload";
-import PaymentMethods from "./contactInfo/PaymentMethods";
+import SocialMedia from "./SocialMedia";
+import AppDownload from "./AppDownload";
+import PaymentMethods from "./PaymentMethods";
 
 const ContactInfo = () => {
 

@@ -1,5 +1,5 @@
-import CompanyInfo from "./footer/CompanyInfo";
-import Legal from "./footer/Legal";
+import CompanyInfo from "./companyInfo/CompanyInfo";
+import Legal from "./legal/Legal";
 
 const footer = () => {
     return (

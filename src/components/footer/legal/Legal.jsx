@@ -1,5 +1,5 @@
-import LegaLinks from "./legal/LegalLinks";
-import LegalIcons from "./legal/LegalIcons";
+import LegaLinks from "./LegalLinks";
+import LegalIcons from "./LegalIcons";
 
 const Legal = () => {
     return (

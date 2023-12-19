@@ -7,8 +7,8 @@ import Products_Show from "./pages/Products_Show";
 import NotFound from "./components/NotFound";
 
 // Components
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (

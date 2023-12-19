@@ -1,5 +1,5 @@
-import GeneralNav from "./Navbar/GeneralNav";
-import CategoriesNav from "./Navbar/CategoriesNav";
+import GeneralNav from "./generalNav/GeneralNav";
+import CategoriesNav from "./categoriesNav/CategoriesNav";
 
 const Navbar = () => {
     return (

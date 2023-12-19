@@ -2,8 +2,8 @@
 import { useState } from "react";
 
 // Component Imports
-import ProductGallery from "./productImages/ProductGallery";
-import EnlargedImage from "./productImages/EnlargedImage";
+import ProductGallery from "./ProductGallery";
+import EnlargedImage from "./EnlargedImage";
 
 const ProductImages = () => {
     const [enlargedImage, setEnlargedImage] = useState();

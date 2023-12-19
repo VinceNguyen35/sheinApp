@@ -46,7 +46,7 @@ import dress_storeIMG from "../assets/products/dress/dress_storeIMG.png";
 
 
 // Component Imports
-import ProductIntro from "../components/ProductIntro";
+import ProductIntro from "../components/productIntro/ProductIntro";
 import Breadcrumbs from "../components/productIntro/Breadcrumbs";
 import NotFound from "../components/NotFound";
 
