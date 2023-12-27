@@ -4,6 +4,7 @@ import { ProductContext } from "../../../context/ProductContext";
 
 // Img Imports
 import plusIcon from "../../../assets/logos/plusIcon.png";
+import minusIcon from "../../../assets/logos/minusIcon.png";
 
 const SizeAndFit = () => {
     const product = useContext(ProductContext);
@@ -45,7 +46,14 @@ const SizeAndFit = () => {
                 onClick={ () => { setIsDisplayed(!isDisplayed) } }
             >
                 <span className="accordion-header-title">Size & Fit</span>
-                <img src={ plusIcon } alt="plus icon" />
+                {
+                    !isDisplayed &&
+                    <img src={ plusIcon } alt="plus icon" />
+                }
+                {
+                    isDisplayed &&
+                    <img src={ minusIcon } alt="minus icon" />
+                }
             </div>
             {
                 isDisplayed &&

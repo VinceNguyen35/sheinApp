@@ -4,6 +4,7 @@ import { ProductContext } from "../../../context/ProductContext";
 
 // Img Imports
 import plusIcon from "../../../assets/logos/plusIcon.png";
+import minusIcon from "../../../assets/logos/minusIcon.png";
 
 const Description = () => {
     const product = useContext(ProductContext);
@@ -18,7 +19,14 @@ const Description = () => {
                 onClick={ () => { setIsDisplayed(!isDisplayed) } }
             >
                 <span className="accordion-header-title">Description</span>
-                <img src={ plusIcon } alt="plus icon" />
+                {
+                    !isDisplayed &&
+                    <img src={ plusIcon } alt="plus icon" />
+                }
+                {
+                    isDisplayed &&
+                    <img src={ minusIcon } alt="minus icon" />
+                }
             </div>
             {
                 isDisplayed &&
