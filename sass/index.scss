@@ -8,10 +8,14 @@
 @import "base/typography";
 
 // layout
+@import "layout/breakpoints";
+@import "layout/grid";
 
 // components
+
 // header
 @import "components/header/topBanner";
+
 // header/navbar
 @import "components/header/navbar/generalNav";
 @import "components/header/navbar/categoriesNav";
@@ -37,6 +41,9 @@
 @import "components/productIntro/productAccordion/description";
 @import "components/productIntro/productAccordion/sizeAndFit";
 @import "components/productIntro/productAccordion/storeDetails";
+
+// footer
+@import "components/footer/footer";
 
 // pages
 @import "pages/products_show";

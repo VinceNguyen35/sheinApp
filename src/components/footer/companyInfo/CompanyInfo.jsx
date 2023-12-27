@@ -94,20 +94,21 @@ const CompanyInfo = () => {
     ];
 
     return (
-        <div>
-            <h4>Company Info Here</h4>
-            <div className="col-left">
-                {
-                    companyInfo.map((item, index) => (
-                        <CompanyLinks
-                            key={index}
-                            item={item}
-                        />
-                    ))
-                }
+        <div className="row">
+            <div className="col-6-xs">
+                <div className="row">
+                    {
+                        companyInfo.map((item, index) => (
+                            <CompanyLinks
+                                key={index}
+                                item={item}
+                            />
+                        ))
+                    }
+                </div>
             </div>
             <div
-            className="col-right">
+                className="col-6-xs">
                 <ContactInfo />
             </div>
         </div>
