@@ -12,41 +12,47 @@ const ShippingInfo = () => {
 
     // Calculating Estimated Shipping Dates
     let fastestShippingDay = dd + 8;
+    let fastestShippingMonth = mm;
+    let fastestShippingYear = yyyy;
     if (fastestShippingDay > 30) {
         fastestShippingDay = fastestShippingDay - 30;
-        mm++;
-    }
-    if (mm > 12) {
-        mm = 1;
-        yyyy++;
+        fastestShippingMonth++;
+        if (fastestShippingMonth > 12) {
+            fastestShippingMonth = 1;
+            fastestShippingYear++;
+        }
     }
 
     let averageShippingDay = dd + 10;
+    let averageShippingMonth = mm;
+    let averageShippingYear = yyyy;
     if (averageShippingDay > 30) {
         averageShippingDay = averageShippingDay - 30;
-        mm++;
-    }
-    if (mm > 12) {
-        mm = 1;
-        yyyy++;
+        averageShippingMonth++;
+        if (averageShippingMonth > 12) {
+            averageShippingMonth = 1;
+            averageShippingYear++;
+        }
     }
 
     let slowestShippingDay = dd + 13;
+    let slowestShippingMonth = mm;
+    let slowestShippingYear = yyyy;
     if (slowestShippingDay > 30) {
         slowestShippingDay = slowestShippingDay - 30;
-        mm++;
-    }
-    if (mm > 12) {
-        mm = 1;
-        yyyy++;
+        slowestShippingMonth++;
+        if (slowestShippingMonth > 12) {
+            slowestShippingMonth = 1;
+            slowestShippingYear++;
+        }
     }
 
     if (dd < 10) dd = '0' + dd;
     if (mm < 10) mm = '0' + mm;
 
-    const fastestShippingDate = mm + '/' + fastestShippingDay + '/' + yyyy;
-    const averageShippingDate = mm + '/' + averageShippingDay + '/' + yyyy;
-    const slowestShippingDate = mm + '/' + slowestShippingDay + '/' + yyyy;
+    const fastestShippingDate = fastestShippingMonth + '/' + fastestShippingDay + '/' + fastestShippingYear;
+    const averageShippingDate = averageShippingMonth + '/' + averageShippingDay + '/' + averageShippingYear;
+    const slowestShippingDate = slowestShippingMonth + '/' + slowestShippingDay + '/' + slowestShippingYear;
 
     return (
         <div className="shipping-info">
