@@ -477,9 +477,8 @@ body {
 .top-banner {
   display: flex;
   justify-content: center;
-  height: 100%;
-  width: 1230px;
-  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .general-nav {
