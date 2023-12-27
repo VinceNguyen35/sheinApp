@@ -709,6 +709,11 @@ body {
   color: #999;
   font-size: 12px;
 }
+.breadcrumbs .breadcrumb a:hover {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: underline;
+}
 .breadcrumbs .breadcrumb span {
   color: #999;
   font-size: 12px;
@@ -1206,6 +1211,6 @@ ul li a:hover {
   color: #000000;
 }
 
-.products-show {
+.pages {
   padding: 0 25px;
 }
