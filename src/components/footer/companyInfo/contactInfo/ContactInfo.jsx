@@ -1,12 +1,10 @@
 import SocialMedia from "./SocialMedia";
 import AppDownload from "./AppDownload";
-import PaymentMethods from "./PaymentMethods";
 
 const ContactInfo = () => {
 
     return (
         <div>
-            <h5>Contact Info Here</h5>
             <div className="row">
                 <div className="col">
                     <h6>FIND US ON</h6>
@@ -49,10 +47,6 @@ const ContactInfo = () => {
                     If you want to unsubsribe the marketing email, 
                     please proceed to our <span><a href="https://us.shein.com/user/privacy_request?isVisitor=true">privacy center</a></span>.
                 </p>
-            </div>
-            <div className="accepted-payments">
-                <h6>WE ACCEPT</h6>
-                <PaymentMethods />
             </div>
         </div>
     );
