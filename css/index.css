@@ -109,61 +109,73 @@ body {
     box-sizing: border-box;
     flex-grow: 0;
     width: 8.3333333333%;
+    padding: 0 10px;
   }
   .col-2-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 16.6666666667%;
+    padding: 0 10px;
   }
   .col-3-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 25%;
+    padding: 0 10px;
   }
   .col-4-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 33.3333333333%;
+    padding: 0 10px;
   }
   .col-5-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 41.6666666667%;
+    padding: 0 10px;
   }
   .col-6-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 50%;
+    padding: 0 10px;
   }
   .col-7-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 58.3333333333%;
+    padding: 0 10px;
   }
   .col-8-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 66.6666666667%;
+    padding: 0 10px;
   }
   .col-9-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 75%;
+    padding: 0 10px;
   }
   .col-10-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 83.3333333333%;
+    padding: 0 10px;
   }
   .col-11-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 91.6666666667%;
+    padding: 0 10px;
   }
   .col-12-xs {
     box-sizing: border-box;
     flex-grow: 0;
     width: 100%;
+    padding: 0 10px;
   }
 }
 @media (min-width: 480px) {
@@ -171,61 +183,73 @@ body {
     box-sizing: border-box;
     flex-grow: 0;
     width: 8.3333333333%;
+    padding: 0 10px;
   }
   .col-2-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 16.6666666667%;
+    padding: 0 10px;
   }
   .col-3-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 25%;
+    padding: 0 10px;
   }
   .col-4-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 33.3333333333%;
+    padding: 0 10px;
   }
   .col-5-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 41.6666666667%;
+    padding: 0 10px;
   }
   .col-6-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 50%;
+    padding: 0 10px;
   }
   .col-7-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 58.3333333333%;
+    padding: 0 10px;
   }
   .col-8-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 66.6666666667%;
+    padding: 0 10px;
   }
   .col-9-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 75%;
+    padding: 0 10px;
   }
   .col-10-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 83.3333333333%;
+    padding: 0 10px;
   }
   .col-11-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 91.6666666667%;
+    padding: 0 10px;
   }
   .col-12-sm {
     box-sizing: border-box;
     flex-grow: 0;
     width: 100%;
+    padding: 0 10px;
   }
 }
 @media (min-width: 720px) {
@@ -233,61 +257,73 @@ body {
     box-sizing: border-box;
     flex-grow: 0;
     width: 8.3333333333%;
+    padding: 0 10px;
   }
   .col-2-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 16.6666666667%;
+    padding: 0 10px;
   }
   .col-3-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 25%;
+    padding: 0 10px;
   }
   .col-4-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 33.3333333333%;
+    padding: 0 10px;
   }
   .col-5-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 41.6666666667%;
+    padding: 0 10px;
   }
   .col-6-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 50%;
+    padding: 0 10px;
   }
   .col-7-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 58.3333333333%;
+    padding: 0 10px;
   }
   .col-8-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 66.6666666667%;
+    padding: 0 10px;
   }
   .col-9-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 75%;
+    padding: 0 10px;
   }
   .col-10-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 83.3333333333%;
+    padding: 0 10px;
   }
   .col-11-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 91.6666666667%;
+    padding: 0 10px;
   }
   .col-12-md {
     box-sizing: border-box;
     flex-grow: 0;
     width: 100%;
+    padding: 0 10px;
   }
 }
 @media (min-width: 960px) {
@@ -295,61 +331,73 @@ body {
     box-sizing: border-box;
     flex-grow: 0;
     width: 8.3333333333%;
+    padding: 0 10px;
   }
   .col-2-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 16.6666666667%;
+    padding: 0 10px;
   }
   .col-3-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 25%;
+    padding: 0 10px;
   }
   .col-4-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 33.3333333333%;
+    padding: 0 10px;
   }
   .col-5-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 41.6666666667%;
+    padding: 0 10px;
   }
   .col-6-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 50%;
+    padding: 0 10px;
   }
   .col-7-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 58.3333333333%;
+    padding: 0 10px;
   }
   .col-8-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 66.6666666667%;
+    padding: 0 10px;
   }
   .col-9-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 75%;
+    padding: 0 10px;
   }
   .col-10-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 83.3333333333%;
+    padding: 0 10px;
   }
   .col-11-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 91.6666666667%;
+    padding: 0 10px;
   }
   .col-12-lg {
     box-sizing: border-box;
     flex-grow: 0;
     width: 100%;
+    padding: 0 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -357,61 +405,73 @@ body {
     box-sizing: border-box;
     flex-grow: 0;
     width: 8.3333333333%;
+    padding: 0 10px;
   }
   .col-2-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 16.6666666667%;
+    padding: 0 10px;
   }
   .col-3-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 25%;
+    padding: 0 10px;
   }
   .col-4-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 33.3333333333%;
+    padding: 0 10px;
   }
   .col-5-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 41.6666666667%;
+    padding: 0 10px;
   }
   .col-6-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 50%;
+    padding: 0 10px;
   }
   .col-7-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 58.3333333333%;
+    padding: 0 10px;
   }
   .col-8-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 66.6666666667%;
+    padding: 0 10px;
   }
   .col-9-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 75%;
+    padding: 0 10px;
   }
   .col-10-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 83.3333333333%;
+    padding: 0 10px;
   }
   .col-11-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 91.6666666667%;
+    padding: 0 10px;
   }
   .col-12-xl {
     box-sizing: border-box;
     flex-grow: 0;
     width: 100%;
+    padding: 0 10px;
   }
 }
 .top-banner {
@@ -1113,11 +1173,38 @@ body {
 }
 
 .footer {
-  padding: 60px 10px 20px 10px;
+  padding-top: 60px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
   background-color: #fafafa;
 }
 .footer div {
-  padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+  box-sizing: content-box;
+}
+.list .list-header {
+  color: #222;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+ul {
+  margin-top: 8px;
+}
+ul li a {
+  color: #666;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 23px;
+  cursor: pointer;
+}
+ul li a:hover {
+  color: #000000;
 }
 
 .products-show {

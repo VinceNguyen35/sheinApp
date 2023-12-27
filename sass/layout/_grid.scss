@@ -53,6 +53,7 @@ $layout-values: flex-start,
             box-sizing: border-box;
             flex-grow: 0;
             width: math.div($i * 100%, $grid-columns);
+            padding: 0 10px;
         }
     }
 }
@@ -63,6 +64,7 @@ $layout-values: flex-start,
             box-sizing: border-box;
             flex-grow: 0;
             width: math.div($i * 100%, $grid-columns);
+            padding: 0 10px;
         }
     }
 }
@@ -73,6 +75,7 @@ $layout-values: flex-start,
             box-sizing: border-box;
             flex-grow: 0;
             width: math.div($i * 100%, $grid-columns);
+            padding: 0 10px;
         }
     }
 }
@@ -83,6 +86,7 @@ $layout-values: flex-start,
             box-sizing: border-box;
             flex-grow: 0;
             width: math.div($i * 100%, $grid-columns);
+            padding: 0 10px;
         }
     }
 }
@@ -93,6 +97,7 @@ $layout-values: flex-start,
             box-sizing: border-box;
             flex-grow: 0;
             width: math.div($i * 100%, $grid-columns);
+            padding: 0 10px;
         }
     }
 }

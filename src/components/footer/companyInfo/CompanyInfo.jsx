@@ -94,7 +94,7 @@ const CompanyInfo = () => {
     ];
 
     return (
-        <div className="row">
+        <div className="row company-info">
             <div className="col-6-xs">
                 <div className="row">
                     {

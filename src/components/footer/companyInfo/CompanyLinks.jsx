@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 const CompanyLinks = ({item}) => {
     return (
-        <div className="col-3-xs">
+        <div className="col-3-xs list">
             <div className="list-header">
                 { item.categoryType }
             </div>
