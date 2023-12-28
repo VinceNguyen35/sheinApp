@@ -1211,6 +1211,42 @@ ul li a:hover {
   color: #000000;
 }
 
+.contact-info h6 {
+  font-weight: 700;
+  font-size: 12px;
+  color: #222;
+}
+
+.social-media ul {
+  float: left;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+.social-media ul li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+.social-media ul li a img {
+  height: 25px;
+  width: 25px;
+}
+
+.app-download ul {
+  float: left;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+.app-download ul li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+.app-download ul li a img {
+  height: 25px;
+  width: 25px;
+}
+
 .pages {
   padding: 0 25px;
 }

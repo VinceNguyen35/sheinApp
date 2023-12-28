@@ -58,18 +58,19 @@ const SocialMedia = () => {
     ];
     
     return (
-        <div>
-            {socialMediaList.map((socialMedia, index) => (
-                <a
-                    key={ index }
-                    href={ socialMedia.link }
-                >
-                    <img
-                        src={ socialMedia.icon }
-                        alt={`${socialMedia.name}` + " icon"}
-                    />
-                </a>
-            ))}
+        <div className="social-media">
+            <ul>
+                {socialMediaList.map((socialMedia, index) => (
+                    <li key={ index }>
+                        <a href={ socialMedia.link }>
+                            <img
+                                src={ socialMedia.icon }
+                                alt={ `${ socialMedia.name }` + " icon" }
+                            />
+                        </a>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 }

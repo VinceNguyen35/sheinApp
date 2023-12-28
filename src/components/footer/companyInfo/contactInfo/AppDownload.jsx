@@ -16,18 +16,19 @@ const AppDownload = () => {
     ];
 
     return (
-        <div>
-            {appList.map((app, index) => (
-                <a
-                    key={ index }
-                    href={ app.link }
-                >
-                    <img
-                        src={ app.icon }
-                        alt={`${app.name}` + " icon"}
-                    />
-                </a>
-            ))}
+        <div className="app-download">
+            <ul>
+                { appList.map((app, index) => (
+                    <li key={ index }>
+                        <a href={ app.link }>
+                            <img
+                                src={ app.icon }
+                                alt={ `${ app.name }` + " icon" }
+                            />
+                        </a>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 }

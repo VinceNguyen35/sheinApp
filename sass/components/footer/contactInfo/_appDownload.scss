@@ -1,0 +1,20 @@
+.app-download {
+    ul {
+        float: left;
+        margin-top: 16px;
+        margin-bottom: 20px;
+
+        li {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 5px;
+
+            a {
+                img {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+    }
+}

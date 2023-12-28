@@ -4,18 +4,18 @@ import AppDownload from "./AppDownload";
 const ContactInfo = () => {
 
     return (
-        <div>
-            <div className="row">
-                <div className="col">
+        <>
+            <div className="row contact-info">
+                <div className="col-8-xs">
                     <h6>FIND US ON</h6>
                     <SocialMedia />
                 </div>
-                <div className="col">
+                <div className="col-4-xs">
                     <h6>DOWNLOAD SHEIN APP TO SAVE MORE!</h6>
                     <AppDownload />
                 </div>
             </div>
-            <div className="signup-forms">
+            <div className=" row signup-forms">
                 <form action="#" method="POST">
                     <label>
                         SIGN UP FOR SHEIN STYLE NEWS
@@ -48,7 +48,7 @@ const ContactInfo = () => {
                     please proceed to our <span><a href="https://us.shein.com/user/privacy_request?isVisitor=true">privacy center</a></span>.
                 </p>
             </div>
-        </div>
+        </>
     );
 }
  
