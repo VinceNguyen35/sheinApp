@@ -1215,6 +1215,57 @@ ul li a:hover {
   font-weight: 700;
   font-size: 12px;
   color: #222;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+.contact-info form {
+  display: flex;
+  width: 100%;
+}
+.contact-info form input {
+  width: 100%;
+  height: 34px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+}
+.contact-info form input:focus {
+  border: 1px solid #000000;
+  outline: none;
+}
+.contact-info form .subscribe {
+  display: inline-block;
+  min-width: 144px;
+  height: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+}
+.contact-info form .subscribe:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.contact-info form .phone-country-code {
+  min-width: 80px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+.contact-info form .phone-country-code img {
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
 }
 
 .social-media ul {

@@ -107,8 +107,7 @@ const CompanyInfo = () => {
                     }
                 </div>
             </div>
-            <div
-                className="col-6-xs">
+            <div className="col-6-xs">
                 <ContactInfo />
             </div>
         </div>

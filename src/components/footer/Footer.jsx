@@ -5,9 +5,7 @@ const footer = () => {
     return (
         <div className="footer">
             <CompanyInfo />
-            <div className="row">
-                <Legal />
-            </div>
+            <Legal />
         </div>
     );
 }

@@ -1,11 +1,14 @@
+// Component Imports
 import SocialMedia from "./SocialMedia";
 import AppDownload from "./AppDownload";
 
-const ContactInfo = () => {
+// Img Imports
+import downArrowBlackIcon from "../../../../assets/logos/downArrowBlackIcon.png";
 
+const ContactInfo = () => {
     return (
-        <>
-            <div className="row contact-info">
+        <div className="contact-info">
+            <div className="row">
                 <div className="col-8-xs">
                     <h6>FIND US ON</h6>
                     <SocialMedia />
@@ -16,28 +19,24 @@ const ContactInfo = () => {
                 </div>
             </div>
             <div className=" row signup-forms">
+                <h6>SIGN UP FOR SHEIN STYLE NEWS</h6>
                 <form action="#" method="POST">
-                    <label>
-                        SIGN UP FOR SHEIN STYLE NEWS
-                    </label>
                     <input
                         type="text"
                         placeholder="Your Email Address"
                     />
-                    <button>Subscribe</button>
+                    <div className="subscribe">Subscribe</div>
                 </form>
                 <form action="#" method="POST">
-                    <div>
-                        <ul>
-                            <li>Canada + 1</li>
-                            <li>United States + 1</li>
-                        </ul>
+                    <div className="phone-country-code">
+                        <span>US + 1</span>
+                        <img src={ downArrowBlackIcon } alt="down arrow" />
                     </div>
                     <input
                         type="text"
                         placeholder="WhatsApp Account"
                     />
-                    <button>Subscribe</button>
+                    <div className="subscribe">Subscribe</div>
                 </form>
             </div>
             <div className="privacy-statement">
@@ -48,7 +47,7 @@ const ContactInfo = () => {
                     please proceed to our <span><a href="https://us.shein.com/user/privacy_request?isVisitor=true">privacy center</a></span>.
                 </p>
             </div>
-        </>
+        </div>
     );
 }
  
