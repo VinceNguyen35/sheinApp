@@ -1,0 +1,22 @@
+.legal-links {
+    padding: 0;
+    
+    span {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #666;
+        padding-left: 10px;
+    }
+
+    ul {
+        li {
+            display: inline-block;
+            padding: 0 10px;
+            border-right: 1px solid #ccc;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}

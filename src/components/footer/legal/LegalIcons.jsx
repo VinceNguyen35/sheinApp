@@ -3,7 +3,7 @@ import dmcaIcon from "../../../assets/logos/dmcaIcon.png";
 
 const LegalIcons = () => {
     return (
-        <div>
+        <div className="legal-icons">
             <a href="https://sealserver.trustwave.com/cert.php?customerId=&size=105x54&style=invert&form=&baseURL=fr.shein.com">
                 <img
                     src={ trustwaveIcon }

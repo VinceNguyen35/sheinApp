@@ -3,13 +3,12 @@ import LegalIcons from "./LegalIcons";
 
 const Legal = () => {
     return (
-        <div className="row">
-            <h4>Legal Stuff</h4>
-            <h6>©2009-2023 SHEIN All Rights Reserved</h6>
-            <div className="col-left">
+        <div className="row legal">
+            <div className="col-6-xs legal-links">
+                <span>©2009-2023 SHEIN All Rights Reserved</span>
                 <LegaLinks />
             </div>
-            <div className="col-right">
+            <div className="col-4 xs">
                 <LegalIcons />
             </div>
         </div>
