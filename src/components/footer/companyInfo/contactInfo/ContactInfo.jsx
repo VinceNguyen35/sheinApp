@@ -26,6 +26,12 @@ const ContactInfo = () => {
         }
     }
 
+    const handleEmailChange = (event) => {
+        event.preventDefault();
+        setEmailErrorMessage("");
+        setEmail(event.target.value);
+    }
+
     const handlePhoneSubscribe = (event) => {
         event.preventDefault();
         if (phoneNumber.length === 10 && !isNaN(phoneNumber)) {
@@ -35,6 +41,12 @@ const ContactInfo = () => {
         } else {
             setPhoneNumberErrorMessage("Oops! It looks like you entered an invalid WhatsApp account.");
         }
+    }
+
+    const handlePhoneChange = (event) => {
+        event.preventDefault();
+        setPhoneNumberErrorMessage("");
+        setPhoneNumber(event.target.value);
     }
 
     return (
@@ -61,7 +73,7 @@ const ContactInfo = () => {
                             type="text"
                             placeholder="Your Email Address"
                             value={ email }
-                            onChange={ event =>  setEmail(event.target.value) }
+                            onChange={ event => handleEmailChange(event) }
                         />
                         <div className="footer-tips">
                             <div className="input-error-text">
@@ -91,7 +103,7 @@ const ContactInfo = () => {
                                 type="text"
                                 placeholder="WhatsApp Account"
                                 value={ phoneNumber }
-                                onChange={ event => setPhoneNumber(event.target.value) }
+                                onChange={ event => handlePhoneChange(event) }
                             />
                         </div>
                         <div className="footer-tips">

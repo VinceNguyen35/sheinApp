@@ -34,8 +34,8 @@
 
             .footer-tips {
                 height: 20px;
-                padding-bottom: 6px;
-                margin-bottom: 6px;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
 
                 .input-error-text {
                     color: #d53333;
@@ -43,9 +43,17 @@
                     margin-top: 6px;
                 }
             }
-        }
 
-        
+            .privacy-statement {
+                color: #666;
+                font-size: 12px;
+
+                a {
+                    text-decoration: underline;
+                    color: #2d68a8;
+                }
+            }
+        }
 
         .subscribe {
             display: inline-block;

@@ -1243,13 +1243,21 @@ ul li a:hover {
 }
 .contact-info form .footer-input .footer-tips {
   height: 20px;
-  padding-bottom: 6px;
-  margin-bottom: 6px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 .contact-info form .footer-input .footer-tips .input-error-text {
   color: #d53333;
   font-size: 12px;
   margin-top: 6px;
+}
+.contact-info form .footer-input .privacy-statement {
+  color: #666;
+  font-size: 12px;
+}
+.contact-info form .footer-input .privacy-statement a {
+  text-decoration: underline;
+  color: #2d68a8;
 }
 .contact-info form .subscribe {
   display: inline-block;
