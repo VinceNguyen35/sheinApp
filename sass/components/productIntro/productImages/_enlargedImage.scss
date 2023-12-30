@@ -1,7 +1,7 @@
 .enlarged-image-section {
     @mixin swiper-icon() {
         position: absolute;
-        top: 85%;
+        top: 450px;
         margin-top: -18px;
         width: 36px;
         height: 36px;
@@ -55,6 +55,6 @@
 
 .enlarged-image {
     height: 510px;
-    width: 386px;
+    width: 384px;
     position: relative;
 }

@@ -1008,7 +1008,7 @@ body {
 }
 .enlarged-image-section .swiper-icon-left {
   position: absolute;
-  top: 85%;
+  top: 450px;
   margin-top: -18px;
   width: 36px;
   height: 36px;
@@ -1027,7 +1027,7 @@ body {
 }
 .enlarged-image-section .swiper-icon-right {
   position: absolute;
-  top: 85%;
+  top: 450px;
   margin-top: -18px;
   width: 36px;
   height: 36px;

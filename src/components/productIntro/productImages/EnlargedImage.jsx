@@ -11,6 +11,7 @@ import rightArrowBlackIcon from "../../../assets/logos/rightArrowBlackIcon.png";
 const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
     const product = useContext(ProductContext);
     const pictures = product.pictures;
+    const lastPictureIndex = pictures.length - 1;
 
     const [displaySwiper, setDisplaySwiper] = useState(false);
     const [enlargedImagePosition, setEnlargedImagePosition] = useState(0);
@@ -22,20 +23,42 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
         setEnlargedImagePosition(newEnlargedImagePosition);
     }, [enlargedImage]);
 
-    const handleLeftSwiper = () => {
-        const newEnlargedImage = enlargedImage--;
-        const newEnlargedImagePosition = enlargedImagePosition - 384;
-        setTransitionTime(0.3);
-        setEnlargedImage(newEnlargedImage);
-        setEnlargedImagePosition(newEnlargedImagePosition);
+    const handleLeftSwiper = async () => {
+        let newEnlargedImage = enlargedImage - 1;
+        let newEnlargedImagePosition = enlargedImagePosition - 384;
+        await setTransitionTime(0.3);
+        await setEnlargedImage(newEnlargedImage);
+        await setEnlargedImagePosition(newEnlargedImagePosition);
+        console.log(enlargedImage);
+        if (enlargedImage === 1) { // edge case for beginning of swiper
+            const resetSwiper = () => {
+                setTransitionTime(0);
+                setEnlargedImage(lastPictureIndex + 1);
+                newEnlargedImagePosition = lastPictureIndex * 384;
+                setEnlargedImagePosition(newEnlargedImagePosition);
+            }
+
+            setTimeout(resetSwiper, 300);
+        }
     }
 
     const handleRightSwiper = () => {
-        const newEnlargedImage = enlargedImage++;
-        const newEnlargedImagePosition = enlargedImagePosition + 384;
+        let newEnlargedImage = enlargedImage + 1;
+        let newEnlargedImagePosition = enlargedImagePosition + 384;
         setTransitionTime(0.3);
         setEnlargedImage(newEnlargedImage);
         setEnlargedImagePosition(newEnlargedImagePosition);
+        console.log(enlargedImage);
+        if (enlargedImage === lastPictureIndex + 1) { // edge case for end of swiper
+            const resetSwiper = () => {
+                setTransitionTime(0);
+                setEnlargedImage(1);
+                newEnlargedImagePosition = lastPictureIndex * 384;
+                setEnlargedImagePosition(newEnlargedImagePosition);
+            }
+
+            setTimeout(resetSwiper, 300);
+        }
     }
 
     return (
@@ -52,6 +75,11 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
                         transform: "translate(-" + enlargedImagePosition + "px)"
                     }}
                 >
+                    <img // for swiper carousel edge case
+                        className="enlarged-image"
+                        src={pictures[lastPictureIndex]}
+                        alt={"gallery img " + `${lastPictureIndex}`}
+                    />
                     {pictures.map((img, index) => (
                         <img
                             key={index}
@@ -60,6 +88,11 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
                             alt={"gallery img " + `${index}`}
                         />
                     ))}
+                    <img // for swiper carousel edge case
+                        className="enlarged-image"
+                        src={pictures[0]}
+                        alt={"gallery img 0"}
+                    />
                 </div>
             </div>
             {
