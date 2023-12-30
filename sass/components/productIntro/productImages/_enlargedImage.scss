@@ -1,4 +1,60 @@
+.enlarged-image-section {
+    @mixin swiper-icon() {
+        position: absolute;
+        top: 85%;
+        margin-top: -18px;
+        width: 36px;
+        height: 36px;
+        background-color: rgba(255, 255, 255, .94);
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .08);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    
+        img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .enlarged-image-swiper {
+        height: 510px;
+        width: 384px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #000000;
+        cursor: zoom-in;
+
+        .enlarged-image-content {
+            height: 510px;
+            position: absolute;
+            white-space: nowrap;
+        }
+    }
+
+    .swiper-icon-left {
+        @include swiper-icon();
+        left: 100px;
+    }
+
+    .swiper-icon-right {
+        @include swiper-icon();
+        left: 415px;
+    }
+
+    .swiper-icon-left:hover {
+        background-color: #fff;
+    }
+
+    .swiper-icon-right:hover {
+        background-color: #fff;
+    }
+}
+
 .enlarged-image {
     height: 510px;
+    width: 386px;
     position: relative;
 }

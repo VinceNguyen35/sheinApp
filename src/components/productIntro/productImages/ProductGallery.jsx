@@ -8,7 +8,7 @@ const ProductGallery = ({ setEnlargedImage }) => {
     const pictures = product.pictures;
 
     useEffect(() => {
-        setEnlargedImage(pictures[0]);
+        setEnlargedImage(0);
     }, []);
 
     return (
@@ -18,7 +18,7 @@ const ProductGallery = ({ setEnlargedImage }) => {
                     key={index}
                     src={img}
                     alt={"gallery img " + `${index}`}
-                    onMouseOver={() => setEnlargedImage(pictures[index])}
+                    onMouseOver={() => setEnlargedImage(index)}
                 />
             ))}
         </div>

@@ -15,6 +15,7 @@ const ProductImages = () => {
             />
             <EnlargedImage
                 enlargedImage={ enlargedImage }
+                setEnlargedImage={ setEnlargedImage }
             />
         </div>
     );
