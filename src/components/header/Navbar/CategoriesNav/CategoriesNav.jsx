@@ -139,9 +139,9 @@ const CategoriesNav = () => {
             <div className="categories-dropdown">
                 <Categories />
             </div>
-            <div className="categories-carousel-content">
+            <div className="categories-carousel-controller">
                 <div
-                    className="categories-carousel-controller"
+                    className="categories-carousel-content"
                     style={{
                         transition: "transform 0.5s ease 0s",
                         transform: "translate(-" + carouselBreakpoints[carouselDisplacement] + "px)"

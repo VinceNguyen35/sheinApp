@@ -39,14 +39,14 @@
         }
     }
 
-    .categories-carousel-content {
+    .categories-carousel-controller {
         height: 100%;
         position: relative;
         overflow: hidden;
         -webkit-box-flex: 1;
         flex: 1;
 
-        .categories-carousel-controller {
+        .categories-carousel-content {
             position: absolute;
             white-space: nowrap;
             height: 100%;
