@@ -1,7 +1,6 @@
 .breadcrumbs {
-    display: none;
-
-    @media (min-wdith: 480px) {
+    // For Desktop
+    @media (min-width: 480px) {
         display: inline-flex;
         padding: 14px 0;
         white-space: nowrap;
@@ -26,5 +25,5 @@
                 font-size: 12px;
             }
         }
-    }
+}
 }

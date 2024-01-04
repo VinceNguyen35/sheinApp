@@ -1,3 +1,4 @@
+// Image Imports
 import NewUserCoupon from "../../assets/NewUserCoupon.png";
 
 const TopBanner = () => {

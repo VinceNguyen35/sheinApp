@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 // React Imports
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
 
 // Context Imports
 import { ProductContext } from "../context/ProductContext";
+import { MobileContext } from "../context/MobileContext";
 
 // Data Imports for Demo Purposes Only
 // Manfinity
@@ -53,9 +55,11 @@ import Breadcrumbs from "../components/productIntro/Breadcrumbs";
 import NotFound from "../components/NotFound";
 
 const Products_Show = () => {
+    // Router Variables
     const { id } = useParams();
     let productExists = true;
 
+    // Product Data Array
     const productData = [
         {
             productName: "Manfinity Homme Men Letter Patched Detail Tee",
@@ -605,6 +609,7 @@ const Products_Show = () => {
         }
     ];
 
+    // Product Array Routing Handling
     let product = {};
     switch(id) {
         case "manfinity": 
@@ -626,13 +631,19 @@ const Products_Show = () => {
         
     }
 
+    // Mobile Display Context
+    const isMobile = useContext(MobileContext);
+
     return (
         <div className="found-product">
             {!productExists && <NotFound />}
             {productExists &&
                 <div className="products-show">
                 <ProductContext.Provider value={product}>
-                    <Breadcrumbs />
+                    {
+                        !isMobile &&
+                        <Breadcrumbs />
+                    }
                     <ProductIntro />
                 </ProductContext.Provider>
             </div>}

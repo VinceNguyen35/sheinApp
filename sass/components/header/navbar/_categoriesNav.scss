@@ -1,8 +1,5 @@
 .categories-nav {
-    @media (min-width: 0) {
-        display: none;
-    }
-
+    // For Desktop
     @media (min-width: 480px) {
         display: flex;
         position: relative;
@@ -14,52 +11,52 @@
         box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.04);
         font-size: 13px;
         font-weight: 400;
-    
+
         .categories-dropdown {
             display: inline-block;
             height: 100%;
-    
+
             .dropdown {
                 height: 100%;
                 padding: 10px 10px 0 10px;
-    
+
                 .hovering {
                     transform: rotate(180deg);
                     transition: .2s ease-in-out;
                 }
-    
+
                 .notHovering {
                     transition: .2s ease-in-out;
                 }
-    
+
                 img {
                     width: 10px;
                     height: 10px;
                     padding: 0 5px;
                 }
             }
-    
+
             & :hover {
                 background-color: #e8e8e8;
             }
         }
-    
+
         .categories-carousel-controller {
             height: 100%;
             position: relative;
             overflow: hidden;
             -webkit-box-flex: 1;
             flex: 1;
-    
+
             .categories-carousel-content {
                 position: absolute;
                 white-space: nowrap;
                 height: 100%;
-    
+
                 & :hover {
                     background-color: #e8e8e8;
                 }
-    
+
                 .category {
                     display: inline-block;
                     height: 100%;
@@ -67,23 +64,23 @@
                 }
             }
         }
-    
+
         .categories-scroller {
             height: 100%;
             box-shadow: -2px 0px 3px 0px rgba(0, 0, 0, 0.08);
             display: flex;
             align-items: center;
-    
+
             & :hover {
                 cursor: pointer;
             }
-    
+
             img {
                 width: 10px;
                 height: 10px;
                 padding: 0 10px;
             }
-    
+
             .cannotHover {
                 pointer-events: none;
             }

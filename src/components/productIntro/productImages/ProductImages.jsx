@@ -1,5 +1,8 @@
 // React Imports
-import { useState } from "react";
+import { useState, useContext } from "react";
+
+// Context Imports
+import { MobileContext } from  "../../../context/MobileContext";
 
 // Component Imports
 import ProductGallery from "./ProductGallery";
@@ -8,11 +11,14 @@ import EnlargedImage from "./EnlargedImage";
 const ProductImages = () => {
     const [enlargedImage, setEnlargedImage] = useState();
 
+    const isMobile = useContext(MobileContext);
+
     return (
         <div className="product-images">
-            <ProductGallery
-                setEnlargedImage={ setEnlargedImage }
-            />
+            {
+                !isMobile &&
+                <ProductGallery setEnlargedImage={setEnlargedImage} />
+            }
             <EnlargedImage
                 enlargedImage={ enlargedImage }
                 setEnlargedImage={ setEnlargedImage }

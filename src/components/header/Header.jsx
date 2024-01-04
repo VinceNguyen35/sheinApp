@@ -1,13 +1,25 @@
+// React Imports
+import { useContext } from "react";
+
+// Context Imports
+import { MobileContext } from "../../context/MobileContext";
+
+// Component Imports
 import TopBanner from "./TopBanner";
 import Navbar from "./navbar/Navbar";
 
-const header = () => {
+const Header = () => {
+    const isMobile = useContext(MobileContext);
+
     return (
         <div className="header">
-            <TopBanner />
+            {
+                !isMobile &&
+                <TopBanner />
+            }
             <Navbar />
         </div>
     );
 }
  
-export default header;
+export default Header;

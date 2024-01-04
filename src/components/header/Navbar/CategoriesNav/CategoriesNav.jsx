@@ -1,7 +1,7 @@
-// react imports
+// React Imports
 import { useState } from "react";
 
-// component imports
+// Component Imports
 import Categories from "./Categories";
 import Category from "./Category";
 import CategoriesScroller from "./CategoriesScroller";
@@ -156,9 +156,9 @@ const CategoriesNav = () => {
                 </div>
             </div>
             <CategoriesScroller
-                carouselDisplacement={ carouselDisplacement }
-                scrollLeft={ scrollLeft }
-                scrollRight= { scrollRight }
+                carouselDisplacement={carouselDisplacement}
+                scrollLeft={scrollLeft}
+                scrollRight={scrollRight}
             />
         </div>
     );

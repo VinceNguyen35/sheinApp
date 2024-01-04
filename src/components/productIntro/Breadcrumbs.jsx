@@ -22,16 +22,16 @@ const Breadcrumbs = () => {
                 breadcrumbs.map((breadcrumb, index) => (
                     <div
                         className="breadcrumb"
-                        key={ index }
+                        key={index}
                     >
-                        <a href={ breadcrumb.link }>
-                            { breadcrumb.title }
+                        <a href={breadcrumb.link}>
+                            {breadcrumb.title}
                         </a>
                         <span> / </span>
                         {
                             handleFinalBreadcrumb(index, breadcrumbs.length - 1) &&
                             <a href="#">
-                                { productName }
+                                {productName}
                             </a>
                         }
                     </div>
