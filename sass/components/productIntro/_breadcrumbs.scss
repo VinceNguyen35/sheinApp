@@ -1,26 +1,30 @@
 .breadcrumbs {
-    display: inline-flex;
-    padding: 14px 0;
-    white-space: nowrap;
-    overflow: hidden;
+    display: none;
 
-    .breadcrumb {
-        padding: 0 2px;
-
-        a {
-            color: #999;
-            font-size: 12px;
-        }
-
-        a:hover {
-            color: #000000;
-            cursor: pointer;
-            text-decoration: underline;
-        }
-
-        span {
-            color: #999;
-            font-size: 12px;
+    @media (min-wdith: 480px) {
+        display: inline-flex;
+        padding: 14px 0;
+        white-space: nowrap;
+        overflow: hidden;
+    
+        .breadcrumb {
+            padding: 0 2px;
+    
+            a {
+                color: #999;
+                font-size: 12px;
+            }
+    
+            a:hover {
+                color: #000000;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+    
+            span {
+                color: #999;
+                font-size: 12px;
+            }
         }
     }
 }
