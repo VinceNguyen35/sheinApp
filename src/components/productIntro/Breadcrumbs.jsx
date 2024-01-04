@@ -1,7 +1,7 @@
 // React Imports
 import { useContext } from "react";
 
-// Component Imports
+// Context Imports
 import { ProductContext } from "../../context/ProductContext";
 
 const Breadcrumbs = () => {

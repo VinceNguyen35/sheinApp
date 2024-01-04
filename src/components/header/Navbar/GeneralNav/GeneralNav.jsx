@@ -1,5 +1,8 @@
 // React Imports
-import { useState, useEffect } from "react";
+import { useContext } from "react";
+
+// Context Imports
+import { MobileContext } from "../../../../context/MobileContext";
 
 // Component Imports
 import SearchBar from "./SearchBar";
@@ -11,16 +14,7 @@ import leftArrowBlackIcon from "../../../../assets/logos/leftArrowBlackIcon.png"
 import navbarIcon from "../../../../assets/logos/navbarIcon.png";
 
 const GeneralNav = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
-
-    const updateMedia = () => {
-        setIsMobile(window.innerWidth < 480);
-    }
-
-    useEffect(() => {
-        window.addEventListener("resize", updateMedia);
-        return () => window.removeEventListener("resize", updateMedia);
-    });
+    const isMobile = useContext(MobileContext);
 
     return (
         <div className="general-nav">

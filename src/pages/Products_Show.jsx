@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 // React Imports
-import { ProductContext } from "../context/ProductContext";
 import { useParams } from "react-router-dom";
+
+// Context Imports
+import { ProductContext } from "../context/ProductContext";
 
 // Data Imports for Demo Purposes Only
 // Manfinity

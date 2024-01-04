@@ -1,5 +1,7 @@
 // React Imports
 import { useContext } from "react";
+
+// Context Imports
 import { ProductContext } from "../../context/ProductContext";
 
 // Image Imports
