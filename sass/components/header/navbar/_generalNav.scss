@@ -1,152 +1,204 @@
 .general-nav {
+    @mixin miscellaneous-icon() {
+        padding: 0 5px;
+    
+        img {
+            z-index: 60;
+            width: 20px;
+            height: 20px;
+            padding: 0 3px;
+        }
+    }
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 56px;
-    padding: 0 20px;
+    justify-content: space-between;
+    margin-top: 5px;
 
     .header-left {
-        display: flex;
-        align-items: center;
-        z-index: 60;
+        .navigation {
+            @include miscellaneous-icon();
+            padding: 0 10px;
 
-        img {
-            width: 125px;
-            height: 25px;
-            padding: 0 25px;
-            display: block;
+            img {
+                padding: 0 10px;
+            }
         }
     }
 
     .header-center {
         display: flex;
-        justify-content: flex-end;
-        flex: 1;
-        margin-right: 28px;
+        align-items: center;
+        justify-content: center;
 
-        form {
-            display: flex;
-        
+        a {
             img {
-                z-index: 50;
-                width: 20px;
                 height: 20px;
-                border: 10px solid black;
-            }
-
-            img:hover {
-                cursor: pointer;
-                opacity: 0.75;
-            }
-        
-            input {
-                z-index: 50;
-                width: 100%;
-                height: 36px;
-                padding-left: 12px;
-                padding-right: 26px;
-                border: 1px solid #e5e5e5;
-            }
-
-            input:focus {
-                outline: none;
-            }
-
-            .search-content {
-                display: inline-block;
-                position: absolute;
-                background: #ffffff;
-                padding: 10px;
-                border: 1px solid rgba(0, 0, 0, 0.1);
-                top: 105px;
-                width: 227px;
-                z-index: 500;
-                overflow-x: hidden;
-                overflow-y: auto;
-                animation: fadeIn 0.5s;
-
-                @keyframes fadeIn {
-                    0% { opacity: 0; }
-                    100% { opacity: 1 }
-                }
-
-                .search-content-title {
-                    font-family: sans-serif;
-                    font-size: 18px;
-                    margin: 11px 0 18px 0;
-                }
-
-                .search-content-category {
-                    display: inline-block;
-                    font-size: 12px;
-                    color: #666666;
-                    background-color: #f5f5f5;
-                    padding: 2px 10px;
-                    margin: 0 10px 10px 0;
-
-                    img {
-                        border: none;
-                        width: 13px;
-                        height: 13px;
-                        padding: 2px 4px 0 0;
-                    }
-                }
-
-                .search-content-category:hover {
-                    cursor: pointer;
-                }
-            }
-
-            .search-mask-header {
-                position: absolute;
-                top: 50px;
-                right: 0;
-                width: 100%;
-                min-height: 100px;
-                z-index: 40;
-            }
-
-            .search-mask-body {
-                position: absolute;
-                top: 115px;
-                right: 0;
-                width: 100%;
-                min-height: 2000px;
-                background-color: rgba(34, 34, 34, 0.3);
-                z-index: 40;
+                padding: 8px;
             }
         }
     }
 
     .header-right {
-        .miscellaneous-nav {
+        .miscellaneous-nav-mobile {
             display: flex;
-            justify-content: space-around;
+            align-items: center;
+            justify-content: flex-end;
 
             .miscellaneous-icon {
-                padding: 0 5px;
-                opacity: 0.65;
+                @include miscellaneous-icon();
+            }
+        }
+    }
 
+    // For Desktop
+    @media (min-width: 480px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 56px;
+        padding: 0 20px;
+    
+        .header-left {
+            display: flex;
+            align-items: center;
+            z-index: 60;
+    
+            img {
+                width: 125px;
+                height: 25px;
+                padding: 0 25px;
+                display: block;
+            }
+        }
+    
+        .header-center {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+            margin-right: 28px;
+    
+            form {
+                display: flex;
+    
                 img {
-                    z-index: 60;
-                    width: 21px;
+                    z-index: 50;
+                    width: 20px;
                     height: 20px;
-                    padding: 0 3px;
+                    border: 10px solid black;
+                }
+    
+                img:hover {
+                    cursor: pointer;
+                    opacity: 0.75;
+                }
+    
+                input {
+                    z-index: 50;
+                    width: 100%;
+                    height: 36px;
+                    padding-left: 12px;
+                    padding-right: 26px;
+                    border: 1px solid #e5e5e5;
+                }
+    
+                input:focus {
+                    outline: none;
+                }
+    
+                .search-content {
+                    display: inline-block;
+                    position: absolute;
+                    background: #ffffff;
+                    padding: 10px;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    top: 105px;
+                    width: 227px;
+                    z-index: 500;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    animation: fadeIn 0.5s;
+    
+                    @keyframes fadeIn {
+                        0% {
+                            opacity: 0;
+                        }
+    
+                        100% {
+                            opacity: 1
+                        }
+                    }
+    
+                    .search-content-title {
+                        font-family: sans-serif;
+                        font-size: 18px;
+                        margin: 11px 0 18px 0;
+                    }
+    
+                    .search-content-category {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #666666;
+                        background-color: #f5f5f5;
+                        padding: 2px 10px;
+                        margin: 0 10px 10px 0;
+    
+                        img {
+                            border: none;
+                            width: 13px;
+                            height: 13px;
+                            padding: 2px 4px 0 0;
+                        }
+                    }
+    
+                    .search-content-category:hover {
+                        cursor: pointer;
+                    }
+                }
+    
+                .search-mask-header {
+                    position: absolute;
+                    top: 50px;
+                    right: 0;
+                    width: 100%;
+                    min-height: 100px;
+                    z-index: 40;
+                }
+    
+                .search-mask-body {
+                    position: absolute;
+                    top: 115px;
+                    right: 0;
+                    width: 100%;
+                    min-height: 2000px;
+                    background-color: rgba(34, 34, 34, 0.3);
+                    z-index: 40;
                 }
             }
-
-            .miscellaneous-icon:hover {
-                cursor: pointer;
-                opacity: 1;
-            }
-
-            .dropdown {
-                position: absolute;
-                z-index: 50;
-                top: 115px;
-                padding: 18px;
-                background-color: #ffffff;
-                box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.08);
+        }
+    
+        .header-right {
+            .miscellaneous-nav-desktop {
+                display: flex;
+                justify-content: space-around;
+    
+                .miscellaneous-icon {
+                    @include miscellaneous-icon();
+                }
+    
+                .miscellaneous-icon:hover {
+                    cursor: pointer;
+                    opacity: 1;
+                }
+    
+                .dropdown {
+                    position: absolute;
+                    z-index: 50;
+                    top: 115px;
+                    padding: 18px;
+                    background-color: #ffffff;
+                    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.08);
+                }
             }
         }
     }

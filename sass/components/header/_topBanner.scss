@@ -1,10 +1,11 @@
 .top-banner {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    overflow: hidden;
+    display: none;
 
-    @media (max-width: 480px) {
-        display: none;
+    // For Desktop
+    @media (min-width: 480px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
     }
 }
