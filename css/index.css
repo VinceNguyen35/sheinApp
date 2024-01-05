@@ -1069,6 +1069,7 @@ body {
     height: 510px;
     position: absolute;
     white-space: nowrap;
+    display: block;
   }
   .enlarged-image-section .enlarged-image-swiper .swiper-icon-left {
     display: none;
