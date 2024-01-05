@@ -1,3 +1,5 @@
 .pages {
-    padding: 0 25px;
+    @media (min-width: 480px) {
+        padding: 0 25px;
+    }
 }

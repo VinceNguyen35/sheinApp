@@ -2,27 +2,37 @@
 
 // React Imports
 import { useState, useEffect, useContext } from "react";
+
+// Context Imports
 import { ProductContext } from "../../../context/ProductContext";
+import { MobileContext } from "../../../context/MobileContext";
 
 // Img Imports
 import leftArrowBlackIcon from "../../../assets/logos/leftArrowBlackIcon.png";
 import rightArrowBlackIcon from "../../../assets/logos/rightArrowBlackIcon.png";
 
 const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
+    // Product Context
     const product = useContext(ProductContext);
     const pictures = product.pictures;
     const lastPictureIndex = pictures.length - 1;
 
+    // Mobile Context
+    const isMobile = useContext(MobileContext);
+
+    // State Variables
     const [displaySwiper, setDisplaySwiper] = useState(false);
     const [enlargedImagePosition, setEnlargedImagePosition] = useState(0);
     const [transitionTime, setTransitionTime] = useState(0);
 
+    // useEffect Hook
     useEffect(() => {
         const newEnlargedImagePosition = enlargedImage * 384;
         setTransitionTime(0);
         setEnlargedImagePosition(newEnlargedImagePosition);
     }, [enlargedImage]);
 
+    // Handlers for Arrow Click Events
     const handleLeftSwiper = async () => {
         let newEnlargedImage = enlargedImage - 1;
         let newEnlargedImagePosition = enlargedImagePosition - 384;
@@ -75,11 +85,14 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
                         transform: "translate(-" + enlargedImagePosition + "px)"
                     }}
                 >
-                    <img // for swiper carousel edge case
-                        className="enlarged-image"
-                        src={pictures[lastPictureIndex]}
-                        alt={"gallery img " + `${lastPictureIndex}`}
-                    />
+                    {
+                        !isMobile &&
+                        <img // for swiper carousel edge case
+                            className="enlarged-image"
+                            src={pictures[lastPictureIndex]}
+                            alt={"gallery img " + `${lastPictureIndex}`}
+                        />
+                    }
                     {pictures.map((img, index) => (
                         <img
                             key={index}
@@ -88,31 +101,40 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
                             alt={"gallery img " + `${index}`}
                         />
                     ))}
-                    <img // for swiper carousel edge case
-                        className="enlarged-image"
-                        src={pictures[0]}
-                        alt={"gallery img 0"}
-                    />
+                    {
+                        !isMobile &&
+                        <img // for swiper carousel edge case
+                            className="enlarged-image"
+                            src={pictures[0]}
+                            alt={"gallery img 0"}
+                        />
+                    }
                 </div>
+                {
+                    displaySwiper &&
+                    <div
+                        className="swiper-icon-left"
+                        onClick={handleLeftSwiper}
+                    >
+                        {
+                            !isMobile &&
+                            <img src={leftArrowBlackIcon} alt="left arrow" />
+                        }
+                    </div>
+                }
+                {
+                    displaySwiper &&
+                    <div
+                        className="swiper-icon-right"
+                        onClick={handleRightSwiper}
+                    >
+                        {
+                            !isMobile &&
+                            <img src={rightArrowBlackIcon} alt="right arrow" />
+                        }
+                    </div>
+                }
             </div>
-            {
-                displaySwiper &&
-                <div
-                    className="swiper-icon-left"
-                    onClick={ handleLeftSwiper }
-                >
-                    <img src={leftArrowBlackIcon} alt="left arrow" />
-                </div>
-            }
-            {
-                displaySwiper &&
-                <div
-                    className="swiper-icon-right"
-                    onClick={ handleRightSwiper }
-                >
-                    <img src={rightArrowBlackIcon} alt="right arrow" />
-                </div>
-            }
         </div>
     );
 }

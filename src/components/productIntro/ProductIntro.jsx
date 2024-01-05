@@ -18,9 +18,9 @@ const ProductIntro = () => {
 
     const productIntroClass = isMobile ? "row" : "product-intro";
 
-    const productIntroLeftColClass = isMobile ? "" : "product-intro-col-left";
+    const productIntroLeftColClass = isMobile ? "product-intro-col-left" : "product-intro-col-left";
 
-    const productIntroRightColClass = isMobile ? "" : "product-intro-col-right";
+    const productIntroRightColClass = isMobile ? "col-12-xs" : "product-intro-col-right";
 
     return (
         <div className={productIntroClass}>

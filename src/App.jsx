@@ -53,7 +53,10 @@ function App() {
             </Routes>
           </div>
         </Router>
-        <Footer />
+        {
+          !isMobile &&
+          <Footer />
+        }
       </MobileContext.Provider>
     </div>
   );
