@@ -25,19 +25,23 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
     const [enlargedImagePosition, setEnlargedImagePosition] = useState(0);
     const [transitionTime, setTransitionTime] = useState(0);
     const [enlargedImageWidth, setEnlargedImageWidth] = useState(0);
+    const [lastImagePosition, setLastImagePosition] = useState(0);
 
     // useEffect Hook
     useEffect(() => {
-        const newEnlargedImagePosition = enlargedImage * -384;
+        let newEnlargedImagePosition = 0;
         setTransitionTime(0);
-        setEnlargedImagePosition(newEnlargedImagePosition);
 
-        // set the enlarged image width based on screen size
+        // configure based on screen size
         if (isMobile) {
             setEnlargedImageWidth(window.innerWidth);
+            newEnlargedImagePosition = (enlargedImage - 1) * -255;
         } else {
             setEnlargedImageWidth(384);
+            newEnlargedImagePosition = enlargedImage * -384;
         }
+
+        setEnlargedImagePosition(newEnlargedImagePosition);
     }, [enlargedImage, isMobile]);
 
     // Handlers for Arrow Click Events
@@ -47,7 +51,6 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
         setTransitionTime(0.3);
         setEnlargedImage(newEnlargedImage);
         setEnlargedImagePosition(newEnlargedImagePosition);
-        console.log(enlargedImage);
         if (enlargedImage === 1) { // edge case for beginning of swiper
             const resetSwiper = () => {
                 setTransitionTime(0);
@@ -66,7 +69,6 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
         setTransitionTime(0.3);
         setEnlargedImage(newEnlargedImage);
         setEnlargedImagePosition(newEnlargedImagePosition);
-        console.log(enlargedImage);
         if (enlargedImage === lastPictureIndex + 1) { // edge case for end of swiper
             const resetSwiper = () => {
                 setTransitionTime(0);
@@ -79,11 +81,22 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
         }
     }
 
-    const handleMouseMove = (event) => {
+    const handleTouchStart = (event) => {
+        let touchPosition = event.touches[0].clientX;
         setTransitionTime(0);
-        let currentPosition = event.touches[0].clientX;
-        setEnlargedImagePosition(currentPosition);
-        console.log(currentPosition);
+        setLastImagePosition(touchPosition - enlargedImagePosition);
+    }
+
+    const handleTouchMove = (event) => {
+        let touchPosition = event.touches[0].clientX;
+        let newPosition = touchPosition - lastImagePosition;
+        setEnlargedImagePosition(newPosition);
+        console.log(newPosition);
+    }
+
+    const handleTouchEnd = () => {
+        setTransitionTime(0.3);
+        setLastImagePosition(enlargedImagePosition);
     }
 
     return (
@@ -102,7 +115,9 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
                         "transition": "transform " + transitionTime + "s",
                         "transform": "translate(" + enlargedImagePosition + "px)"
                     }}
-                    onTouchMove={handleMouseMove}
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleTouchEnd}
                 >
                     {
                         !isMobile &&

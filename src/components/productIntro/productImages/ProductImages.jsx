@@ -1,5 +1,5 @@
 // React Imports
-import { useState, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 
 // Context Imports
 import { MobileContext } from  "../../../context/MobileContext";
@@ -12,6 +12,10 @@ const ProductImages = () => {
     const [enlargedImage, setEnlargedImage] = useState();
 
     const isMobile = useContext(MobileContext);
+
+    useEffect(() => {
+        setEnlargedImage(1);
+    }, []);
 
     return (
         <div className="product-images">

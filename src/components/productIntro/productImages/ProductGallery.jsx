@@ -1,15 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { ProductContext } from "../../../context/ProductContext";
 
 const ProductGallery = ({ setEnlargedImage }) => {
     const product = useContext(ProductContext);
     const pictures = product.pictures;
-
-    useEffect(() => {
-        setEnlargedImage(1);
-    }, []);
 
     return (
         <div className="product-gallery">
