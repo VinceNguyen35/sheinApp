@@ -24,21 +24,29 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
     const [displaySwiper, setDisplaySwiper] = useState(false);
     const [enlargedImagePosition, setEnlargedImagePosition] = useState(0);
     const [transitionTime, setTransitionTime] = useState(0);
+    const [enlargedImageWidth, setEnlargedImageWidth] = useState(0);
 
     // useEffect Hook
     useEffect(() => {
-        const newEnlargedImagePosition = enlargedImage * 384;
+        const newEnlargedImagePosition = enlargedImage * -384;
         setTransitionTime(0);
         setEnlargedImagePosition(newEnlargedImagePosition);
-    }, [enlargedImage]);
+
+        // set the enlarged image width based on screen size
+        if (isMobile) {
+            setEnlargedImageWidth(window.innerWidth);
+        } else {
+            setEnlargedImageWidth(384);
+        }
+    }, [enlargedImage, isMobile]);
 
     // Handlers for Arrow Click Events
-    const handleLeftSwiper = async () => {
+    const handleLeftSwiper = () => {
         let newEnlargedImage = enlargedImage - 1;
-        let newEnlargedImagePosition = enlargedImagePosition - 384;
-        await setTransitionTime(0.3);
-        await setEnlargedImage(newEnlargedImage);
-        await setEnlargedImagePosition(newEnlargedImagePosition);
+        let newEnlargedImagePosition = enlargedImagePosition + 384;
+        setTransitionTime(0.3);
+        setEnlargedImage(newEnlargedImage);
+        setEnlargedImagePosition(newEnlargedImagePosition);
         console.log(enlargedImage);
         if (enlargedImage === 1) { // edge case for beginning of swiper
             const resetSwiper = () => {
@@ -54,7 +62,7 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
 
     const handleRightSwiper = () => {
         let newEnlargedImage = enlargedImage + 1;
-        let newEnlargedImagePosition = enlargedImagePosition + 384;
+        let newEnlargedImagePosition = enlargedImagePosition - 384;
         setTransitionTime(0.3);
         setEnlargedImage(newEnlargedImage);
         setEnlargedImagePosition(newEnlargedImagePosition);
@@ -71,19 +79,30 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
         }
     }
 
+    const handleMouseMove = (event) => {
+        setTransitionTime(0);
+        let currentPosition = event.touches[0].clientX;
+        setEnlargedImagePosition(currentPosition);
+        console.log(currentPosition);
+    }
+
     return (
         <div
             className="enlarged-image-section"
             onMouseEnter={() => setDisplaySwiper(true)}
             onMouseLeave={() => setDisplaySwiper(false)}
         >
-            <div className="enlarged-image-swiper">
+            <div
+                className="enlarged-image-swiper"
+                style={{ "width": enlargedImageWidth }}
+            >
                 <div
                     className="enlarged-image-content"
                     style={{
-                        transition: "transform " + transitionTime + "s",
-                        transform: "translate(-" + enlargedImagePosition + "px)"
+                        "transition": "transform " + transitionTime + "s",
+                        "transform": "translate(" + enlargedImagePosition + "px)"
                     }}
+                    onTouchMove={handleMouseMove}
                 >
                     {
                         !isMobile &&

@@ -24,7 +24,8 @@
     }
 
     .enlarged-image-swiper {
-        width: 100%;
+        height: 340px;
+        overflow: hidden;
 
         .enlarged-image-content {
             display: flex;
@@ -35,7 +36,6 @@
             height: 510px;
             width: 384px;
             position: relative;
-            overflow: hidden;
             border: 1px solid #000000;
             cursor: zoom-in;
         
