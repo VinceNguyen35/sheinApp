@@ -91,11 +91,32 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
         let touchPosition = event.touches[0].clientX;
         let newPosition = touchPosition - lastImagePosition;
         setEnlargedImagePosition(newPosition);
-        console.log(newPosition);
     }
 
     const handleTouchEnd = () => {
         setTransitionTime(0.3);
+
+        // Swiper Optimization
+        
+        // Edge Cases (beginning and end of carousel)
+        if (enlargedImagePosition > 0) { // beginning
+            setEnlargedImagePosition(0);
+        }
+
+        const swiperEnd = (pictures.length * -255) + ((pictures.length - 1) * -3);
+        const swiperEndPosition = swiperEnd + enlargedImageWidth;
+        console.log(swiperEndPosition);
+
+        if (enlargedImagePosition < swiperEndPosition) { // end
+            setEnlargedImagePosition(swiperEndPosition);
+        }
+
+        // if(Math.abs(enlargedImagePosition - lastImagePosition) < 20) {
+        //     setEnlargedImagePosition(lastImagePosition);
+            
+
+        // }
+
         setLastImagePosition(enlargedImagePosition);
     }
 
