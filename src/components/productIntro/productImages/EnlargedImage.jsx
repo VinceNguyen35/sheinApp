@@ -25,20 +25,22 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
     const [enlargedImagePosition, setEnlargedImagePosition] = useState(0);
     const [transitionTime, setTransitionTime] = useState(0);
     const [enlargedImageWidth, setEnlargedImageWidth] = useState(0);
+    const [lastCursorPosition, setLastCursorPosition] = useState(0);
     const [lastImagePosition, setLastImagePosition] = useState(0);
 
     // useEffect Hook
     useEffect(() => {
         let newEnlargedImagePosition = 0;
-        setTransitionTime(0);
 
         // configure based on screen size
         if (isMobile) {
+            setTransitionTime(0.3);
             setEnlargedImageWidth(window.innerWidth);
-            newEnlargedImagePosition = (enlargedImage - 1) * -255;
+            newEnlargedImagePosition = enlargedImage * -258;
         } else {
+            setTransitionTime(0);
             setEnlargedImageWidth(384);
-            newEnlargedImagePosition = enlargedImage * -384;
+            newEnlargedImagePosition = (enlargedImage + 1) * -384;
         }
 
         setEnlargedImagePosition(newEnlargedImagePosition);
@@ -51,10 +53,10 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
         setTransitionTime(0.3);
         setEnlargedImage(newEnlargedImage);
         setEnlargedImagePosition(newEnlargedImagePosition);
-        if (enlargedImage === 1) { // edge case for beginning of swiper
+        if (enlargedImage === 0) { // edge case for beginning of swiper
             const resetSwiper = () => {
                 setTransitionTime(0);
-                setEnlargedImage(lastPictureIndex + 1);
+                setEnlargedImage(lastPictureIndex);
                 newEnlargedImagePosition = lastPictureIndex * 384;
                 setEnlargedImagePosition(newEnlargedImagePosition);
             }
@@ -69,10 +71,10 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
         setTransitionTime(0.3);
         setEnlargedImage(newEnlargedImage);
         setEnlargedImagePosition(newEnlargedImagePosition);
-        if (enlargedImage === lastPictureIndex + 1) { // edge case for end of swiper
+        if (enlargedImage === lastPictureIndex) { // edge case for end of swiper
             const resetSwiper = () => {
                 setTransitionTime(0);
-                setEnlargedImage(1);
+                setEnlargedImage(0);
                 newEnlargedImagePosition = lastPictureIndex * 384;
                 setEnlargedImagePosition(newEnlargedImagePosition);
             }
@@ -84,12 +86,13 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
     const handleTouchStart = (event) => {
         let touchPosition = event.touches[0].clientX;
         setTransitionTime(0);
-        setLastImagePosition(touchPosition - enlargedImagePosition);
+        setLastCursorPosition(touchPosition - enlargedImagePosition);
+        setLastImagePosition(enlargedImagePosition);
     }
 
     const handleTouchMove = (event) => {
         let touchPosition = event.touches[0].clientX;
-        let newPosition = touchPosition - lastImagePosition;
+        let newPosition = touchPosition - lastCursorPosition;
         setEnlargedImagePosition(newPosition);
     }
 
@@ -97,27 +100,33 @@ const EnlargedImage = ({ enlargedImage, setEnlargedImage }) => {
         setTransitionTime(0.3);
 
         // Swiper Optimization
-        
-        // Edge Cases (beginning and end of carousel)
-        if (enlargedImagePosition > 0) { // beginning
-            setEnlargedImagePosition(0);
-        }
 
         const swiperEnd = (pictures.length * -255) + ((pictures.length - 1) * -3);
         const swiperEndPosition = swiperEnd + enlargedImageWidth;
-        console.log(swiperEndPosition);
+        const differenceInPosition = enlargedImagePosition - lastImagePosition;
+        const newEnlargedImage = Math.abs(parseInt(enlargedImagePosition / 258));
+        const closestImagePercentage = Math.abs(enlargedImagePosition / 258) % 1;
 
+        // Edge Cases (beginning and end of carousel)
         if (enlargedImagePosition < swiperEndPosition) { // end
             setEnlargedImagePosition(swiperEndPosition);
+        } else if (enlargedImagePosition > 0) { // beginning
+            setEnlargedImagePosition(0);
+        // Keep Same Image if Little Movement
+        } else if (Math.abs(differenceInPosition) < 20) {
+            setEnlargedImagePosition(lastImagePosition);
+        // Auto Change to Closest Photo
+        } else if (closestImagePercentage > 0.4) {
+            setEnlargedImage(newEnlargedImage + 1);
+            setEnlargedImagePosition((enlargedImage) * -258);
+            console.log(Math.abs(enlargedImagePosition / 258));
+        } else  {
+            setEnlargedImage(newEnlargedImage);
+            setEnlargedImagePosition((enlargedImage) * -258);
+            console.log(Math.abs(enlargedImagePosition / 258));
         }
 
-        // if(Math.abs(enlargedImagePosition - lastImagePosition) < 20) {
-        //     setEnlargedImagePosition(lastImagePosition);
-            
-
-        // }
-
-        setLastImagePosition(enlargedImagePosition);
+        setLastCursorPosition(enlargedImagePosition);
     }
 
     return (

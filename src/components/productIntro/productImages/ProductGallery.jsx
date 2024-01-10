@@ -14,7 +14,7 @@ const ProductGallery = ({ setEnlargedImage }) => {
                     key={index}
                     src={img}
                     alt={"gallery img " + `${index + 1}`}
-                    onMouseOver={() => setEnlargedImage(index + 1)}
+                    onMouseOver={() => setEnlargedImage(index)}
                 />
             ))}
         </div>

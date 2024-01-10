@@ -14,7 +14,7 @@ const ProductImages = () => {
     const isMobile = useContext(MobileContext);
 
     useEffect(() => {
-        setEnlargedImage(1);
+        setEnlargedImage(0);
     }, []);
 
     return (
