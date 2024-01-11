@@ -779,6 +779,7 @@ body {
 .product-info .product-info-mobile .pricing-details {
   display: flex;
   max-width: 100%;
+  margin: 5px 0;
 }
 .product-info .product-info-mobile .pricing-details .discounted-price {
   font-family: Arial, Helvetica, sans-serif;
@@ -953,12 +954,16 @@ body {
 .adding-product .favorite-button {
   width: 52px;
   height: 52px;
-  border-radius: 50%;
-  border: 1px solid #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+@media (min-width: 480px) {
+  .adding-product .favorite-button {
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+  }
 }
 .adding-product .favorite-icon {
   width: 25px;

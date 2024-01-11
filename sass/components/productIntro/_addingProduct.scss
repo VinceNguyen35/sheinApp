@@ -23,12 +23,15 @@
     .favorite-button {
         width: 52px;
         height: 52px;
-        border-radius: 50%;
-        border: 1px solid #e5e5e5;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+
+        @media (min-width: 480px) {
+            border-radius: 50%;
+            border: 1px solid #e5e5e5;
+        }
     }
 
     .favorite-icon {
