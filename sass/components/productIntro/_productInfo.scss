@@ -64,14 +64,15 @@
             margin: 0.2133rem 0;
 
             .product-name {
-                font-size: 12px;
+                font-size: 11px;
                 margin-bottom: 5px;
+                max-width: 70%;
             }
 
             .ratings {
                 display: flex;
                 align-items: center;
-                font-size: 12px;
+                font-size: 11px;
                 width: 90px;
 
                 img {
