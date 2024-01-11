@@ -3,6 +3,7 @@ import { useContext } from "react";
 
 // Context Imports
 import { ProductContext } from "../../context/ProductContext";
+import { MobileContext } from "../../context/MobileContext";
 
 // Image Imports
 import starIconEmpty from "../../assets/logos/starIconEmpty.png";
@@ -12,6 +13,7 @@ import rightArrowGreyIcon from "../../assets/logos/rightArrowGreyIcon.png";
 
 const ProductInfo = () => {
     const product = useContext(ProductContext);
+    const isMobile = useContext(MobileContext);
 
     // Returns an array which defines which star icon to use for each rating
     const handleStarRating = (averageRating) => {
@@ -58,41 +60,73 @@ const ProductInfo = () => {
 
     return (
         <div className="product-info">
-            <div className="product-name">{ product.productName }</div>
-            <div className="product-info-minor-details">
-                <div className="sku">SKU: {product.SKU}</div>
-                <div className="ratings">
-                    {
-                        handleStarRating(product.averageRating).map((rating, index) => (
-                            <img
-                                key={index}
-                                src={rating}
-                                alt="empty star"
-                            />
-                        ))
-                    }
-                    {product.averageRating} ({product.numberOfReviews} Reviews)
-                </div>
-            </div>
-            <div className="pricing-details">
-                <span className="discounted-price">${discountedPrice(product.price, product.discountPercentage)}</span>
-                <div className="discount-wrapper">
-                    <div className="discount-estimation">
-                        Estimated
+            {
+                !isMobile &&
+                <div className="product-info-desktop">
+                    <div className="product-name">{product.productName}</div>
+                    <div className="product-info-minor-details">
+                        <div className="sku">SKU: {product.SKU}</div>
+                        <div className="ratings">
+                            {
+                                handleStarRating(product.averageRating).map((rating, index) => (
+                                    <img
+                                        key={index}
+                                        src={rating}
+                                        alt="star"
+                                    />
+                                ))
+                            }
+                            {product.averageRating} ({product.numberOfReviews} Reviews)
+                        </div>
                     </div>
-                    <div className="discount-percentage">
-                        -{product.discountPercentage}%
+                    <div className="pricing-details">
+                        <span className="discounted-price">${discountedPrice(product.price, product.discountPercentage)}</span>
+                        <div className="discount-wrapper">
+                            <div className="discount-estimation">
+                                Estimated
+                            </div>
+                            <div className="discount-percentage">
+                                -{product.discountPercentage}%
+                            </div>
+                        </div>
+                        <div className="original-price">
+                            ${product.price}
+                            <img src={rightArrowGreyIcon} alt="right arrow" />
+                        </div>
+                    </div>
+                    <div className="discount-details">
+                        30% OFF For orders $9.90+ • 25% OFF For orders %59.00+
+                        <img src={rightArrowGreyIcon} alt="right arrow" />
                     </div>
                 </div>
-                <div className="original-price">
-                    ${product.price}
-                    <img src={ rightArrowGreyIcon } alt="right arrow" />
+            }
+            {
+                isMobile &&
+                <div className="product-info-mobile">
+                    <div className="pricing-details">
+                        <span className="discounted-price">${discountedPrice(product.price, product.discountPercentage)}</span>
+                        <div className="discount-wrapper">
+                            <div className="discount-estimation">
+                                Estimated
+                            </div>
+                            <div className="discount-percentage">
+                                -{product.discountPercentage}%
+                            </div>
+                        </div>
+                        <div className="original-price">
+                            ${product.price}
+                            <img src={rightArrowGreyIcon} alt="right arrow" />
+                        </div>
+                    </div>
+                    <div className="goods-name">
+                        <div className="product-name">{product.productName}</div>
+                        <div className="ratings">
+                            <img src={starIconFilled} alt="star"/>
+                            {product.averageRating} ({product.numberOfReviews})
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className="discount-details">
-                30% OFF For orders $9.90+ • 25% OFF For orders %59.00+
-                <img src={ rightArrowGreyIcon } alt="right arrow" />
-            </div>
+            }
         </div>
     );
 }
