@@ -29,7 +29,7 @@ const SearchBar = () => {
         const rotatePlaceholderItem = () => {
             i++;
             setPlaceholderItem(placeholderItemsList[i]);
-            if(i === 9) {
+            if (i === 9) {
                 i = -1;
             }
         }
@@ -48,11 +48,11 @@ const SearchBar = () => {
         <form action="">
             <input
                 type="text"
-                placeholder={ placeholderItem }
-                onFocus={ handleFocusIn }
+                placeholder={placeholderItem}
+                onFocus={handleFocusIn}
             />
             <img
-                src={ searchIcon }
+                src={searchIcon}
                 alt="Search Icon"
             />
             {
@@ -63,18 +63,18 @@ const SearchBar = () => {
                 isEditing &&
                 <div
                     className="search-mask-header"
-                    onClick={ handleFocusOut }
+                    onClick={handleFocusOut}
                 ></div>
             }
             {
                 isEditing &&
                 <div
                     className="search-mask-body"
-                    onClick={ handleFocusOut }
+                    onClick={handleFocusOut}
                 ></div>
             }
         </form>
     );
 }
- 
+
 export default SearchBar;

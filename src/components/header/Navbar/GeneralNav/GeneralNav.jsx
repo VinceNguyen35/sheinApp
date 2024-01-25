@@ -58,10 +58,10 @@ const GeneralNav = () => {
                 }
             </div>
             <div className="header-right">
-                <MiscellaneousNav isMobile={ isMobile }/>
+                <MiscellaneousNav isMobile={isMobile} />
             </div>
         </div>
     );
 }
- 
+
 export default GeneralNav;

@@ -53,14 +53,14 @@ const SearchContent = () => {
                 {
                     searchContentCategories.map((category, index) => (
                         <div
-                            key={ index }
+                            key={index}
                             className="search-content-category"
                         >
                             {
-                                category.isHot && 
+                                category.isHot &&
                                 <img src={fireIcon} alt="fire icon" />
                             }
-                            { category.title }
+                            {category.title}
                         </div>
                     ))
                 }
@@ -68,5 +68,5 @@ const SearchContent = () => {
         </div>
     );
 }
- 
+
 export default SearchContent;

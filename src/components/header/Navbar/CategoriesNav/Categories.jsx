@@ -10,17 +10,17 @@ const Categories = () => {
     return (
         <div
             className="dropdown"
-            onMouseOver={ () => setHover("hovering") }
-            onMouseLeave={ () => setHover("notHovering") }
+            onMouseOver={() => setHover("hovering")}
+            onMouseLeave={() => setHover("notHovering")}
         >
             Categories
             <img
-                className={ hover }
-                src={ downArrowGreyIcon }
+                className={hover}
+                src={downArrowGreyIcon}
                 alt="directional icon for categories"
             />
         </div>
     );
 }
- 
+
 export default Categories;

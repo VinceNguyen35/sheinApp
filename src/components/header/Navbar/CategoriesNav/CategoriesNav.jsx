@@ -163,5 +163,5 @@ const CategoriesNav = () => {
         </div>
     );
 }
- 
+
 export default CategoriesNav;

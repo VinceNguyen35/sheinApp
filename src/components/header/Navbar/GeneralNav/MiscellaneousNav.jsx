@@ -11,7 +11,7 @@ import globeIcon from "../../../../assets/logos/globeIcon.png";
 import searchIconBlack from "../../../../assets/logos/searchIconBlack.png";
 import shareIcon from "../../../../assets/logos/shareIcon.png";
 
-const MiscellaneousNav = ({isMobile}) => {
+const MiscellaneousNav = ({ isMobile }) => {
     const [userHover, setUserHover] = useState(false);
     const [shoppingCartHover, setShoppingCartHover] = useState(false);
     const [supportHover, setSupportHover] = useState(false);
@@ -23,10 +23,10 @@ const MiscellaneousNav = ({isMobile}) => {
                 isMobile &&
                 <div className="miscellaneous-nav-mobile">
                     <div className="miscellaneous-icon">
-                            <img
-                                src={searchIconBlack}
-                                alt="Search Icon"
-                            />
+                        <img
+                            src={searchIconBlack}
+                            alt="Search Icon"
+                        />
                     </div>
                     <div className="miscellaneous-icon">
                         <img
@@ -111,5 +111,5 @@ const MiscellaneousNav = ({isMobile}) => {
         </div>
     );
 }
- 
+
 export default MiscellaneousNav;

@@ -25,8 +25,8 @@ const CategoriesScroller = ({
                 setLeftHover("cannotHover");
             }
             scrollLeft();
-            setRightArrow(rightArrowBlackIcon); 
-            setRightHover("");          
+            setRightArrow(rightArrowBlackIcon);
+            setRightHover("");
         }
     }
 
@@ -45,19 +45,19 @@ const CategoriesScroller = ({
     return (
         <div className="categories-scroller">
             <img
-                className={ leftHover }
-                onClick={ handleLeftArrow }
-                src={ leftArrow }
+                className={leftHover}
+                onClick={handleLeftArrow}
+                src={leftArrow}
                 alt="right arrow icon"
             />
             <img
-                className={ rightHover }
-                onClick={ handleRightArrow }
-                src={ rightArrow }
+                className={rightHover}
+                onClick={handleRightArrow}
+                src={rightArrow}
                 alt="right arrow icon"
             />
         </div>
     );
 }
- 
+
 export default CategoriesScroller;
