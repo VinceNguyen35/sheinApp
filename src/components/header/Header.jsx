@@ -6,7 +6,7 @@ import { MobileContext } from "../../context/MobileContext";
 
 // Component Imports
 import TopBanner from "./TopBanner";
-import Navbar from "./navbar/Navbar";
+import Navbar from "./Navbar/Navbar";
 
 const Header = () => {
     const isMobile = useContext(MobileContext);
