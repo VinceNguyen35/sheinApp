@@ -82,7 +82,7 @@ Examples to access these pages include the following
 
 ## Acknowledgements
 
-This project is inspired by the following:
+This project is inspired by the following
 
 - Shein's user interface and design
 - My girlfriend, who frequents Shein's website as a customer
