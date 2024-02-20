@@ -1,6 +1,10 @@
 /* eslint-disable react/prop-types */
+
 // React Imports
-import { useState } from "react";
+import { useContext } from "react";
+
+// Context Imports
+import { CartContext } from "../../../../context/CartContext";
 
 // Component Imports
 import userIcon from "../../../../assets/logos/userIcon.png";
@@ -12,10 +16,8 @@ import searchIconBlack from "../../../../assets/logos/searchIconBlack.png";
 import shareIcon from "../../../../assets/logos/shareIcon.png";
 
 const MiscellaneousNav = ({ isMobile }) => {
-    const [userHover, setUserHover] = useState(false);
-    const [shoppingCartHover, setShoppingCartHover] = useState(false);
-    const [supportHover, setSupportHover] = useState(false);
-    const [internationalHover, setInternationalHover] = useState(false);
+
+    const cartTotal = useContext(CartContext);
 
     return (
         <div className="miscellaneous-nav">
@@ -46,26 +48,18 @@ const MiscellaneousNav = ({ isMobile }) => {
             {
                 !isMobile &&
                 <div className="miscellaneous-nav-desktop">
-                    <div
-                        className="miscellaneous-icon"
-                        onMouseOver={() => setUserHover(true)}
-                        onMouseOut={() => setUserHover(false)}
-                    >
+                    <div className="miscellaneous-icon">
                         <img
                             src={userIcon}
                             alt="User Icon"
                         />
                     </div>
-                    <div
-                        className="miscellaneous-icon"
-                        onMouseOver={() => setShoppingCartHover(true)}
-                        onMouseOut={() => setShoppingCartHover(false)}
-                    >
+                    <div className="miscellaneous-icon">
                         <img
                             src={shoppingCartIcon}
                             alt="Shopping Cart Icon"
                         />
-                        0
+                        { cartTotal.cartTotal }
                     </div>
                     <div className="miscellaneous-icon">
                         <img
@@ -74,39 +68,19 @@ const MiscellaneousNav = ({ isMobile }) => {
                         />
                         0
                     </div>
-                    <div
-                        className="miscellaneous-icon"
-                        onMouseOver={() => setSupportHover(true)}
-                        onMouseOut={() => setSupportHover(false)}
-                    >
+                    <div className="miscellaneous-icon">
                         <img
                             src={headphonesIcon}
                             alt="Headphones Icon"
                         />
                     </div>
-                    <div
-                        className="miscellaneous-icon"
-                        onMouseOver={() => setInternationalHover(true)}
-                        onMouseOut={() => setInternationalHover(false)}
-                    >
+                    <div className="miscellaneous-icon">
                         <img
                             src={globeIcon}
                             alt="Globe Icon"
                         />
                     </div>
                 </div>
-            }
-            {
-                userHover && <div className="dropdown">User Hover</div>
-            }
-            {
-                shoppingCartHover && <div className="dropdown">ShoppingCartHover</div>
-            }
-            {
-                supportHover && <div className="dropdown">Support Hover</div>
-            }
-            {
-                internationalHover && <div className="dropdown">International Hover</div>
             }
         </div>
     );
