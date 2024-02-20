@@ -202,6 +202,20 @@
                     background-color: #ffffff;
                     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.08);
 
+                    .empty-cart {
+                        img {
+                            display: block;
+                            margin: 10px auto;
+                            opacity: 0.45;
+                        }
+
+                        .empty-cart-text {
+                            width: 50%;
+                            margin: 20px auto;
+                            color: #666;
+                        }
+                    }
+
                     .cart-item {
                         margin: 10px 20px;
 
