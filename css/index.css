@@ -681,7 +681,7 @@ body {
     text-align: center;
   }
   .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-items-list {
-    max-height: 300px;
+    max-height: 250px;
     overflow-y: auto;
   }
   .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-items-list .cart-item {
@@ -734,6 +734,19 @@ body {
     font-size: 18px;
     font-weight: bolder;
   }
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .total-pricing {
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    text-align: right;
+  }
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .total-pricing .savings {
+    color: #fa6338;
+  }
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .total-pricing .discount-price {
+    color: #fa6338;
+    font-size: 24px;
+    font-weight: 700;
+  }
   .general-nav .header-right .miscellaneous-nav-desktop .dropdown .checkout-button {
     width: 365px;
     height: 54px;
@@ -742,7 +755,7 @@ body {
     background-color: #000000;
     font-size: 18px;
     text-align: center;
-    margin: 0 auto;
+    margin: 5px auto 20px;
   }
   .general-nav .header-right .miscellaneous-nav-desktop .dropdown .checkout-button:hover {
     cursor: pointer;

@@ -96,9 +96,9 @@ const Dropdown = ({setShowCart}) => {
                         ))}
                     </div>
                     <div className="total-pricing">
-                        <div>{ totalOriginalPrice.toFixed(2) }</div>
-                        <div>{ totalSavings.toFixed(2) }</div>
-                        <div>{ totalDiscountPrice.toFixed(2) }</div>
+                        <div className="price">Retail Price: ${ totalOriginalPrice.toFixed(2) }</div>
+                        <div className="savings">Already Saved: ${ totalSavings.toFixed(2) }</div>
+                        <div className="price">Total: <span className="discount-price">${totalDiscountPrice.toFixed(2)}</span></div>
                     </div>
                     <div className="checkout-button">CHECKOUT</div>
                 </div>
