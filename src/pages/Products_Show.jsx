@@ -67,6 +67,7 @@ const Products_Show = () => {
             price: 11.99,
             discountPercentage: 41,
             discountPrice: 7.07,
+            discountSavings: 4.92,
             averageRating: 4.79,
             numberOfReviews: 600,
             breadcrumbs: [
@@ -265,6 +266,7 @@ const Products_Show = () => {
             price: 24.49,
             discountPercentage: 37,
             discountPrice: 15.42,
+            discountSavings: 9.07,
             averageRating: 3.62,
             numberOfReviews: 123,
             breadcrumbs: [
@@ -440,6 +442,7 @@ const Products_Show = () => {
             price: 11.49,
             discountPercentage: 30,
             discountPrice: 8.04,
+            discountSavings: 3.45,
             averageRating: 4.62,
             numberOfReviews: 365,
             breadcrumbs: [
