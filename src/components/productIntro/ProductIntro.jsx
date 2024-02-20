@@ -16,10 +16,9 @@ import ProductAccordion from "./productAccordion/ProductAccordion";
 const ProductIntro = () => {
     const isMobile = useContext(MobileContext);
 
+    // Setting layout classes based on screen size
     const productIntroClass = isMobile ? "row" : "product-intro";
-
     const productIntroLeftColClass = isMobile ? "product-intro-col-left" : "product-intro-col-left";
-
     const productIntroRightColClass = isMobile ? "col-12-xs" : "product-intro-col-right";
 
     return (

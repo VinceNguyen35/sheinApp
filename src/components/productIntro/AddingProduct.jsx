@@ -2,17 +2,17 @@
 import { useContext } from "react";
 
 // Context Imports
-import { CartContext } from "../../context/CartContext";
+import { CartTotalContext } from "../../context/CartTotalContext";
 
 // Image Imports
 import heartIconBlack from "../../assets/logos/heartIconBlack.png";
 
 const AddingProduct = () => {
-    const cartTotal = useContext(CartContext);
+    const cart = useContext(CartTotalContext);
 
     const handleClick = () => {
-        const currentCartTotal = cartTotal.cartTotal;
-        cartTotal.setCartTotal(currentCartTotal + 1);
+        const currentCartTotal = cart.cartTotal;
+        cart.setCartTotal(currentCartTotal + 1);
     }
 
     return (

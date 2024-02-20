@@ -4,7 +4,7 @@
 import { useContext } from "react";
 
 // Context Imports
-import { CartContext } from "../../../../context/CartContext";
+import { CartTotalContext } from "../../../../context/CartTotalContext";
 
 // Component Imports
 import userIcon from "../../../../assets/logos/userIcon.png";
@@ -17,7 +17,7 @@ import shareIcon from "../../../../assets/logos/shareIcon.png";
 
 const MiscellaneousNav = ({ isMobile }) => {
 
-    const cartTotal = useContext(CartContext);
+    const cart = useContext(CartTotalContext);
 
     return (
         <div className="miscellaneous-nav">
@@ -59,7 +59,7 @@ const MiscellaneousNav = ({ isMobile }) => {
                             src={shoppingCartIcon}
                             alt="Shopping Cart Icon"
                         />
-                        { cartTotal.cartTotal }
+                        { cart.cartTotal }
                     </div>
                     <div className="miscellaneous-icon">
                         <img

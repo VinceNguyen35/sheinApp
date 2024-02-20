@@ -1,4 +1,9 @@
-import { useState, useContext } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+
+// React Imports
+import { useState, useEffect, useContext } from "react";
+
+// Context Imports
 import { ProductContext } from "../../../context/ProductContext";
 
 const Sizes = () => {
@@ -6,6 +11,10 @@ const Sizes = () => {
     const sizes = product.sizes;
 
     const [selectedSize, setSelectedSize] = useState("");
+
+    useEffect(() => {
+        setSelectedSize(sizes[0]);
+    }, []);
 
     const selectedSizeClasses = (size) => {
         if (size === selectedSize) {

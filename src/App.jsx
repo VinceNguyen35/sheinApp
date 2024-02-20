@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Context Imports
 import { MobileContext } from "./context/MobileContext";
-import { CartContext } from "./context/CartContext";
+import { CartTotalContext } from "./context/CartTotalContext";
 
 // Page Imports
 import Home from "./pages/Home";
@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <MobileContext.Provider value={isMobile}>
-        <CartContext.Provider value={{cartTotal, setCartTotal}}>
+        <CartTotalContext.Provider value={{cartTotal, setCartTotal}}>
           <Header />
           <Router>
             <div className="pages">
@@ -62,7 +62,7 @@ function App() {
             !isMobile &&
             <Footer />
           }
-        </CartContext.Provider>
+        </CartTotalContext.Provider>
       </MobileContext.Provider>
     </div>
   );

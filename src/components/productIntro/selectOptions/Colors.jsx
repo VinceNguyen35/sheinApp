@@ -8,7 +8,7 @@ const Colors = () => {
     const productName = product.productName;
     const colors = product.colors;
 
-    const [selectedColor, setSelectedColor] = useState(colors[1]);
+    const [selectedColor, setSelectedColor] = useState("");
 
     useEffect(() => {
         if (productName === "Manfinity Homme Men Letter Patched Detail Tee") {
@@ -20,7 +20,7 @@ const Colors = () => {
         } else {
             setSelectedColor("");
         }
-    },[]);
+    },[selectedColor]);
 
     const selectedColorClasses = (color) => {
         if(color === selectedColor) {
