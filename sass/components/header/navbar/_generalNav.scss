@@ -210,7 +210,7 @@
                             position: relative;
                         }
 
-                        .cart-item-name {
+                        .cart-item-top {
                             font-size: 14px;
                             overflow: hidden;
                             white-space: nowrap;
@@ -218,16 +218,16 @@
                             margin-bottom: 6px;
                         }
 
-                        .cart-item-details {
+                        .cart-item-middle {
                             display: flex;
                             vertical-align: center;
                             margin-top: 10px;
                             margin-bottom: 30px;
 
-                            .cart-item-details-left {
+                            .cart-item-middle-left {
                                 display: flex;
 
-                                .cart-item-color-picture {
+                                img {
                                     width: 14px;
                                     height: 14px;
                                     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -243,15 +243,26 @@
                                 }
                             }
 
-                            .cart-item-details-right {
+                            .cart-item-middle-right {
 
                             }
                         }
 
-                        .cart-item-price {
-                            color: #fa6338;
-                            font-size: 18px;
-                            font-weight: bolder;
+                        .cart-item-bottom {
+                            display: flex;
+                            justify-content: space-between;
+
+                            img {
+                                width: 16px;
+                                height: 16px;
+                                cursor: pointer;
+                            }
+
+                            .cart-item-price {
+                                color: #fa6338;
+                                font-size: 18px;
+                                font-weight: bolder;
+                            }
                         }
                     }
                 }

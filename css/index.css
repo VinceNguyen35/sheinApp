@@ -674,36 +674,45 @@ body {
     height: 90px;
     position: relative;
   }
-  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-name {
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-top {
     font-size: 14px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-bottom: 6px;
   }
-  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-details {
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-middle {
     display: flex;
     vertical-align: center;
     margin-top: 10px;
     margin-bottom: 30px;
   }
-  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-details .cart-item-details-left {
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-middle .cart-item-middle-left {
     display: flex;
   }
-  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-details .cart-item-details-left .cart-item-color-picture {
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-middle .cart-item-middle-left img {
     width: 14px;
     height: 14px;
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 50%;
     margin: auto 0;
   }
-  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-details .cart-item-details-left .cart-item-color-size {
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-middle .cart-item-middle-left .cart-item-color-size {
     color: #666;
     font-size: 12px;
     padding-left: 5px;
     margin: auto 0;
   }
-  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-price {
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-bottom img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  .general-nav .header-right .miscellaneous-nav-desktop .dropdown .cart-item .cart-item-bottom .cart-item-price {
     color: #fa6338;
     font-size: 18px;
     font-weight: bolder;

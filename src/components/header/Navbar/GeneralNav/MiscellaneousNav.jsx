@@ -66,13 +66,12 @@ const MiscellaneousNav = ({ isMobile }) => {
                             src={shoppingCartIcon}
                             alt="Shopping Cart Icon"
                             onMouseOver={() => setShowCart(true)}
-                            onMouseOut={() => setShowCart(false)}
                         />
                         { cart.cartTotal }
                     </div>
                     {
                         showCart &&
-                        <Dropdown />
+                        <Dropdown setShowCart={setShowCart} />
                     }
                     <div className="miscellaneous-icon">
                         <img

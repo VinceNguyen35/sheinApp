@@ -1,16 +1,34 @@
+/* eslint-disable react/prop-types */
 // React Imports
 import { useContext } from "react";
 
 // Context Imports
+import { CartTotalContext } from "../../../../context/CartTotalContext";
 import { CartItemsContext } from "../../../../context/CartItemsContext";
 
-const Dropdown = () => {
+// Image Imports
+import trashIcon from "../../../../assets/logos/trashIcon.png";
+
+const Dropdown = ({setShowCart}) => {
 
     // Context Variables
+    const cartTotal = useContext(CartTotalContext);
     const cartItems = useContext(CartItemsContext);
 
+    // Handler Functions
+    const handleDelete = (index) => {
+        // Handle Cart Total
+        const newCartTotal = cartTotal.cartTotal - 1;
+        cartTotal.setCartTotal(newCartTotal);
+
+        // Handle Cart List
+        const newCartItems = cartItems.cartItems;
+        newCartItems.splice(index, 1);
+        cartItems.setCartItems(newCartItems);
+    }
+
     return (
-        <div className="dropdown">
+        <div className="dropdown" onMouseLeave={() => setShowCart(false)}>
             {cartItems.cartItems.map((cartItem, index) => (
                 <div key={index} className="cart-item row">
                     <div className="col-3-xs">
@@ -21,21 +39,24 @@ const Dropdown = () => {
                         />
                     </div>
                     <div className="col-9-xs">
-                        <div className="cart-item-name">{cartItem.product.productName}</div>
-                        <div className="cart-item-details">
-                            <div className="cart-item-details-left">
-                                <img
-                                    src={cartItem.color.picture}
-                                    alt="picture of item color"
-                                    className="cart-item-color-picture"
-                                />
+                        <div className="cart-item-top">{cartItem.product.productName}</div>
+                        <div className="cart-item-middle">
+                            <div className="cart-item-middle-left">
+                                <img src={cartItem.color.picture} alt="picture of item color" />
                                 <div className="cart-item-color-size">{cartItem.color.name} / {cartItem.size}</div>
                             </div>
-                            <div className="cart-item-details-right">
+                            <div className="cart-item-middle-right">
 
                             </div>
                         </div>
-                        <div className="cart-item-price">{cartItem.product.price}</div>
+                        <div className="cart-item-bottom">
+                            <div className="cart-item-price">{cartItem.product.price}</div>
+                            <img
+                                src={trashIcon}
+                                alt="trash icon"
+                                onClick={() => handleDelete(index)}
+                            />
+                        </div>
                     </div>
                 </div>
             ))}
