@@ -53,11 +53,6 @@ const ProductInfo = () => {
         return starRating;
     }
 
-    const discountedPrice = (originalPrice, discountPercentage) => {
-        const newPrice = originalPrice - (originalPrice * discountPercentage / 100);
-        return Math.trunc(newPrice * 100) / 100;
-    }
-
     return (
         <div className="product-info">
             {
@@ -80,7 +75,7 @@ const ProductInfo = () => {
                         </div>
                     </div>
                     <div className="pricing-details">
-                        <span className="discounted-price">${discountedPrice(product.price, product.discountPercentage)}</span>
+                        <span className="discounted-price">${ product.discountPrice }</span>
                         <div className="discount-wrapper">
                             <div className="discount-estimation">
                                 Estimated
@@ -104,7 +99,7 @@ const ProductInfo = () => {
                 isMobile &&
                 <div className="product-info-mobile">
                     <div className="pricing-details">
-                        <span className="discounted-price">${discountedPrice(product.price, product.discountPercentage)}</span>
+                        <span className="discounted-price">${ product.discountPrice }</span>
                         <div className="discount-wrapper">
                             <div className="discount-estimation">
                                 Estimated

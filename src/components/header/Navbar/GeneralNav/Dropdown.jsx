@@ -72,7 +72,7 @@ const Dropdown = ({setShowCart}) => {
                                     </div>
                                 </div>
                                 <div className="cart-item-bottom">
-                                    <div className="cart-item-price">{cartItem.product.price}</div>
+                                    <div className="cart-item-price">{cartItem.product.discountPrice}</div>
                                     <img
                                         src={trashIcon}
                                         alt="trash icon"

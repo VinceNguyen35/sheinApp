@@ -66,6 +66,7 @@ const Products_Show = () => {
             SKU: "sm2209144214692168",
             price: 11.99,
             discountPercentage: 41,
+            discountPrice: 7.07,
             averageRating: 4.79,
             numberOfReviews: 600,
             breadcrumbs: [
@@ -263,6 +264,7 @@ const Products_Show = () => {
             SKU: "sw2303019187878545",
             price: 24.49,
             discountPercentage: 37,
+            discountPrice: 15.42,
             averageRating: 3.62,
             numberOfReviews: 123,
             breadcrumbs: [
@@ -437,6 +439,7 @@ const Products_Show = () => {
             SKU: "sn2204193020259050",
             price: 11.49,
             discountPercentage: 30,
+            discountPrice: 8.04,
             averageRating: 4.62,
             numberOfReviews: 365,
             breadcrumbs: [
