@@ -1,16 +1,15 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react-hooks/exhaustive-deps */
 
 // React Imports
-import { useState, useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 
 // Context Imports
 import { ProductContext } from "../../../context/ProductContext";
 
-const Sizes = () => {
+const Sizes = ({selectedSize, setSelectedSize}) => {
     const product = useContext(ProductContext);
     const sizes = product.sizes;
-
-    const [selectedSize, setSelectedSize] = useState("");
 
     useEffect(() => {
         setSelectedSize(sizes[0]);

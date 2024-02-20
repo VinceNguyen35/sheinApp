@@ -1,12 +1,15 @@
 /* eslint-disable react/prop-types */
 
 // React Imports
-import { useContext } from "react";
+import { useState, useContext } from "react";
 
 // Context Imports
 import { CartTotalContext } from "../../../../context/CartTotalContext";
 
 // Component Imports
+import Dropdown from "./Dropdown";
+
+// Image Imports
 import userIcon from "../../../../assets/logos/userIcon.png";
 import shoppingCartIcon from "../../../../assets/logos/shoppingCartIcon.png";
 import heartIconBlack from "../../../../assets/logos/heartIconBlack.png";
@@ -17,6 +20,10 @@ import shareIcon from "../../../../assets/logos/shareIcon.png";
 
 const MiscellaneousNav = ({ isMobile }) => {
 
+    // State Variables
+    const [showCart, setShowCart] = useState(false);
+
+    // Context Variables
     const cart = useContext(CartTotalContext);
 
     return (
@@ -58,9 +65,15 @@ const MiscellaneousNav = ({ isMobile }) => {
                         <img
                             src={shoppingCartIcon}
                             alt="Shopping Cart Icon"
+                            onMouseOver={() => setShowCart(true)}
+                            onMouseOut={() => setShowCart(false)}
                         />
                         { cart.cartTotal }
                     </div>
+                    {
+                        showCart &&
+                        <Dropdown />
+                    }
                     <div className="miscellaneous-icon">
                         <img
                             src={heartIconBlack}

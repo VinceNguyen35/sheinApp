@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Context Imports
 import { MobileContext } from "./context/MobileContext";
 import { CartTotalContext } from "./context/CartTotalContext";
+import { CartItemsContext } from "./context/CartItemsContext";
 
 // Page Imports
 import Home from "./pages/Home";
@@ -21,6 +22,7 @@ function App() {
   // State Variables
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
   const [cartTotal, setCartTotal] = useState(0);
+  const [cartItems, setCartItems] = useState([]);
 
   const updateMedia = () => {
     setIsMobile(window.innerWidth < 480);
@@ -35,33 +37,35 @@ function App() {
     <div className="App">
       <MobileContext.Provider value={isMobile}>
         <CartTotalContext.Provider value={{cartTotal, setCartTotal}}>
-          <Header />
-          <Router>
-            <div className="pages">
-              <Routes>
-                <Route
-                  path="/"
-                  element={<Home />}
-                />
-                <Route
-                  path="/products"
-                  element={<Products />}
-                />
-                <Route
-                  path="/products/:id"
-                  element={<Products_Show />}
-                />
-                <Route
-                  path="*"
-                  element={<NotFound />}
-                />
-              </Routes>
-            </div>
-          </Router>
-          {
-            !isMobile &&
-            <Footer />
-          }
+          <CartItemsContext.Provider value={{cartItems, setCartItems}}>
+            <Header />
+            <Router>
+              <div className="pages">
+                <Routes>
+                  <Route
+                    path="/"
+                    element={<Home />}
+                  />
+                  <Route
+                    path="/products"
+                    element={<Products />}
+                  />
+                  <Route
+                    path="/products/:id"
+                    element={<Products_Show />}
+                  />
+                  <Route
+                    path="*"
+                    element={<NotFound />}
+                  />
+                </Routes>
+              </div>
+            </Router>
+            {
+              !isMobile &&
+              <Footer />
+            }
+          </CartItemsContext.Provider>
         </CartTotalContext.Provider>
       </MobileContext.Provider>
     </div>

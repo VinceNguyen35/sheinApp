@@ -17,8 +17,8 @@ import manfinity_img2 from "../assets/products/manfinity/manfinity_img2.webp";
 import manfinity_img6 from "../assets/products/manfinity/manfinity_img6.webp";
 import manfinity_img7 from "../assets/products/manfinity/manfinity_img7.webp";
 import armyGreen from "../assets/products/manfinity/armyGreen.webp";
-import darkGrey from "../assets/products/manfinity/darkGrey.webp";
 import mochaBrown from "../assets/products/manfinity/mochaBrown.webp";
+import darkGrey from "../assets/products/manfinity/darkGrey.webp";
 import navyBlue from "../assets/products/manfinity/navyBlue.webp";
 import manfinity_storeIMG from "../assets/products/manfinity/manfinity_storeIMG.jpg";
 
@@ -96,12 +96,12 @@ const Products_Show = () => {
                     picture: armyGreen
                 },
                 {
-                    name: "Dark Grey",
-                    picture: darkGrey
-                },
-                {
                     name: "Mocha Brown",
                     picture: mochaBrown
+                },
+                {
+                    name: "Dark Grey",
+                    picture: darkGrey
                 },
                 {
                     name: "Navy Blue",

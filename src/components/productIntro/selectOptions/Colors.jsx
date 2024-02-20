@@ -1,26 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
-import { useState, useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 import { ProductContext } from "../../../context/ProductContext";
 
-const Colors = () => {
+const Colors = ({selectedColor, setSelectedColor}) => {
     const product = useContext(ProductContext);
-    const productName = product.productName;
     const colors = product.colors;
 
-    const [selectedColor, setSelectedColor] = useState("");
-
     useEffect(() => {
-        if (productName === "Manfinity Homme Men Letter Patched Detail Tee") {
-            setSelectedColor(colors[2]);
-        } else if (productName === "Flap Pocket Cargo Pants") {
-            setSelectedColor(colors[1]);
-        } else if (productName === "SHEIN Belle Solid Draped Backless Halterneck Satin Bridesmaid Dress") {
-            setSelectedColor(colors[1]);
-        } else {
-            setSelectedColor("");
-        }
-    },[selectedColor]);
+        setSelectedColor(colors[1]);
+    },[]);
 
     const selectedColorClasses = (color) => {
         if(color === selectedColor) {
@@ -42,11 +31,11 @@ const Colors = () => {
                         <div
                             key={index}
                             className={ selectedColorClasses(color) }
+                            onClick={() => { setSelectedColor(colors[index]); }}
                         >
                             <img
                                 src={color.picture}
                                 alt={color.name}
-                                onClick={() => { setSelectedColor(colors[index]); }}
                             />
                         </div>
                     ))
