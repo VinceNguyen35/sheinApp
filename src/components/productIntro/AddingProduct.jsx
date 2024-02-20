@@ -30,7 +30,6 @@ const AddingProduct = ({selectedColor, selectedSize}) => {
             size: selectedSize
         };
         cartItems.setCartItems([...currentCartItems, newCartItem]);
-        console.log(cartItems);
     }
 
     return (

@@ -10,6 +10,7 @@
         }
     }
 
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -193,11 +194,66 @@
     
                 .dropdown {
                     position: absolute;
+                    width: 350px;
                     z-index: 50;
                     top: 115px;
+                    right: 25px;
                     padding: 18px;
                     background-color: #ffffff;
                     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.08);
+
+                    .cart-item {
+                        margin: 10px 20px;
+
+                        .cart-item-picture {
+                            height: 90px;
+                            position: relative;
+                        }
+
+                        .cart-item-name {
+                            font-size: 14px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            margin-bottom: 6px;
+                        }
+
+                        .cart-item-details {
+                            display: flex;
+                            vertical-align: center;
+                            margin-top: 10px;
+                            margin-bottom: 30px;
+
+                            .cart-item-details-left {
+                                display: flex;
+
+                                .cart-item-color-picture {
+                                    width: 14px;
+                                    height: 14px;
+                                    border: 1px solid rgba(0, 0, 0, 0.06);
+                                    border-radius: 50%;
+                                    margin: auto 0;
+                                }
+                            
+                                .cart-item-color-size {
+                                    color: #666;
+                                    font-size: 12px;
+                                    padding-left: 5px;
+                                    margin: auto 0;
+                                }
+                            }
+
+                            .cart-item-details-right {
+
+                            }
+                        }
+
+                        .cart-item-price {
+                            color: #fa6338;
+                            font-size: 18px;
+                            font-weight: bolder;
+                        }
+                    }
                 }
             }
         }
