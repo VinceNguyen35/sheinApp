@@ -1,5 +1,5 @@
 // React Imports
-import { useContext } from "react";
+import { useState, useContext } from "react";
 
 // Context Imports
 import { MobileContext } from "../../../../context/MobileContext";
@@ -14,6 +14,11 @@ import leftArrowBlackIcon from "../../../../assets/logos/leftArrowBlackIcon.png"
 import navbarIcon from "../../../../assets/logos/navbarIcon.png";
 
 const GeneralNav = () => {
+
+    // State Variables
+    const [showCart, setShowCart] = useState(false);
+
+    // Context Variables
     const isMobile = useContext(MobileContext);
 
     return (
@@ -25,6 +30,7 @@ const GeneralNav = () => {
                         <img
                             src={leftArrowBlackIcon}
                             alt="left arrow"
+                            onTouchStart={() => setShowCart(false)}
                         />
                         <img
                             src={navbarIcon}
@@ -58,7 +64,11 @@ const GeneralNav = () => {
                 }
             </div>
             <div className="header-right">
-                <MiscellaneousNav isMobile={isMobile} />
+                <MiscellaneousNav
+                    isMobile={isMobile}
+                    showCart={showCart}
+                    setShowCart={setShowCart}
+                />
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 // React Imports
-import { useState, useContext } from "react";
+import { useContext } from "react";
 
 // Context Imports
 import { CartTotalContext } from "../../../../context/CartTotalContext";
@@ -18,10 +18,7 @@ import globeIcon from "../../../../assets/logos/globeIcon.png";
 import searchIconBlack from "../../../../assets/logos/searchIconBlack.png";
 import shareIcon from "../../../../assets/logos/shareIcon.png";
 
-const MiscellaneousNav = ({ isMobile }) => {
-
-    // State Variables
-    const [showCart, setShowCart] = useState(false);
+const MiscellaneousNav = ({ isMobile, showCart, setShowCart }) => {
 
     // Context Variables
     const cart = useContext(CartTotalContext);
@@ -47,8 +44,14 @@ const MiscellaneousNav = ({ isMobile }) => {
                         <img
                             src={shoppingCartIcon}
                             alt="Shopping Cart Icon"
+                            onTouchStart={() => setShowCart(true)}
                         />
+                        {cart.cartTotal}
                     </div>
+                    {
+                        showCart &&
+                        <Dropdown />
+                    }
                 </div>
 
             }

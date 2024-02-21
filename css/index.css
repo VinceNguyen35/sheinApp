@@ -531,6 +531,111 @@ body {
   height: 20px;
   padding: 0 3px;
 }
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown {
+  position: absolute;
+  width: 98%;
+  top: 35px;
+  z-index: 50;
+  margin: 10px auto;
+  background-color: #ffffff;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.08);
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .empty-cart {
+  height: 100px;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .empty-cart img {
+  display: block;
+  margin: 10px auto;
+  opacity: 0.45;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .empty-cart .empty-cart-text {
+  width: 50%;
+  margin: 20px auto;
+  color: #666;
+  text-align: center;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list {
+  min-height: 100%;
+  overflow-y: auto;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list .cart-item {
+  margin: 10px 8px;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list .cart-item .cart-item-picture {
+  height: 90px;
+  position: relative;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list .cart-item .cart-item-top {
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list .cart-item .cart-item-middle {
+  display: flex;
+  vertical-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list .cart-item .cart-item-middle .cart-item-middle-left {
+  display: flex;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list .cart-item .cart-item-middle .cart-item-middle-left img {
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+  margin: auto 0;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list .cart-item .cart-item-middle .cart-item-middle-left .cart-item-color-size {
+  color: #666;
+  font-size: 12px;
+  padding-left: 5px;
+  margin: auto 0;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list .cart-item .cart-item-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list .cart-item .cart-item-bottom img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .cart-items-list .cart-item .cart-item-bottom .cart-item-price {
+  color: #fa6338;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .total-pricing {
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: right;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .total-pricing .savings {
+  color: #fa6338;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .total-pricing .discount-price {
+  color: #fa6338;
+  font-size: 24px;
+  font-weight: 700;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .checkout-button {
+  width: 365px;
+  height: 54px;
+  line-height: 54px;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px auto 20px;
+}
+.general-nav .header-right .miscellaneous-nav-mobile .dropdown .checkout-button:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(0, 0, 0, 0.8);
+}
 @media (min-width: 480px) {
   .general-nav {
     display: flex;
