@@ -4,7 +4,7 @@ This Single Page Application (SPA) is a clone of the Shein products page, create
 
 Click on the link below to view the current working version of this project.
 
-<a href="https://myshein.netlify.app">myshein.netlify.app</a>
+<a href="https://myshein.netlify.app/products/manfinity">myshein.netlify.app/products/manfinity</a>
 
 ## Table of Contents
 
