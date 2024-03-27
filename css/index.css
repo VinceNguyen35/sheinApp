@@ -513,6 +513,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.general-nav .header-center a {
+  padding-left: 30px;
+}
 .general-nav .header-center a img {
   height: 20px;
   padding: 8px;

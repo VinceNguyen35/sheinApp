@@ -11,7 +11,6 @@ import MiscellaneousNav from "./MiscellaneousNav";
 // Img Imports
 import sheinLogo from "../../../../assets/logos/sheinLogo.png";
 import leftArrowBlackIcon from "../../../../assets/logos/leftArrowBlackIcon.png";
-import navbarIcon from "../../../../assets/logos/navbarIcon.png";
 
 const GeneralNav = () => {
 
@@ -31,10 +30,6 @@ const GeneralNav = () => {
                             src={leftArrowBlackIcon}
                             alt="left arrow"
                             onTouchStart={() => setShowCart(false)}
-                        />
-                        <img
-                            src={navbarIcon}
-                            alt="Navbar Icon"
                         />
                     </div>
                 }
